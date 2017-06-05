@@ -65,6 +65,10 @@ include $this->admin_tpl('header');?>
         <td><?php echo form::images('info[image]', 'image', $image, 'content');?></td>
       </tr>
 	<tr>
+		<th><?php echo '小图' ?>：</th>
+		<td><?php echo form::images('info[image1]', 'image1', $image1, 'content'); ?></td>
+	</tr>
+	<tr>
 		<th><?php echo '大图' ?>：</th>
 		<td><?php echo form::images('info[big_image]', 'big_image', $big_image, 'content'); ?></td>
 	</tr>

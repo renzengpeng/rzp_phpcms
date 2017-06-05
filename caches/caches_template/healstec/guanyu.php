@@ -22,7 +22,7 @@
 					<li class="col-md-4 col-sm-4 col-xs-4">
 						<div class="gy col-md-12 col-sm-12 col-xs-12"></div>
 						<div class="col-md-12 col-sm-12 col-xs-12 gyo">
-							<div class="col-md-1 col-sm-1 col-xs-1" style="padding: 0;"><img src="<?php echo $r['image'];?>"
+							<div class="col-md-1 col-sm-1 col-xs-1" style="padding: 0;"><img src="<?php echo $r['image1'];?>"
 																							 class="img-responsive"/>
 							</div>
 							<div class="col-md-10 col-sm-10 col-xs-10" style="color: #ffffff;"><p><?php echo $r['catname'];?></p><br/><span><?php echo $r['description'];?></span>
