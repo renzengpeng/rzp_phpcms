@@ -27,7 +27,7 @@ return array (
     'sethtml' => '0',
     'letter' => 'guanyuwomen',
     'usable_type' => '',
-    'big_image' => 'http://www.healstec.com/uploadfile/2017/0605/20170605070957862.png',
+    'big_image' => 'http://www.healstec.com/uploadfile/2017/0605/20170605071848180.gif',
   ),
 );
 ?>

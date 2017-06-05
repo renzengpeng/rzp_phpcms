@@ -5,7 +5,7 @@
 				
 				<div class="section fp-auto-height" style="padding-top: 0;">
 					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=444d1ae2bfa95acdcd7107b3ec703cce&sql=select+%2A+from+hl_category+where+catid%3D%2710%27&cache=3600&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_category where catid=\'10\'',)).'444d1ae2bfa95acdcd7107b3ec703cce');if(!$data = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='10' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);if(!empty($data)){setcache($tag_cache_name, $data, 'tpl_data');}}?>
-		<div class="container-fluid tu_o tu_o_2 tu_o_3" style="background: url(<?php echo $data['0']['image'];?>); width: 100%; background-size: cover; margin-top: 85px;">
+		<div class="container-fluid tu_o tu_o_2 tu_o_3" style="background: url(<?php echo $data['0']['big_image'];?>); width: 100%; background-size: cover; margin-top: 85px;">
 			<div class="row">
 			<div class="tu_o_zh" id="tu_cpcp">
 			<div class="tu_zh" id="chanpin" style="width: 100%;">
