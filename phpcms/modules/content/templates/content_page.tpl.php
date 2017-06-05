@@ -45,8 +45,17 @@ function closeParent() {
       <th width="80"> <?php echo L('keywords');?>	  </th>
       <td><input type="text" name="info[keywords]" id="keywords" value="<?php echo $keywords?>" size="50">  <?php echo L('explode_keywords');?></td>
     </tr>
+	<tr>
+		<th><?php echo '大图' ?>：</th>
+		<td><?php echo form::images('info[image1]', 'image1', $image, 'content'); ?></td>
+	</tr>
+	<tr>
+		<th><?php echo '小图' ?>：</th>
+		<td><?php echo form::images('info[image2]', 'image2', $image, 'content'); ?></td>
+	</tr>
 
 <tr>
+
  <th width="80"> <?php echo L('content');?>	  </th>
 <td>
 <textarea name="info[content]" id="content"><?php echo $content?></textarea>

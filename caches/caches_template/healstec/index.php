@@ -71,127 +71,72 @@
 				<div class="col-md-12  col-sm-12"  id="col"><p>健康方案</p></div>
 			</div>
 		</div>
-		<div class="container-fluid tu_o">
-			<a href="ky_jk.html">
-				<div class="row">
-					<div class="tu_o_zh">
-						<div class="tu_zh">
-                            <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=e7448c8a9a9ba6803f32f2820fc043cc&sql=select+%2A+from+hl_page+where+catid%3D%2722%27+&cache=3600&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_page where catid=\'22\' ',)).'e7448c8a9a9ba6803f32f2820fc043cc');if(!$data = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_page where catid='22'  LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);if(!empty($data)){setcache($tag_cache_name, $data, 'tpl_data');}}?>
-                            <h1><?php echo $data['0']['title'];?></h1>
-                            <p><?php echo $data['0']['content'];?></p>
-                            <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=2cda98eee9d608d3d6c4453cd11889d8&sql=select+%2A+from+hl_page+where+catid%3D%2722%27+&cache=3600&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_page where catid=\'22\' ',)).'2cda98eee9d608d3d6c4453cd11889d8');if(!$data = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_page where catid='22'  LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);if(!empty($data)){setcache($tag_cache_name, $data, 'tpl_data');}}?>
+			<div class="container-fluid tu_o"
+				 style="background: url(<?php echo $data['0']['image1'];?>); width: 100%; background-size: cover;">
+				<a href="ky_jk.html">
+					<div class="row">
+						<div class="tu_o_zh">
+							<div class="tu_zh">
+
+								<h1><?php echo $data['0']['title'];?></h1>
+								<p><?php echo $data['0']['content'];?></p>
 
 
+
+						</div>
+						</div>
 					</div>
-					</div>
-				</div>
-			</a>
-		</div>
+				</a>
+			</div>
+		<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 		</div>
 
 		
-<div class="section fp-auto-height section1">
+	<div class="section fp-auto-height section1">
+		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=7dc6f55bec3fb920f11b214a4987c347&sql=select+%2A+from+hl_category+where+catid%3D%2713%27+&cache=3600&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_category where catid=\'13\' ',)).'7dc6f55bec3fb920f11b214a4987c347');if(!$data = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='13'  LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);if(!empty($data)){setcache($tag_cache_name, $data, 'tpl_data');}}?>
 		<div class="container" id="midle ">
 			<div class="row">
-				<div class="col-md-12  col-sm-12"  id="col"><p>营养与健康</p></div>
+				<div class="col-md-12  col-sm-12"  id="col"><p><?php echo $data['0']['catname'];?></p></div>
 			</div>
 		</div>		
-		<div class="container-fluid tu_o" style="background: url(<?php echo IMG_PATH;?>/healstec/hp_05.png); width: 100%; background-size: cover;">
+		<div class="container-fluid tu_o" style="background: url(<?php echo $data['0']['big_image'];?>); width: 100%; background-size: cover;">
 			<a href="yingyang.html">
 			<div class="row">
 				<div class="tu_o_zh">
 					<div class="tu_zh">
-						<h1 style="color: #ffffff;">营养与健康</h1>
-					<p style="color: #ffffff;">“养生之道，莫先于食”。<br />合理的饮食搭配是健康的基础，机体摄入<br />健康营养成分的比例必须符合人体的需要......</p>
+						<h1 style="color: #ffffff;"><?php echo $data['0']['catname'];?></h1>
+					<p style="color: #ffffff;"><?php echo $data['0']['description'];?></p>
 				</div>
 				</div>
 			</div>
 			</a>
 		</div>
-		</div>
+		<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+	</div>
 		
 		<div class="section " style="padding-top: 0;">
 		<div class="container" id="midle_o" style="margin-bottom: 0;">
 			<div class="row" id="pd">
 				<div class="col-md-12  col-sm-12"  id="col"><p>最新消息</p></div>
 				<ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=08603c3400a60ad2b76a149bc0127d30&action=lists&catid=15&order=updatetime+DESC&thumb=1&num=3&return=info\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$info = $content_tag->lists(array('catid'=>'15','order'=>'updatetime DESC','thumb'=>'1','limit'=>'3',));}?>
+					<?php $n=1;if(is_array($info)) foreach($info AS $v) { ?>
 					<li class="col-md-12  col-sm-12">
-						<img src="<?php echo IMG_PATH;?>/healstec/H_26.jpg" class="col-md-8  col-sm-8 col-xs-12 img-responsive" id="ji_img">
+						<img src="<?php echo $v['thumb'];?>" class="col-md-8  col-sm-8 col-xs-12 img-responsive"
+							 id="ji_img">
 						<div class="col-md-4 col-sm-4 col-xs-12" id="ji_zi">
-							<h1>自然科学</h1>
-							<p>让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。</p>
+							<h1><?php echo $v['title'];?></h1>
+							<p><?php echo str_cut($v['description'],100);?></p>
 						</div>
 					</li>
-					<li class="col-md-12  col-sm-12" >
-						<img src="<?php echo IMG_PATH;?>H_29.jpg" class="col-md-8  col-sm-8 col-xs-12 img-responsive" id="ji_img"/>
-						<div class="col-md-4 col-sm-4 col-xs-12" id="ji_zi">
-							<h1>自然科学</h1>
-							<p>让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。</p>
-						</div>
-					</li>
-					<li class="col-md-12  col-sm-12">
-						<img src="<?php echo IMG_PATH;?>H_29.jpg" class="col-md-8  col-sm-8 col-xs-12 img-responsive" id="ji_img"/>
-						<div class="col-md-4 col-sm-4 col-xs-12" id="ji_zi">
-							<h1>自然科学</h1>
-							<p>让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。</p>
-						</div>
-					</li>
-<!-- 					<li class="col-md-12  col-sm-12">
-						<img src="<?php echo IMG_PATH;?>H_31.jpg" class="col-md-8  col-sm-8 col-xs-12 img-responsive" id="ji_img"/>
-						<div class="col-md-4 col-sm-4 col-xs-12" id="ji_zi">
-							<h1>自然科学</h1>
-							<p>让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。让生活更加简单，让生命更加安全。</p>
-						</div>
-					</li> -->
+
+					<?php $n++;}unset($n); ?>
+					<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 				</ul>
 			</div>
 		</div>
 		</div>
 
-  
-<div class="section fp-auto-height se_f">
-		<footer>
-			<div class="container"  style="padding: 0;">
-				<ul class="col-md-12 col-sm-12 f_u" style="padding: 0;">
-					<li class="col-md-3 col-sm-3 li_11" style="padding: 0;"><h1>联系我们</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
-							<li>官方热线：400-888-8888</li>
-							<li>官方微信：Hhhhh</li>
-							<li>QQ号：220220220</li>
-						</ul>
-					</li>
-					<li class="col-md-2 col-sm-2 li_22" style="padding: 0;"><h1>公司简介</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
-							<li><a href="">公司历史</a></li>
-							<li><a href="">业务原则</a></li>
-							<li><a href="">H在中国</a></li>
-							<li><a href="">质量与安全</a></li>
-						</ul>
-					</li>
-					<li class="col-md-2 col-sm2 li_33" style="padding: 0;"><h1>新闻频道</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
-							<li><a href="">集团新闻</a></li>
-							<li><a href="">新闻特写</a></li>
-							<li><a href="">H声明</a></li>
-							<li><a href="">媒体联系</a></li>
-						</ul>
-					</li>
-					<li class="col-md-5 col-sm-5 li_44" style="padding: 0;"><h1>关注我们</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-							<li class="col-md-5 col-sm-5" style="padding: 0;">微信<br/><img src="<?php echo IMG_PATH;?>Hf_03.jpg"/></li>
-							<li class="col-md-5 col-sm-5" style="padding: 0;">微博<br/><img src="<?php echo IMG_PATH;?>Hf_03.jpg"/></li>
-						</ul>
-					</li>					
-				</ul>
-				<div class="g_s">
-					工商编码
-				</div>
-			</div>
-		</footer>
-		</div>
-		</div>
+		  <?php include template("","footer"); ?>
 
-		
-	
-	</body>
-</html>

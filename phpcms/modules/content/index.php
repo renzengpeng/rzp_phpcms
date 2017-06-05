@@ -262,7 +262,7 @@ class index {
 			$GLOBALS['URL_ARRAY']['categorydir'] = $categorydir;
 			$GLOBALS['URL_ARRAY']['catdir'] = $catdir;
 			$GLOBALS['URL_ARRAY']['catid'] = $catid;
-			include template('content',$template);
+			include template('','guanyu');
 		} else {
 		//单网页
 			$this->page_db = pc_base::load_model('page_model');
