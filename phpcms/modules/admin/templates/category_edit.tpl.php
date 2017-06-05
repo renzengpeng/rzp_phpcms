@@ -65,6 +65,10 @@ include $this->admin_tpl('header');?>
         <td><?php echo form::images('info[image]', 'image', $image, 'content');?></td>
       </tr>
 	<tr>
+		<th><?php echo '大图' ?>：</th>
+		<td><?php echo form::images('info[big_image]', 'big_image', $big_image, 'content'); ?></td>
+	</tr>
+	<tr>
         <th><?php echo L('description')?>：</th>
         <td>
 		<textarea name="info[description]" maxlength="255" style="width:300px;height:60px;"><?php echo $description;?></textarea>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=divice-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Healstec</title>
+		<link type="image/x-icon" rel="icon" href="img/bitbug_favicon (1).ico" />
+		<link type="image/x-icon" rel="shortcut icon" href="img/bitbug_favicon (1).ico" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+		<link type="text/css" rel="stylesheet" href="css/bootstrap-off-canvas-nav.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0; padding-bottom: 0;">
+			<div class="container">
+					<div class="b_t"><p>我们的产品遍布全国</p></div>
+			</div>
+			<div class="container">
+				<div class="navbar-header">	
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class='sr-only'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+						<span class='icon-bar'></span>
+					</button>
+					<a href="index.html"><img src="img/H2_06.jpg" class="navbar-brand"/></a>					
+				</div>									
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 							
+						<ul class="nav navbar-nav navbar-right"  id="u_o">
+							<input type="text" id="in"/>
+							<div class="clearfix"></div>
+							<li><a href="guanyu.html" class="gywm" style="color: #0f97a7; font-weight: bold;">关于我们</a></li>							
+							<li><a href="keyan.html">科研技术</a></li>
+							<li><a href="shehui.html">社会责任</a></li>
+							<li><a href="yingyang.html">营养与健康</a></li>
+							<li><a href="pinpai.html"  style="padding-right: 0;">品牌中心</a></li>
+						</ul>					
+				</div>
+			</div>
+			<div class="container" id="midle_o" style="margin-top:0; padding-top: 0; ">
+			<div class="row" style="padding-bottom: 0; ">
+				<div class="col-md-12  col-sm-12"  id="col" style="border-bottom-color:#12949c ; margin-bottom: 0;"></div>
+			</div>
+		</div>
+		</nav>
+										
+		<div class="container-fluid tu_o" style="background: url(img/renshi_02.jpg) center; width: 100%;  background-size: cover; margin-top: 70px;" id="gy_to"></div>
+	    <div class="container-fluid tu_o " style="background: url(img/renshi_02.jpg) center; width: 100%;  background-size: cover; margin-top: 70px;  display: none;" id="gy_to"></div>
+		<div class="container-fluid tu_o " style="background: url(img/renshi_02.jpg) center; width: 100%;  background-size: cover; margin-top: 70px;  display: none;" id="gy_to"></div>
+		<div class="container-fluid tu_o " style="background: url(img/renshi_02.jpg) center; width: 100%;  background-size: cover; margin-top: 70px;  display: none;" id="gy_to"></div>
+		<div class="container-fluid tu_o " style="background: url(img/renshi_02.jpg) center; width: 100%;  background-size: cover; margin-top: 70px;  display: none;" id="gy_to"></div>   
+		
+		<div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
+			<div class="row gy_no">
+				<ul class="col-md-6 col-sm-4 col-xs-12 x_w" style="padding-bottom: 0; margin-bottom: 0;">
+					<li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img src="img/hgyxy_05.jpg"/></li>
+					<li class="col-md-2 col-sm-4" style="padding-right: 0;"><p>关于我们</p></li>
+					<li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="img/xw_08.jpg"/></li>
+					<li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>认识我们</p></li>
+				</ul>
+				<ul class="col-md-6 col-sm-7 x_w_y col-xs-12" style="padding-bottom: 0; margin-bottom: 0; text-align: center;" id="onck">
+					<li class="col-md-2 col-sm-2 col-xs-3" style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"><p>认识我们</p></li>
+					<li class="col-md-2 col-sm-2 col-xs-2"><p>价值观</p></li>
+					<li class="col-md-2 col-sm-2 col-xs-2"><p>使命愿景</p></li>
+					<li class="col-md-3 col-sm-3 col-xs-3"><p>核心竞争力</p></li>
+					<li class="col-md-2 col-sm-2 x_w_y_li col-xs-2"  ><p>新闻频道</p></li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				var $p=$("#onck li");
+				$p.css("cursor","pointer");
+				$p.click(function(){
+					//选中的文字添加下边框
+					$p.css({
+						"border-bottom":"0",
+					})
+					$(this).css({
+						"border-bottom":"1px solid #f7ac1d",
+					})
+					//选中后其左面显示其一致的文字内容并加上颜色效果
+					var $tex=$("#text p");
+					$tex.text($(this).text()).css("color","#0096a5");
+					//选中后相应的banner图转换
+					var $im=$(".tu_o");
+					//$im.css("display","none");
+					// $im.eq($(this).index()).css("display","block");
+					if($(window).width>1024){
+						$im.eq($(this).index()).css("display","block");
+					}
+					if($(window).width<768){
+						$im.eq($(this).index()).css("display","none");
+					}
+					//点击展示相应内容
+					var $gy=$(".gy_wm");
+					$gy.css("display","none");
+					$gy.eq($(this).index()).fadeIn(500);//透明渐入效果
+				    
+				})
+			})
+		</script>		
+		<!--认识我们-->
+		<div class="container gy_wm renshiwomen" style="padding-left: 0; padding-right: 0;">
+			<ul style="background: url(img/renshi_05.jpg) no-repeat center;background-size:cover ;width: 100%; padding-left: 0; margin-top: 0;" class="rho">
+				<li style="float: right; letter-spacing: 1px;"></li>
+			</ul>
+			<ul style="background: url(img/renshi_08.jpg) no-repeat center;background-size:cover ;width: 100%;  padding-left: 0;" class="rht">
+				<li style="letter-spacing: 1px; color: #FFFFFF; width: 50%;">
+				<h1 >北京海生泰和医药科技有限公司</h1>
+				<p >成立于2015年12月，由留英药学博士，及其来自于制药，能源，电子等行业的伙伴共同创立，致力于采用创新性的药品和食品制剂技术，为中国消费者研究、开发和生产日化品、食品、营养品、药品以及医疗器械产品。</p>
+				</li>				
+			</ul>
+			<ul style="background: url(img/renshi_10.jpg) no-repeat center;background-size:cover ;width: 100%;  padding-left: 0;" class="rhth">
+				<li style=" letter-spacing: 1px; color: #FFFFFF; width: 50%; float: right; ">
+				<h1>目前</h1>
+				<p >已在英国伦敦设立了分公司，在中国北京建立研发中心，并初步创立了由国内外知名专家学者和国内资深博士、研究员共同建立的技术研发团队。</p>
+				</li>
+			</ul>
+			<ul style="background: url(img/renshi_12.jpg) no-repeat center;background-size:cover ;width: 100%;  padding-left: 0; margin-top: 1%; margin-bottom: 10%;" class="rhf">
+				<li style="  letter-spacing: 1px; color: #FFFFFF; width: 50%; margin-left: 4%;">
+				<h1 >我们相信“中国制造”的力量</h1>
+				<p >扎根中国，与国内外的科研院所和科技公司进行广泛的技术合作，在全球范围内选取创造性的技术方案和优质原料、辅料，参照中国人的健康数据及国家标准，为健康人群和患病人群在运动、能力代谢、体重管理、慢病管理和愈后等领域提供最好的解决方案。</p>
+				</li>
+			</ul>
+		</div>
+		
+				
+			
+		
+		<!--价值观-->
+		<div class="container-fluid gy_wm" style=" display: none;">
+			<p align="center"><img src="img/gy-jizh_04.jpg" /></p>
+		</div>
+		<!--使命愿景-->	
+		<div class="container-fluid sm gy_wm" style="display: none; background: url(img/gysm01_05.jpg) no-repeat center; background-size: cover;width: 100%; he702">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<h1 style="color: #f19e00;">我们的使命</h1>
+					<p>使用新药研发技术和营养包埋等食品技术
+<br/>结合创新的配方选择
+<br/>为中国消费者提供更有效，更安全，具有更高依从性的健康产品解决方案</p>
+				</div>	
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<h1>我们的愿景</h1>
+					<p>成为中国最具创新能力的健康产品公司
+<br/>用科学和创新关爱我们的家人和顾客</p>
+				</div>							
+			</div>
+		</div>
+		
+		<!--核心竞争力-->
+		<div class="ry gy_wm" style="display:none; background: url(img/gyhx_04.jpg) no-repeat center; background-size: cover; width: 100%; height: 673px; margin-top: 0; padding-top: 0;">
+		<div class="container ryo">
+			<div style="float: right;">
+				<h1 style="margin-top: 20%; font-size: 26px; color: #0097a5; text-align: right; margin-top:10%;">公司核心竞争力</h1>
+				<div style="background: rgba(1,116,123,0.8);width: 300px; overflow: hidden; color: #FFFFFF; font-size: 15px; line-height: 3rem; padding: 8%;">
+					创始人和核心研发团队在肿瘤，代谢类疾病，
+					自身免疫性疾病等领域有丰富的新药研发经验，因此能够更好的理解相关健康产品的作用机理和安全范围，找出最佳的解决方案。同时，研发团队整合了营养，
+					食品，制药等多方面的技术力量，确保我们的产品在效果，味道和安全性等方面达到最优。</div>				
+			</div>
+		</div>		
+		</div>
+		
+		<!--新闻-->
+		<div class="container xw gy_wm" style="padding-left: 0; padding-right: 0; padding-top: 0;display: none;">
+			<div class="row">
+			<div class="col-md-4 col-sm-4 xw_l col-xs-12">
+				<h1><img src="img/hgyxy_09.jpg" class="img-responsive"/></h1>
+				<div class="inp col-md-12 col-sm-12" style="padding-left: 0; padding-right: 0; margin-top: 8%;">
+					<input type="text" value="输入新闻关键词" onfocus="if (value =='输入新闻关键词'){value =''}"onblur="if (value ==''){value='输入新闻关键词'}" style="color: #9a9a9a;"/>
+					<a href="#"><div class="glyphicon glyphicon-search s_s"></div></a>
+				</div>
+				<div class="inp col-md-12 col-sm-12" style="padding-left: 0; padding-right: 0; margin-top: 2%;">
+					
+					<select>
+						<option>最近一周</option>
+						<option>最近一个月</option>
+						<option>最近三个月</option>
+						<option>最近半年</option>
+						<option>最近一年</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-8 col-sm-8 col-xs-12" style="padding-left: 0;">
+				<ul class="col-md-12 col-sm-12 news col-xs-12">
+					<li><h1>推动“一带一路”沿线文化交流合作“丝路荟影”摄影展在北京举行</h1>
+						<h2>2017-05-15</h2>
+						<p>在“一带一路”国际合作高峰论坛召开之际，由丝路商旅文组委会等单位主办的“丝路荟影”摄影展在北京拉开帷幕，全国人大原副委员长蒋正华、全国政协原副主席李金华等领导同志，以及海内外华人摄影艺术家和各界人士出席了5月12日的开幕式。</p>
+					</li>
+				</ul>
+				<ul class="col-md-12 col-sm-12 news_o col-xs-12" style="padding: 0;">
+					<li class="col-md-12 col-sm-12 li_o" col-xs-12>
+						<a href="#">
+						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;">2017-05-15</h2>
+						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1>推动“一带一路”沿线文化交流合作“丝路荟影”摄影展在北京举行</h1>
+							<p>在“一带一路”国际合作高峰论坛召开之际，由丝路商旅文组委会等单位主办的“丝路荟影”摄影展在北京拉开帷幕，全国人大原副委员长蒋正华、全国政协原副主席李金华等领导同志，以及海内外华人摄影艺术家和各界人士出席了5月12日的开幕式。</p>
+						</div>
+						<div class="col-md-1 col-sm-1 col-xs-1 glyphicon glyphicon-chevron-right tu_biao" style="padding-left: 0; padding-right: 0;"></div>		
+						</a>
+					</li>
+					<li class="col-md-12 col-sm-12  col-xs-12">
+						<a href="#">
+						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;">2017-05-15</h2>
+						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1>推动“一带一路”沿线文化交流合作“丝路荟影”摄影展在北京举行</h1>
+							<p>在“一带一路”国际合作高峰论坛召开之际，由丝路商旅文组委会等单位主办的“丝路荟影”摄影展在北京拉开帷幕，全国人大原副委员长蒋正华、全国政协原副主席李金华等领导同志，以及海内外华人摄影艺术家和各界人士出席了5月12日的开幕式。</p>
+						</div>
+						<div class="col-md-1 col-sm-1 col-xs-1 glyphicon glyphicon-chevron-right tu_biao" style="padding-left: 0; padding-right: 0;"></div>		
+						</a>
+					</li>
+					<li class="col-md-12 col-sm-12  col-xs-12">
+						<a href="#">
+						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;">2017-05-15</h2>
+						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1>推动“一带一路”沿线文化交流合作“丝路荟影”摄影展在北京举行</h1>
+							<p>在“一带一路”国际合作高峰论坛召开之际，由丝路商旅文组委会等单位主办的“丝路荟影”摄影展在北京拉开帷幕，全国人大原副委员长蒋正华、全国政协原副主席李金华等领导同志，以及海内外华人摄影艺术家和各界人士出席了5月12日的开幕式。</p>
+						</div>
+						<div class="col-md-1 col-sm-1 col-xs-1 glyphicon glyphicon-chevron-right tu_biao" style="padding-left: 0; padding-right: 0;"></div>		
+						</a>
+					</li>
+					<li class="col-md-12 col-sm-12  col-xs-12">
+						<a href="#">
+						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;">2017-05-15</h2>
+						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1>推动“一带一路”沿线文化交流合作“丝路荟影”摄影展在北京举行</h1>
+							<p>在“一带一路”国际合作高峰论坛召开之际，由丝路商旅文组委会等单位主办的“丝路荟影”摄影展在北京拉开帷幕，全国人大原副委员长蒋正华、全国政协原副主席李金华等领导同志，以及海内外华人摄影艺术家和各界人士出席了5月12日的开幕式。</p>
+						</div>
+						<div class="col-md-1 col-sm-1 col-xs-1 glyphicon glyphicon-chevron-right tu_biao" style="padding-left: 0; padding-right: 0;"></div>		
+						</a>
+					</li>
+					<li class="col-md-12 col-sm-12  col-xs-12">
+						<a href="#">
+						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;">2017-05-15</h2>
+						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1>推动“一带一路”沿线文化交流合作“丝路荟影”摄影展在北京举行</h1>
+							<p>在“一带一路”国际合作高峰论坛召开之际，由丝路商旅文组委会等单位主办的“丝路荟影”摄影展在北京拉开帷幕，全国人大原副委员长蒋正华、全国政协原副主席李金华等领导同志，以及海内外华人摄影艺术家和各界人士出席了5月12日的开幕式。</p>
+						</div>
+						<div class="col-md-1 col-sm-1 col-xs-1 glyphicon glyphicon-chevron-right tu_biao" style="padding-left: 0; padding-right: 0;"></div>		
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container"  style="padding: 0;">
+				<ul class="col-md-12 col-sm-12 f_u" style="padding: 0;">
+					<li class="col-md-3 col-sm-3 li_11" style="padding: 0;"><h1>联系我们</h1>
+						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
+							<li>官方热线：400-888-8888</li>
+							<li>官方微信：Hhhhh</li>
+							<li>QQ号：220220220</li>
+						</ul>
+					</li>
+					<li class="col-md-2 col-sm-2 li_22" style="padding: 0;"><h1>公司简介</h1>
+						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
+							<li><a href="">公司历史</a></li>
+							<li><a href="">业务原则</a></li>
+							<li><a href="">H在中国</a></li>
+							<li><a href="">质量与安全</a></li>
+						</ul>
+					</li>
+					<li class="col-md-2 col-sm2 li_33" style="padding: 0;"><h1>新闻频道</h1>
+						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
+							<li><a href="">集团新闻</a></li>
+							<li><a href="">新闻特写</a></li>
+							<li><a href="">H声明</a></li>
+							<li><a href="">媒体联系</a></li>
+						</ul>
+					</li>
+					<li class="col-md-5 col-sm-5 li_44" style="padding: 0;"><h1>关注我们</h1>
+						<ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
+							<li class="col-md-5 col-sm-5" style="padding: 0;">微信<br/><img src="img/Hf_03.jpg"/></li>
+							<li class="col-md-5 col-sm-5" style="padding: 0;">微博<br/><img src="img/Hf_03.jpg"/></li>
+						</ul>
+					</li>					
+				</ul>
+				<div class="g_s">
+					工商编码
+				</div>
+			</div>
+		</footer>
+		
+	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/nav.js"></script>	
+	</body>
+</html>

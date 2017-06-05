@@ -28,7 +28,7 @@ class index {
 		$sitelist  = getcache('sitelist','commons');
 		$default_style = $sitelist[$siteid]['default_style'];
 		$CATEGORYS = getcache('category_content_'.$siteid,'commons');
-		include template('content','index',$default_style);
+		include template('','index',$default_style);
 	}
 	//内容页
 	public function show() {
@@ -262,7 +262,7 @@ class index {
 			$GLOBALS['URL_ARRAY']['categorydir'] = $categorydir;
 			$GLOBALS['URL_ARRAY']['catdir'] = $catdir;
 			$GLOBALS['URL_ARRAY']['catid'] = $catid;
-			include template('content',$template);
+			include template('','guanyu');
 		} else {
 		//单网页
 			$this->page_db = pc_base::load_model('page_model');
