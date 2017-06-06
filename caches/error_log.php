@@ -746,3 +746,80 @@
 <?php exit;?>06-06 13:50:28 | 2048 | Only variables should be passed by reference | caches/caches_template/healstec/header.php | 54
 <?php exit;?>06-06 13:50:28 | 2048 | Only variables should be passed by reference | caches/caches_template/healstec/header.php | 54
 <?php exit;?>06-06 13:50:28 | 2048 | Only variables should be passed by reference | caches/caches_template/healstec/index.php | 54
+<?php exit;?>06-06 23:11:41 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:11:41 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\index.php | 54
+<?php exit;?>06-06 23:11:47 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:11:52 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:12:00 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:12:05 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:12:13 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:12:13 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:14:15 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:14:15 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:40 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:40 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:48 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:49 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:55 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:56 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:59 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:20:59 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:21:22 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:21:38 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:23:45 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:23:56 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:25:34 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-06 23:25:34 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-06 23:27:04 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:28:09 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:33:48 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:34:04 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:42:35 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-06 23:42:35 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-06 23:43:21 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:43:42 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-06 23:43:42 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-06 23:44:03 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-06 23:52:19 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-06 23:52:19 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:00:46 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:04:10 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:04:10 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:04:41 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:04:41 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:05:51 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:06:28 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:08:50 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:08:51 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:08:52 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:08:53 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:08:56 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:08:57 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:09:24 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:09:25 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:09:26 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:09:43 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:09:52 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:10:46 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:10:47 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:11:05 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:11:39 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:11:57 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:12:05 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:12:19 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:12:21 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:13:04 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:13:05 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:13:15 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:13:16 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:13:17 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:14:40 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:14:40 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:15:04 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:15:04 | 2 | fsockopen():                   | phpcms\libs\classes\http.class.php | 84
+<?php exit;?>06-07 00:15:18 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:16:06 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:16:22 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:18:26 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:18:54 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54
+<?php exit;?>06-07 00:19:57 | 2048 | Only variables should be passed by reference | caches\caches_template\healstec\header.php | 54

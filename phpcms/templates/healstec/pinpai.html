@@ -27,7 +27,7 @@
 {pc:content action="lists" catid="32" order="id DESC" num="10"}
 {loop $data $k $r}
 		<a href="{$r[url]}">
-
+            {if $n%2==1}
 		<div class="container-fluid tu_o tu_o_2" style="background: url({$r[thumb]}); width: 100%;  background-size: cover; margin-bottom:2%;">
             	<div class="tu_o_zh " style="padding-top: 8%;" id="tu_cp" >
 				<div class="tu_zh row" id="pp">
@@ -37,43 +37,54 @@
 					<div class="col-md-11 col-sm-11 col-xs-11" id="ppo">
 					<h1 class="col-xs-12">{$r[title]}</h1>
 					<p style="font-size: 18px; margin-top: -1%;" class="col-xs-12">{$r[description]}</p>
-					<p class="col-xs-12">{$r[content]}</p>
+                        {pc:get  sql="select * from hl_news_data where id='$r[id]'" cache="3600" return="data_ca"}
+					<p class="col-xs-12">{$data_ca[0][content]}</p>
+                        {/pc}
 					</div>
 				</div>	
 				</div>        								
 		</div>
+            {else}
+        <div class="container-fluid tu_o tu_o_2" style="background: url({$r[thumb]}); width: 100%;  background-size: cover; margin-top: 0; padding-top: 0;">
+            <div class="tu_o_zh " style="padding-top: 8%;" id="tu_cp " >
+                <div class="tu_zh row" id="pp" style="float: right;">
+                    <div class="col-md-1 col-sm-1 col-xs-1" id="biao" style="text-align: right; float: right;">
+                        <p style="float: right;"></p>
+                    </div>
+                    <div class="col-md-11 col-sm-11 col-xs-11" id="ppo" style="text-align: right; padding-right: 0;">
+                        <h1>{$r[title]}</h1>
+                        <p style="font-size: 18px; margin-top: -1%;">{$r[description]</p>
+                        {pc:get  sql="select * from hl_news_data where id='$r[id]'" cache="3600" return="data_ca"}
+                        <p class="col-xs-12">{$data_ca[0][content]}</p>
+                        {/pc}
+                    </div>
+                </div>
+            </div>
+        </div>
+            {/if}
 		</a>
 {/loop}
 {/pc}
 	
 {/pc}
-		<div class="container-fluid tu_o tu_o_2" style="background: url(img/hp_06.png); width: 100%;  background-size: cover; margin-top: 0; padding-top: 0;">			
-            	<div class="tu_o_zh " style="padding-top: 8%;" id="tu_cp " >
-				<div class="tu_zh row" id="pp" style="float: right;">	
-					<div class="col-md-1 col-sm-1 col-xs-1" id="biao" style="text-align: right; float: right;">
-						<p style="float: right;"></p>
-					</div>
-					<div class="col-md-11 col-sm-11 col-xs-11" id="ppo" style="text-align: right; padding-right: 0;">
-					<h1>米花糖系列</h1>
-					<p style="font-size: 18px; margin-top: -1%;">100%食品级配方，安全健康</p>
-					<p>simple（简约）+safe（安全）+<br />sincere（诚信）+strict （严谨）<br/>以严谨的科研态度，打造安全、简约的诚信品牌</p>
-					</div>					
-				</div>	
-				</div>    								
-		</div>
+
 
 			
 
 		<div class="container" id="midle">
 			<div class="row">
-				<div class="col-md-12  col-sm-12"  id="col"><p>关于产品</p></div>
+                {pc:get sql="select * from hl_category where catid='36'" cache="3600" return="data_ca"}
+				<div class="col-md-12  col-sm-12"  id="col"><p>{$data_ca[0][catname]}</p></div>
+                {/pc}
 			</div>
 		</div>
 		<div class="container" style="padding-left: 0; padding-right: 0; margin:2% auto;">
 			<ul class="row" class="ro_pp">
-				<li class="col-md-12 col-sm-12 col-xs-12 p_pai"  style="border: 0; padding-left: 0; padding-right: 0;"  >
-					<a href="#">
-					<div class="col-md-11 col-sm-11 col-xs-11"><p >食品级日化品</p></div>
+                {pc:content action="lists" catid="36" order="id DESC" num="10"}
+                {loop $data $k $r}
+				<li class="col-md-12 col-sm-12 col-xs-12 p_pai"  style="border: 0; padding-left: 0; padding-right: 0;{if $n>1} margin-top: 2%;{/if}"   >
+					<a href="{$r[redirect_url]}"  >
+					<div class="col-md-11 col-sm-11 col-xs-11"><p >{$r[title]}</p></div>
 					<h1 class="glyphicon glyphicon-triangle-bottom col-md-1 col-sm-1 col-xs-1"></h1>					
 					</a>
 <!-- 					<ul class="row" id="pinpaineirong" style="display: none; padding-left: 0 ; padding-right: 0;">
@@ -87,14 +98,10 @@
 					<p><a href="#">奶瓶</a></p>
 				</li>
 			</ul> -->
-				</li>				
-				<li class="col-md-12 col-sm-12 col-xs-12 p_pai" style="border: 0;padding-left: 0; padding-right: 0; margin-top: 2%;" id="ppai">
-					<a href="#">
-					<div class="col-md-11 col-sm-11 col-xs-11"><p >健康营养品</p></div>
-					<h1 class="glyphicon glyphicon-triangle-bottom col-md-1 col-sm-1 col-xs-1"></h1>
-					</a>
-				</li>							
-			</ul>			            	          			
+				</li>
+                {/loop}
+                {/pc}
+            </ul>
 		</div>
         	<script type="text/javascript">
 			$(function(){
