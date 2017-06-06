@@ -55,7 +55,7 @@
                     <?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
                     <li class="col-md-4 col-sm-4" id="li_o">
                         <span class="col-md-12 col-sm-12"><img src="<?php echo $r['image'];?>" class="img-responsive center-block"/></span>
-                        <h1><?php echo $r['description'];?></h1>
+                        <h1><?php echo $r['description_index'];?></h1>
                         <h2 class="li_h1"><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></h2>
                     </li>
                     <?php $n++;}unset($n); ?>

@@ -269,6 +269,15 @@ class index {
 				case 11:
 					include template('', 'keyan');
 					break;
+				case 12:
+					include template('', 'shehui');
+					break;
+				case 13:
+					include template('', 'yingyang');
+					break;
+				case 14:
+					include template('', 'pinpai');
+					break;
 			}
 
 		} else {

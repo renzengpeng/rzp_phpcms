@@ -89,6 +89,14 @@ include $this->admin_tpl('header');?>
 		<textarea name="info[description]" maxlength="255" style="width:300px;height:60px;"><?php echo $description;?></textarea>
 		</td>
       </tr>
+	<tr>
+
+		<th><?php echo '首页描述' ?>：</th>
+		<td>
+			<textarea name="info[description_index]" maxlength="255"
+					  style="width:300px;height:60px;"><?php echo $description_index; ?></textarea>
+		</td>
+	</tr>
 
 	 <tr>
       <th><?php echo L('workflow');?>：</th>

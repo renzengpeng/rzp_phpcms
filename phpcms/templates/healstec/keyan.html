@@ -2,18 +2,18 @@
 					
 		<div id="dowebok">
 			<div class="section  fp-auto-height section3" style="padding-top: 0;">
-		<div class="container-fluid tu_o tu_o_2 tu_o_3" style="padding-top: 0; margin-top: 85px; background: url(img/hk_02.png) no-repeat center; width: 100%; background-size: cover;">
+				{pc:get sql="select * from hl_category where catid='11'" cache="3600" return="data"}
+		<div class="container-fluid tu_o tu_o_2 tu_o_3" style="padding-top: 0; margin-top: 85px; background: url({$data[0][big_image]}) no-repeat center; width: 100%; background-size: cover;">
 			<div class="row">				
 				<div class="tu_o_zh" id="tu_cpcp">
 					<div class="tu_zh" id="keyanjishu" style="width: 100%; text-align: right;">
-					<h1  id="chanpin_h1" style="color: #01396a;">科研技术</h1>
+					<h1  id="chanpin_h1" style="color: #01396a;">{$data[0][catname]}</h1>
 					<p></p>
 					<div class="clearfix"></div>
-					<p id="chanpin_p" style="color: #01396a;">倾心所以专注，专注所以专业，专业所以创新——
-<br/>以标准先进的科研技术，耐心细致的科研态度，持之以恒的科研毅力
-<br/>创建您理想健康的生活形态</p>
+					<p id="chanpin_p" style="color: #01396a;">{$data[0][description]}</p>
 				</div>
 				</div>
+				{/pc}
 			</div>
 		</div>
 		</div>

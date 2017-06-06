@@ -32,7 +32,7 @@
                     <span class='icon-bar'></span>
                     <span class='icon-bar'></span>
                 </button>
-                <a href="index.html"><img src="<?php echo IMG_PATH;?>/healstec/H2_06.jpg" class="navbar-brand"/></a>
+                <a href="/"><img src="<?php echo IMG_PATH;?>/healstec/H2_06.jpg" class="navbar-brand"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
