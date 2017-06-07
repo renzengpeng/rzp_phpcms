@@ -16,9 +16,12 @@
 				{/pc}
 				</div>
 			<div class="g_y" style="width: 100%;margin-top: 4%;">
-				<ul class="row" style="padding-left: 0; padding-right: 0; width: 100%;">
+
 					{pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder ASC"}
 					{loop $data $k $r}
+					{if $n%3==1}
+					<ul class="row" style="padding-left: 0; padding-right: 0; width: 100%;">
+					{/if}
 					<li class="col-md-4 col-sm-4 col-xs-4">
 						<div class="gy col-md-12 col-sm-12 col-xs-12"></div>
 						<div class="col-md-12 col-sm-12 col-xs-12 gyo">
@@ -29,6 +32,9 @@
 							</div>
 						</div>
 					</li>
+						{if $n%3==0}
+						</ul>
+						{/if}
 					{/loop}
 					{/pc}
 

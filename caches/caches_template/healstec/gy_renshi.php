@@ -1,27 +1,29 @@
-{template "","header"}
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("","header"); ?>
 
-{template "","gy_header"}
+<?php include template("","gy_header"); ?>
 		<!--认识我们-->
 		<div class="container gy_wm renshiwomen" style="padding-left: 0; padding-right: 0;">
-			<ul style="background: url({IMG_PATH}/healstec/renshi_05.jpg) no-repeat center;background-size:cover ;width: 100%; padding-left: 0; margin-top: 0;" class="rho">
+			<ul style="background: url(<?php echo IMG_PATH;?>/healstec/renshi_05.jpg) no-repeat center;background-size:cover ;width: 100%; padding-left: 0; margin-top: 0;" class="rho">
 				<li style="float: right; letter-spacing: 1px;">我们是谁</li>
 			</ul>
-			{pc:content action="lists" moreinfo="1" catid="37" order="id asc" num="3"}
-			{loop $data $k $r}
-			<ul style="background: url({$r[thumb]}) no-repeat center;background-size:cover ;width: 100%;  padding-left: 0;{if $n==3} margin-top: 1%; margin-bottom: 10%;{/if}" {if $n==1}class="rht"{/if}
-			{if $n==2}class="rhth"{/if}
-			{if $n==3}class="rhf"{/if}
+			<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=e99590800f909d5e34859d00be3b4e75&action=lists&catid=37&order=id+asc&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'37','order'=>'id asc','limit'=>'3',));}?>
+			<?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
+			<ul style="background: url(<?php echo $r['thumb'];?>) no-repeat center;background-size:cover ;width: 100%;  padding-left: 0;<?php if($n==3) { ?> margin-top: 1%; margin-bottom: 10%;<?php } ?>" <?php if($n==1) { ?>class="rht"<?php } ?>
+			<?php if($n==2) { ?>class="rhth"<?php } ?>
+			<?php if($n==3) { ?>class="rhf"<?php } ?>
 			>
 				<li style="letter-spacing: 1px; color: #FFFFFF; width: 50%;
-				{if $n==2}float: right{/if}
-				{if $n==3}margin-left: 4%{/if};
+				<?php if($n==2) { ?>float: right<?php } ?>
+				<?php if($n==3) { ?>margin-left: 4%<?php } ?>;
 				">
-				<h1 >{$r[title]}</h1>
-					<p>{$r[content]}</p>
+				<h1 ><?php echo $r['title'];?></h1>
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=aadc4317070da8de5a591000248a8eca&sql=select+%2A+from+hl_news_data+where+id%3D%27%24r%5Bid%5D%27&cache=3600&return=data_ca\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_news_data where id=\'$r[id]\'',)).'aadc4317070da8de5a591000248a8eca');if(!$data_ca = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_news_data where id='$r[id]' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data_ca = $a;unset($a);if(!empty($data_ca)){setcache($tag_cache_name, $data_ca, 'tpl_data');}}?>
+					<p><?php echo $data_ca['0']['content'];?></p>
+					<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 				</li>				
 			</ul>
-			{/loop}
-			{/pc}
+			<?php $n++;}unset($n); ?>
+			<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 		</div>
 		
 				
@@ -29,43 +31,43 @@
 		
 		<!--价值观-->
 		<div class="container-fluid gy_wm" style=" display: none;">
-			{pc:content action="lists" catid="38" order="id asc" num="1"}
-			{loop $data $k $r}
-			<p align="center"><img src="{$r[thumb]}"/></p>
-			{/loop}
-			{/pc}
+			<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=fae448801cd59c5d993e80d85904dd75&action=lists&catid=38&order=id+asc&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'38','order'=>'id asc','limit'=>'1',));}?>
+			<?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
+			<p align="center"><img src="<?php echo $r['thumb'];?>"/></p>
+			<?php $n++;}unset($n); ?>
+			<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 
 		</div>
 		<!--使命愿景-->	
-		<div class="container-fluid sm gy_wm" style="display: none; background: url({IMG_PATH}/healstec/gysm01_05.jpg) no-repeat center; background-size: cover;width: 100%; he702">
+		<div class="container-fluid sm gy_wm" style="display: none; background: url(<?php echo IMG_PATH;?>/healstec/gysm01_05.jpg) no-repeat center; background-size: cover;width: 100%; he702">
 			<div class="row">
-				{pc:content action="lists" moreinfo="1" catid="39" order="id asc" num="2"}
-				{loop $data $k $r}
+				<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=58e37597c9104e7a24f968cef4235ad5&action=lists&moreinfo=1&catid=39&order=id+asc&num=2\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('moreinfo'=>'1','catid'=>'39','order'=>'id asc','limit'=>'2',));}?>
+				<?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
 				<div class="col-md-12 col-sm-12 col-xs-12">
-					<h1 {if $n==1}style="color: #f19e00;"{/if}>{$r[title]}</h1>
-					<p>{$r2[content]}</p>
+					<h1 <?php if($n==1) { ?>style="color: #f19e00;"<?php } ?>><?php echo $r['title'];?></h1>
+					<p><?php echo $r2['content'];?></p>
 				</div>
-				{/loop}
-				{/pc}
+				<?php $n++;}unset($n); ?>
+				<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 			</div>
 		</div>
 		
 		<!--核心竞争力-->
 		<div class="ry gy_wm" style="display:none; background: url(img/gyhx_04.jpg) no-repeat center; background-size: cover; width: 100%; height: 673px; margin-top: 0; padding-top: 0;">
 		<div class="container ryo">
-			{pc:content action="lists" catid="40" order="id asc" num="2"}
-			{loop $data $k $r}
+			<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=779a5e53a5e87c4d0b1ae2d45dde7edc&action=lists&catid=40&order=id+asc&num=2\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'40','order'=>'id asc','limit'=>'2',));}?>
+			<?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
 			<div style="float: right;">
 				<h1 style="margin-top: 20%; font-size: 26px; color: #0097a5; text-align: right; margin-top:10%;">
-					{$r[title]}</h1>
+					<?php echo $r['title'];?></h1>
 				<div style="background: rgba(1,116,123,0.8);width: 300px; overflow: hidden; color: #FFFFFF; font-size: 15px; line-height: 3rem; padding: 8%;">
-					{pc:get sql="select * from hl_news_data where id='$r[id]'" cache="3600" return="data_ca"}
-					{$data_ca[0][content]}
-					{/pc}
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=aadc4317070da8de5a591000248a8eca&sql=select+%2A+from+hl_news_data+where+id%3D%27%24r%5Bid%5D%27&cache=3600&return=data_ca\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_news_data where id=\'$r[id]\'',)).'aadc4317070da8de5a591000248a8eca');if(!$data_ca = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_news_data where id='$r[id]' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data_ca = $a;unset($a);if(!empty($data_ca)){setcache($tag_cache_name, $data_ca, 'tpl_data');}}?>
+					<?php echo $data_ca['0']['content'];?>
+					<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 				</div>
 			</div>
-			{/loop}
-			{/pc}
+			<?php $n++;}unset($n); ?>
+			<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 
 
 
@@ -149,5 +151,5 @@
 			</div>
 			</div>
 		</div>
-{template "","footer"}
+<?php include template("","footer"); ?>
 

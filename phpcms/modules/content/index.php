@@ -200,7 +200,6 @@ class index {
 		if(empty($next_page)) {
 			$next_page = array('title'=>L('last_page'), 'thumb'=>IMG_PATH.'nopic_small.gif', 'url'=>'javascript:alert(\''.L('last_page').'\');');
 		}
-		include template('content',$template);
 	}
 	//列表页
 	public function lists() {
@@ -279,6 +278,11 @@ class index {
 					include template('', 'pinpai');
 					break;
 			}
+			if(in_array($catid,[37,38,39,40,41])){
+				include template('', 'gy_renshi');
+			}
+
+
 
 		} else {
 		//单网页

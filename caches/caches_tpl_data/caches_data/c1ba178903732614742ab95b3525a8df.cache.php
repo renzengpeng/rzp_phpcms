@@ -2,8 +2,8 @@
 return array (
   0 => 
   array (
-    'id' => '18',
-    'content' => '实际费率计算的两家公司的价格',
+    'id' => '28',
+    'content' => '山高水低共商国是噶',
     'readpoint' => '0',
     'groupids_view' => '',
     'paginationtype' => '0',
