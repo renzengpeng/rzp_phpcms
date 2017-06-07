@@ -279,6 +279,35 @@ class index {
 					break;
 			}
 			if(in_array($catid,[37,38,39,40,41])){
+
+                    $MODEL = getcache('model','commons');
+                    $modelid = $CAT['modelid'];
+                    $sql='select * from hl_news where catid=41';
+                    $key_word=addslashes($_GET['key_word']);
+                    if(!empty($key_word)&&$key_word!='=输入新闻关键词'){
+                        $sql.=' and title like\'%'.$key_word.'%\'';
+                    }
+                    $date=intval($_GET['date']);
+                    if(!empty($date)){
+                        if($date==1){
+                            $start_time=time()-7*60*60*24;
+                        }elseif($date==2){
+                            $start_time=time()-30*60*60*24;
+                        }elseif($date==3){
+                            $start_time=time()-90*60*60*24;
+                        }elseif($date==4){
+                            $start_time=time()-180*60*60*24;
+                        }elseif($date==5){
+                            $start_time=time()-365*60*60*24;
+                        }
+                        $end_time=time();
+                        $sql.=' and inputtime>='.$start_time.' and inputtime<'.$end_time;
+                    }
+                    $tablename = $this->db->table_name = $this->db->db_tablepre.$MODEL[$modelid]['tablename'];
+                     $this->db->query($sql);
+                    $data_arr = $this->db->fetch_array();
+
+
 				include template('', 'gy_renshi');
 			}
 
