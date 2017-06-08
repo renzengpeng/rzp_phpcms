@@ -56,7 +56,7 @@
 				{pc:content action="lists" catid="28" order="id DESC" num="10"}
 				{loop $data $k $r}
 				<li class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 2%;">
-					<a href="#">
+					<a href="{$r[url]}">
 						<div class="col-md-10 col-sm-10 col-xs-10"><p>{$r[title]}</p></div>
 						<h1 class="col-md-2 col-sm-2 col-xs-2" style="font-size: 2rem;">{date('Y-m-d',$r[inputtime])}</h1>
 					</a>

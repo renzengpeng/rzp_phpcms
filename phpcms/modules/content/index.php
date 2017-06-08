@@ -32,6 +32,7 @@ class index {
 	}
 	//内容页
 	public function show() {
+
 		$catid = intval($_GET['catid']);
 		$id = intval($_GET['id']);
 
@@ -48,6 +49,9 @@ class index {
 		
 		if(!isset($CATEGORYS[$catid]) || $CATEGORYS[$catid]['type']!=0) showmessage(L('information_does_not_exist'),'blank');
 		$this->category = $CAT = $CATEGORYS[$catid];
+        $arrparentid = explode(',', $CAT['arrparentid']);
+        $top_parentid = $arrparentid[1] ? $arrparentid[1] : $catid;
+        include template('', 'show');die;
 		$this->category_setting = $CAT['setting'] = string2array($this->category['setting']);
 		$siteid = $GLOBALS['siteid'] = $CAT['siteid'];
 		
@@ -284,7 +288,8 @@ class index {
                     $modelid = $CAT['modelid'];
                     $sql='select * from hl_news where catid=41';
                     $key_word=addslashes($_GET['key_word']);
-                    if(!empty($key_word)&&$key_word!='=输入新闻关键词'){
+                    $key_word=trim($key_word);
+                    if(!empty($key_word)&&$key_word!='输入新闻关键词'){
                         $sql.=' and title like\'%'.$key_word.'%\'';
                     }
                     $date=intval($_GET['date']);
@@ -303,6 +308,7 @@ class index {
                         $end_time=time();
                         $sql.=' and inputtime>='.$start_time.' and inputtime<'.$end_time;
                     }
+
                     $tablename = $this->db->table_name = $this->db->db_tablepre.$MODEL[$modelid]['tablename'];
                      $this->db->query($sql);
                     $data_arr = $this->db->fetch_array();

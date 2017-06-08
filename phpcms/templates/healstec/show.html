@@ -1,0 +1,41 @@
+{template "","header"}
+
+{pc:get sql="select * from hl_category where catid='$top_parentid'"  return="data"}
+<div class="container-fluid tu_o"
+     style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;"
+     id="gy_to"></div>
+{/pc}
+<div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
+    <div class="row gy_no">
+        <ul class="col-md-6 col-sm-4 col-xs-12 x_w" style="padding-bottom: 0; margin-bottom: 0;">
+            <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img
+                    src="{IMG_PATH}/healstec/hgyxy_05.jpg"/></li>
+            {pc:get sql="select * from hl_category where catid='$top_parentid'"  return="data"}
+            <li class="col-md-2 col-sm-4" style="padding-right: 0;"><p>{$data[0][catname]}</p></li>
+            {/pc}
+
+            <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg"/></li>
+            {pc:get sql="select * from hl_category where catid='$catid'"  return="data1"}
+            <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data1[0][catname]}</p></li>
+            {/pc}
+        </ul>
+    </div>
+</div>
+<div class="container gy_wm" >
+
+{pc:get sql="select * from hl_news a left join hl_news_data b on a.id=b.id where a.id=$id" return="data"}
+<div class="keyanbox keyantab1" style="display: block;">
+
+    <div class="row keyan-p">
+        <h3>
+            {$data[0][title]}
+        </h3>
+        {$data[0][content]}
+
+    </div>
+</div>
+{/pc}
+</div>
+
+{template "","footer"}
+

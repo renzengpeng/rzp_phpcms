@@ -90,7 +90,7 @@
                     <input type="hidden" name="catid" value="41">
                     <div class="inp col-md-12 col-sm-12" style="padding-left: 0; padding-right: 0; margin-top: 8%;">
 
-					<input type="text" name="key_word" value="{if $key_word==''}输入新闻关键词{else} {$key_word} {/if}" onfocus="if (value =='输入新闻关键词'){value =''}"onblur="if (value ==''){value='输入新闻关键词'}" style="color: #9a9a9a;"/>
+					<input type="text" name="key_word" value="{if $key_word==''}输入新闻关键词{else}{$key_word}{/if}" onfocus="if (value =='输入新闻关键词'){value =''}"onblur="if (value ==''){value='输入新闻关键词'}" style="color: #9a9a9a;"/>
 					<div  id="submit" class="glyphicon glyphicon-search s_s"></div>
 				</div>
 				<div class="inp col-md-12 col-sm-12" style="padding-left: 0; padding-right: 0; margin-top: 2%;">
@@ -121,7 +121,7 @@
 				<ul class="col-md-12 col-sm-12 news_o col-xs-12" style="padding: 0;">
                     {loop $data_arr $k $r}
 					<li class="col-md-12 col-sm-12 li_o col-xs-12">
-						<a href="#">
+						<a href="{$r[url]}">
 						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;">{date('Y-m-d',$r[inputtime])}</h2>
 						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1>{$r[title]}</h1>
 							<p>{$r[description]}</p>

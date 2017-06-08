@@ -56,7 +56,7 @@
 				<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=d9f72c5bc48fa0595ded2122ef7626a4&action=lists&catid=28&order=id+DESC&num=10\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('catid'=>'28','order'=>'id DESC','limit'=>'10',));}?>
 				<?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
 				<li class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 2%;">
-					<a href="#">
+					<a href="<?php echo $r['url'];?>">
 						<div class="col-md-10 col-sm-10 col-xs-10"><p><?php echo $r['title'];?></p></div>
 						<h1 class="col-md-2 col-sm-2 col-xs-2" style="font-size: 2rem;"><?php echo date('Y-m-d',$r[inputtime]);?></h1>
 					</a>
