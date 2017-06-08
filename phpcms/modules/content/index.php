@@ -310,6 +310,9 @@ class index {
 
 				include template('', 'gy_renshi');
 			}
+			if(in_array($catid,[23,24,25,26])){
+				include template('', 'ky_js');
+			}
 
 
 

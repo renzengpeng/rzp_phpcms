@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'catid' => '10',
+    'catid' => '11',
     'siteid' => '1',
     'module' => 'content',
     'type' => '0',
@@ -10,25 +10,26 @@ return array (
     'parentid' => '0',
     'arrparentid' => '0',
     'child' => '1',
-    'arrchildid' => '10,37,38,39,40,41',
-    'catname' => '关于我们',
+    'arrchildid' => '11,23,24,25,26',
+    'catname' => '科研技术',
     'style' => '',
     'image' => '',
-    'description' => '我们扎根中国，与世界先进科研机构紧密合作，在全球范围内精选优质原料，依照中国健康
-数据标准，旨在为人们提供优秀的健康解决方案',
+    'description' => '倾心所以专注，专注所以专业，专业所以创新—— <br/>
+以标准先进的科研技术，耐心细致的科研态度，持之以恒的科研毅力<br>
+创建您理想健康的生活形态',
     'parentdir' => '',
-    'catdir' => 'guanyuwomen',
-    'url' => 'http://www.healstec.com/index.php?m=content&c=index&a=lists&catid=10',
+    'catdir' => 'tec',
+    'url' => 'http://www.healstec.com/index.php?m=content&c=index&a=lists&catid=11',
     'items' => '0',
     'hits' => '0',
     'setting' => '{"workflowid":"","ishtml":"0","content_ishtml":"0","create_to_html_root":"0","template_list":"healstec","category_template":"category","list_template":"list","show_template":"show","meta_title":"","meta_keywords":"","meta_description":"","presentpoint":"1","defaultchargepoint":"0","paytype":"0","repeatchargedays":"1","category_ruleid":"6","show_ruleid":"16"}',
-    'listorder' => '10',
+    'listorder' => '11',
     'ismenu' => '1',
     'sethtml' => '0',
-    'letter' => 'guanyuwomen',
+    'letter' => 'keyanjishu',
     'usable_type' => '',
-    'big_image' => 'http://www.healstec.com/uploadfile/2017/0605/20170605071848180.gif',
-    'image1' => 'http://www.healstec.com/uploadfile/2017/0608/20170608123045685.jpg',
+    'big_image' => 'http://www.healstec.com/uploadfile/2017/0606/20170606094316291.jpg',
+    'image1' => 'http://www.healstec.com/uploadfile/2017/0608/20170608100627203.png',
     'description_index' => '',
   ),
 );

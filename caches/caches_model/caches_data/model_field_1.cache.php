@@ -1,5 +1,38 @@
 <?php
 return array (
+  'muti_image' => 
+  array (
+    'fieldid' => '110',
+    'modelid' => '1',
+    'siteid' => '1',
+    'field' => 'muti_image',
+    'name' => '图片',
+    'tips' => '多张图片',
+    'css' => '',
+    'minlength' => '0',
+    'maxlength' => '0',
+    'pattern' => '',
+    'errortips' => '',
+    'formtype' => 'images',
+    'setting' => '{"upload_allowext":"gif|jpg|jpeg|png|bmp","isselectimage":"0","upload_number":"10"}',
+    'formattribute' => '',
+    'unsetgroupids' => '',
+    'unsetroleids' => '',
+    'iscore' => '0',
+    'issystem' => '0',
+    'isunique' => '0',
+    'isbase' => '1',
+    'issearch' => '0',
+    'isadd' => '1',
+    'isfulltext' => '0',
+    'isposition' => '0',
+    'listorder' => '0',
+    'disabled' => '0',
+    'isomnipotent' => '0',
+    'upload_allowext' => 'gif|jpg|jpeg|png|bmp',
+    'isselectimage' => '0',
+    'upload_number' => '10',
+  ),
   'catid' => 
   array (
     'fieldid' => '1',

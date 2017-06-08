@@ -295,7 +295,7 @@ return array (
     'letter' => 'keyanjishu',
     'usable_type' => '',
     'big_image' => 'http://www.healstec.com/uploadfile/2017/0606/20170606094316291.jpg',
-    'image1' => '',
+    'image1' => 'http://www.healstec.com/uploadfile/2017/0608/20170608100627203.png',
     'description_index' => '',
     'create_to_html_root' => '0',
     'ishtml' => '0',

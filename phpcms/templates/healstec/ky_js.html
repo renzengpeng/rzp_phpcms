@@ -1,90 +1,65 @@
-<!DOCTYPE html>
-<html>
+{template "","header"}
+<script>
+    $(function () {
+        $('.keyan-tab>div').on('click', function () {
+            $(this).parents('.keyan-tab').find('div').removeClass('active');
+            $(this).addClass('active');
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=divice-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>Healstec</title>
-    <link type="image/x-icon" rel="icon" href="img/bitbug_favicon (1).ico" />
-    <link type="image/x-icon" rel="shortcut icon" href="img/bitbug_favicon (1).ico" />
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-    <link type="text/css" rel="stylesheet" href="css/bootstrap-off-canvas-nav.css" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />    
-    <link type="text/css" rel="stylesheet" href="css/styles.css" />
-     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')
-    </script>
+            $(this).parents('.gy_wm').find('.keyanbox').hide();
 
-</head>
-
-<body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0; padding-bottom: 0;">
-        <div class="container">
-            <div class="b_t">
-                <p>我们的产品遍布全国</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class='sr-only'></span>
-						<span class='icon-bar'></span>
-						<span class='icon-bar'></span>
-						<span class='icon-bar'></span>
-					</button>
-                <a href="index.html"><img src="img/H2_06.jpg" class="navbar-brand" /></a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" id="u_o">
-                    <input type="text" id="in" />
-                    <div class="clearfix"></div>
-                    <li><a href="guanyu.html">关于我们</a></li>
-                    <li><a href="keyan.html" class="gywm" style="color: #0f97a7; font-weight: bold;">科研技术</a></li>
-                    <li><a href="shehui.html">社会责任</a></li>
-                    <li><a href="yingyang.html">营养与健康</a></li>
-                    <li><a href="pinpai.html" style="padding-right: 0;">品牌中心</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container" id="midle_o" style="margin-top:0; padding-top: 0; ">
-            <div class="row" style="padding-bottom: 0; ">
-                <div class="col-md-12  col-sm-12" id="col" style="border-bottom-color:#12949c ; margin-bottom: 0;"></div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container-fluid tu_o" style="background: url(img/jishuts.png) center; width: 100%;  background-size: cover; margin-top: 70px;"  id="gy_to"></div>
-    <div class="container-fluid tu_o" style="background: url(img/jishuts.png) center; width: 100%;  background-size: cover; margin-top: 70px;  display: none;" id="gy_to"></div>
-    <div class="container-fluid tu_o" style="background: url(img/jishuts.png) center; width: 100%;  background-size: cover; margin-top: 70px; display: none;" id="gy_to"></div>
-    <div class="container-fluid tu_o" style="background: url(img/jishuts.png) center; width: 100%;  background-size: cover; margin-top: 70px; display: none;" id="gy_to"></div>
-    <div class="container-fluid tu_o" style="background: url(img/jishuts.png) center; width: 100%;  background-size: cover; margin-top: 70px;  display: none;" id="gy_to"></div>
-
-    <div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
+            if ($(this).hasClass('keyan1')) {
+                $(this).parents('.gy_wm').find('.keyantab1').fadeIn(500);
+            } else if ($(this).hasClass('keyan2')) {
+                $(this).parents('.gy_wm').find('.keyantab2').fadeIn(500);
+            } else if ($(this).hasClass('keyan3')) {
+                $(this).parents('.gy_wm').find('.keyantab3').fadeIn(500);
+            } else if ($(this).hasClass('keyan4')) {
+                $(this).parents('.gy_wm').find('.keyantab4').fadeIn(500);
+            }
+        })
+    });
+</script>
+<link type="text/css" rel="stylesheet" href="{CSS_PATH}/healstec/styles.css"/>
+{pc:get sql="select * from hl_category where catid='11'" cache="3600" return="data"}
+    <div class="container-fluid tu_o" style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;"  id="gy_to"></div>
+<div class="container-fluid tu_o"
+     style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;display: none;"
+     id="gy_to"></div>
+<div class="container-fluid tu_o"
+     style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;display: none;"
+     id="gy_to"></div>
+<div class="container-fluid tu_o"
+     style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;display: none;"
+     id="gy_to"></div>
+<div class="container-fluid tu_o"
+     style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;display: none;"
+     id="gy_to"></div>
+{/pc}
+<div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
         <div class="row gy_no">
             <ul class="col-md-6 col-sm-4 col-xs-12 x_w" style="padding-bottom: 0; margin-bottom: 0;">
-                <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img src="img/hgyxy_05.jpg" /></li>
+                <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img src="{IMG_PATH}/healstec/hgyxy_05.jpg" /></li>
+                {pc:get sql="select * from hl_category where catid='11'" cache="3600" return="data"}
                 <li class="col-md-2 col-sm-4" style="padding-right: 0;">
-                    <p>科研技术</p>
+                    <p>{$data[0][catname]}</p>
                 </li>
-                <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="img/xw_08.jpg" /></li>
+                {/pc}
+                <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg" /></li>
+                {pc:get sql="select * from hl_category where catid='$catid'" cache="1" return="data1"}
                 <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text">
-                    <p>技术探索</p>
+                    <p>{$data1[0][catname]}</p>
                 </li>
+                {/pc}
             </ul>
             <ul class="col-md-6 col-sm-7 x_w_y col-xs-12" style="padding-bottom: 0; margin-bottom: 0; text-align: center;" id="onck">
-                <li class="col-md-2 col-sm-2 x_w_y_li col-xs-3" >
-                    <p>关注科研</p>
+                {pc:content action="category" catid="11" num="25" siteid="$siteid" order="listorder ASC"}
+                {loop $data $k $r}
+                <li class="col-md-2 col-sm-2 x_w_y_li col-xs-3" {if $catid==$r[catid]}
+                    style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if} >
+                    <p>{$r[catname]}</p>
                 </li>
-                <li class="col-md-2 col-sm-2 col-xs-3" style="padding-right: 0; border-bottom: 1px solid #f7ac1d;">
-                    <p>技术探索</p>
-                </li>
-                <li class="col-md-2 col-sm-2 col-xs-3">
-                    <p>健康方案</p>
-                </li>
-                <li class="col-md-2 col-sm-2 col-xs-3">
-                    <p>生产加工</p>
-                </li>
+                {/loop}
+                {/pc}
 
             </ul>
         </div>
@@ -119,137 +94,65 @@
     </script>
 
        <!--关注科研-->
-    <div class="container gy_wm" style=" display: none;">
-        <!--
-            <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6">
-                <div class="row keyan-tab">
-                    <div class="col-xs-3 col-sm-3 col-md-3 keyan1 active">
-                        纳米乳剂
-                    </div>
+    <div class="container gy_wm" {if $catid!=23}style=" display: none;"{/if}>
 
-                    <div class="col-xs-3 col-sm-3 col-md-3 keyan2">
-                        环糊精包含
-                    </div>
+        {pc:content action="lists" moreinfo="1" catid="23" order="id desc" num="1"}
 
-                    <div class="col-xs-3 col-sm-3 col-md-3 keyan3">
-                        固体分散
-                    </div>
-
-                    <div class="col-xs-3 col-sm-3 col-md-3 keyan4">
-                        脂质体
-                    </div>
-                </div>
-            </div>
-        </div>
-        -->
-        
+        {loop $data $k $r}
         <div class="keyanbox keyantab1" style="display: block;">
             <div class="row keyanImg">
+                {php $image_arr=json_decode($r[muti_image],true);}
+                {loop $image_arr $image}
                 <div class="col-xs-4 col-sm-4 col-md-4">
-                    <img src="img/keyan-tab1.png" />
+                    <img src="{$image[url]}" />
                 </div>
-
-                <div class="col-xs-4 col-sm-4 col-md-4">
-                    <img src="img/keyan-tab3.png" />
-                </div>
-
-                <div class="col-xs-4 col-sm-4 col-md-4">
-                    <img src="img/keyan-tab2.png" />
-                </div>
+                {/loop}
             </div>
 
             <div class="row keyan-p">
                 <h3>
-                    纳米乳液的制备方法及原理
+                    {$r[title]}
                 </h3>
-                <p>
-                    纳米乳液（nanoemulsion）又称微乳液（microemulsion），是由水、油、表面活性剂和助表面活性剂等自发形成，粒径为1～100nm的热力学稳定、各向同性，透明或半透明的均相分散体系.一般来说，纳米乳分为三种类型，即水包油型纳米乳(O/W)、油包水型纳米乳(W/O以及双连续型纳米乳(B.C)，1943年由Hoar和Schulman首次发现并报道了这一分散体系。
-                </p>
-                <p>
-                    纳米乳具有许多其它制剂无可比拟的优点：①为各向同性的透明液体，属热力学稳定系统，经热压灭菌或离心也不能使之分层；②工艺简单，制备过程不需特殊设备，可自发形成，纳米乳粒径一般为1～100nm；③黏度低，可减少注射时的疼痛；④具有缓释和靶向作用；⑤提高药物的溶解度，减少药物在体内的酶解，可形成对药物的保护作用并提高胃肠道对药物的吸收，提高药物的生物利用度[20]。因此纳米乳作为一种药物载体受到广泛的关注。
-                </p>
-                <p>
-                    乳化大致可分为机械法和物理化学法两大类。纳米乳剂是非平衡体系，它的形成需要外加能量，一般来自机械设备或来自化学制剂的结构潜能。利用机械设备的能量(高速搅拌器、高压均质机和超声波发生器)这类方法通常被认为是高能乳化法。而利用结构中的化学潜能的方法通常被认为是浓缩法或低能乳化法。
-                </p>
-
-                <h3>
-                    1.机械法制备纳米乳剂
-                </h3>
-                <p>
-                    机械法制备纳米乳剂的常规过程有两步：首先是粗乳液的制备，通常按照工艺配比将油一水，表面活性剂及其他稳定剂成分混合，利用搅拌器得到一定粒度分布的常规乳液；然后是纳米乳剂的制备，利用动态超高压微射流均质机或超声波与高压均质机联用对粗乳液进行特定条件下的均质处理得到纳米乳剂。
-                </p>
-                <p>
-                    利用高压均质机或超声波发生器能量的方法通常被叫做高能乳化法。研究表明，这些设备能在最短的时间内提供所需要的能量并获得液滴粒径最小的均匀流体 。动态超高压微射均质机在国内外纳米乳剂领域的研究中被广泛应用。超声波乳化在降低液滴粒径方面相当有效，仅仅适用于小批量生产。
-                </p>
-
-                <h3>
-                    2.低能乳化法
-                </h3>
-                <p>
-                    低能乳化法是利用在乳化作用过程中曲率和相转变发生的原理。乳剂转换点EIP (Emulsioninversion point)法由Marszall和Shick首先发明。在恒定温度下，乳化过程中不断改变组分就可以观察到相转变。Sadurni等研制的O/W型纳米乳剂，粒径小至14nm，同时还具有高的动力学稳定性。转相乳化PIT(phase inversion temperature)法由Shinoda和Saito首先发明。在恒定组分条件下，调节温度得到目标乳化体系。此法在实际应用中多用来制备0/W型乳液。研究表明，在不添加任何表面活性剂的情况下，自发的乳化也会产生，并获得纳米乳剂。
-                </p>
+                {$r[content]}
 
             </div>
-        </div>                    
+        </div>
+        {/loop}
+        {/pc}
     </div>
 
     <!--技术探索-->
-    <div class="container gy_wm" style="display: block;">
+    <div class="container gy_wm" {if $catid!=24}style=" display: none;"{/if}>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="row keyan-tab">
-                    <div class="col-xs-6 col-sm-6 col-md-6 keyan1 active">
-                        微乳剂
+                    {pc:content action="lists"  catid="24" order="id asc" num="2"}
+                    {loop $data $v}
+                    <div class="col-xs-6 col-sm-6 col-md-6 keyan{$n} {if $n==1}active{/if}">
+                        {$v[title]}
                     </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-6 keyan2">
-                        脂质体
-                    </div>
+                    {/loop}
+                    {/pc}
                 </div>
             </div>
         </div>
-
-        <div class="keyanbox keyantab1" style="display: block;">
+        {pc:content action="lists" moreinfo="1" catid="24" order="id asc" num="2"}
+        {loop $data $v}
+        <div class="keyanbox keyantab{$n}" {if $n==1}style="display: block;"{/if}>
 
             <div class="row keyan-p">
-                <img src="img/keyantabImg1.png" class="keyanImg2">
+                <img src="{$v[thumb]}" class="keyanImg2">
                 <p>
-                    　　为了更好地实现我们的愿景，为我们的家人和顾客开发更有效，更便捷，更安全，更具依从性的健康产品和服务，我们在北京建立了研发中心，配备了高剪切，高压均质，液相色谱，气相色谱，喷雾干燥等设备，组建了由国内外专家顾问团队和资深研究人员所组成的研发队伍，经验领域涵盖了制药，食品，营养等多个方面。我们期望运用科学知识，根据不同的使用场景，为我们的消费者提供最科学的配方，最有效的活性成分递送系统，同时兼顾味道，口感等重要的消费体验。科学的配方是一切产品的开始，我们通过严格的文献调研和广泛的科研合作，仅选择具有最充足证据的活性成分进行配方组合。我们知道，相比于片剂，胶囊，固体粉剂等剂型，液体剂型能够提供最好的配方多样性，便携性，易用性，生物利用度以及口感和味道。构建液体的活性成分传递体系有许多技术上的难点，其中的一个难点就是如何将水不溶性的活性物质加入到液体产品中，并保持货架期的稳定性。这些水不溶性的物质在所有的活性物质中占据了重要的地位，它们可能是关键脂肪酸，例如鱼油；可能是脂溶性的维生素，例如维生素E或维生素A；也可能是其它的抗氧化活性成分，比如白藜芦醇或辅酶Q10。解决上诉的技术问题需要大量的科研实验。借鉴国际上现有的成功经验，我们将微乳剂，脂质体，微囊化等制药和食品领域技术手段应用于我们的液体产品，开发具有自主知识产权的稳定体系。在技术力量上的投入和创新使我们在配方的组合上有更多的自由度，可以为健康人群和患者提供更具创新性的健康解决方案和产品。
+                    　　{$v[content]}
                 </p>
-
-                <h3>
-                    1.微乳剂
-                </h3>
-                <p>
-                    　　乳剂是大自然的营养物质传递系统，是表面活性物质，例如蛋白质和磷脂，包裹油溶性物质在水中形成的一种均匀的分散体系，我们所熟知的牛奶和椰浆就是乳剂的代表。现代食品行业通过稳定剂以及高压均质等技术将乳剂的粒径达到微米或亚微米的大小，使牛奶和椰浆能够在更长的货架期内保持均匀的性状和风味，且更容易通过胃肠道吸收。通过生物技术人工构建的微乳剂以及其喷雾干燥所形成的微胶囊粉被广泛地应用于ICU病人的配方营养，婴儿配方乳粉，营养代餐，甚至维生素水等产品之中。微乳剂在制药和医疗器械行业也有广泛的应用。使用微乳剂的药物传递系统有更好的生物利用度，能够促进难溶药物的吸收，提高药物的疗效。
-                </p>
-
             </div>
         </div>
-
-        <div class="keyanbox keyantab2">
-            <div class="row keyan-p">
-                <img src="img/keyantabImg1.png" class="keyanImg2">
-                <p>
-                    　　为了更好地实现我们的愿景，为我们的家人和顾客开发更有效，更便捷，更安全，更具依从性的健康产品和服务，我们在北京建立了研发中心，配备了高剪切，高压均质，液相色谱，气相色谱，喷雾干燥等设备，组建了由国内外专家顾问团队和资深研究人员所组成的研发队伍，经验领域涵盖了制药，食品，营养等多个方面。我们期望运用科学知识，根据不同的使用场景，为我们的消费者提供最科学的配方，最有效的活性成分递送系统，同时兼顾味道，口感等重要的消费体验。科学的配方是一切产品的开始，我们通过严格的文献调研和广泛的科研合作，仅选择具有最充足证据的活性成分进行配方组合。我们知道，相比于片剂，胶囊，固体粉剂等剂型，液体剂型能够提供最好的配方多样性，便携性，易用性，生物利用度以及口感和味道。构建液体的活性成分传递体系有许多技术上的难点，其中的一个难点就是如何将水不溶性的活性物质加入到液体产品中，并保持货架期的稳定性。这些水不溶性的物质在所有的活性物质中占据了重要的地位，它们可能是关键脂肪酸，例如鱼油；可能是脂溶性的维生素，例如维生素E或维生素A；也可能是其它的抗氧化活性成分，比如白藜芦醇或辅酶Q10。解决上诉的技术问题需要大量的科研实验。借鉴国际上现有的成功经验，我们将微乳剂，脂质体，微囊化等制药和食品领域技术手段应用于我们的液体产品，开发具有自主知识产权的稳定体系。在技术力量上的投入和创新使我们在配方的组合上有更多的自由度，可以为健康人群和患者提供更具创新性的健康解决方案和产品。
-                </p>
-
-                <h3>
-                    1.脂质体
-                </h3>
-                <p>
-                    　　脂质体是一种由磷脂双分子层所构建的活性物质传递系统，基于它的结构，它可以传递脂溶性的活性物质，也可以传递水溶性的活性物质。脂质体在制药行业有着大量的应用，例如抗癌药物的脂质体注射液；添加维生素E和叶黄素的脂质体滴眼液等。脂质体在营养品方面也有广泛的应用，常被用于易于氧化的营养物质的传递，比如脂质体的维生素C，脂质体的DHA，脂质体的辅酶Q10等。
-                </p>
-
-
-
-            </div>
-        </div>
+        {/loop}
+        {/pc}
     </div>
 
        <!--健康方案-->
-    <div class="container gy_wm" style="width: 100%; padding: 0 0 2% 0;margin: 0;">
+    <div class="container gy_wm" style="width: 100%; padding: 0 0 2% 0;margin: 0;{if $catid!=25}display:none{/if}">
         <div class="container ">
             <div class="row">
             <div class="col-md-12  col-sm-12 col-xs-12" style="display: none;">
@@ -257,189 +160,52 @@
                     度，加之强烈的责任感和爱心，为您奉上针对不同人群的健康解决方案，安全无忧，健康生活！</p>
             </div>
             </div>
-        </div> 
+        </div>
+        {pc:content action="lists" moreinfo="1" catid="25" order="id asc" num="20"}
+        {loop $data $v}
         <div class="container" id="midle">
             <div class="row">
-                <div class="col-md-12  col-sm-12"  id="col"><p>食品级日化</p></div>
+                <div class="col-md-12  col-sm-12"  id="col"><p>{$v[title]}</p></div>
             </div>
         </div>
-        <div id="jk_a" style="background: url(img/jiankang1.png); width: 100%;  background-size: cover; margin-top: 2%;">
+        <div id="jk_a" style="background: url({$v[thumb]}); width: 100%;  background-size: cover; margin-top: 2%;">
         <a href="#" >
             <div class="row">
                 <div class="tu_o_zh">
                     <div class="tu_zh">
-                        <h1 style="color: #363636;">食品级日化</h1>
-                    <p style="color: #363636;">用食品配料制造日化产品，做顶级安全日化产品是<br />我们始终追求的产品宗旨，让您的生活吃的放心，<br />用的安心！</p>
+                        <h1 style="color: #363636;">{$v[title]}</h1>
+                    <p style="color: #363636;">{$v[content]}</p>
                 </div>
                 </div>              
             </div>
         </a>
         </div>
-        
-        <div class="container" id="midle">
-            <div class="row">
-                <div class="col-md-12  col-sm-12"  id="col"><p>健康人群营养</p></div>
-            </div>
-        </div>
-        <div id="jk_a" style="background: url(img/jiankang2.png); width: 100%;  background-size: cover; margin-top: 2%;">
-        <a href="#">
-            <div class="row">
-                <div class="tu_o_zh">
-                    <div class="tu_zh">
-                        <h1 style="color: #363636;">健康人群营养</h1>
-                    <p style="color: #363636;">日常营养摄入的严重不足，导致现代人亚健康的<br />生活状态。我们用美味便捷的营养饮料，让您<br />随时随地的快速补充营养！</p>
-                </div>
-                </div>              
-            </div>
-        </a>
-        </div>
-        
-        <div class="container" id="midle">
-            <div class="row">
-                <div class="col-md-12  col-sm-12"  id="col"><p>临床及营养康复</p></div>
-            </div>
-        </div>
-        <div id="jk_a" style="background: url(img/jiankang3.png); width: 100%;  background-size: cover; margin-top: 2%;">
-        <a href="#">
-            <div class="row">
-                <div class="tu_o_zh">
-                    <div class="tu_zh">
-                        <h1 style="color: #363636;">临床及营养康复</h1>
-                    <p style="color: #363636;">我们将针对特定人群的不同的营养需求，寻找适合他们的营养补充剂，以方便、快捷、利吸收为产品研发核心，令他们快速恢复健康活力！</p>
-                </div>
-                </div>
-        </div>
-        </a>
-        </div>
-        
-       <div class="container" id="midle">
-            <div class="row">
-                <div class="col-md-12  col-sm-12"  id="col"><p>医疗及诊断</p></div>
-            </div>
-        </div>
-        <div id="jk_a" style="background: url(img/jiankang4.png); width: 100%;  background-size: cover; margin-top: 2%;">
-        <a href="#">
-            <div class="row">
-                <div class="tu_o_zh">
-                    <div class="tu_zh">
-                        <h1 style="color: #363636;">医疗及诊断</h1>
-                    <p style="color: #363636;">营养活性成分对于临床医疗诊治有很好的辅助作用，<br/>为您在治疗期间提供坚实的身体营养基础，令您<br/>快速摆脱病痛！</p>
-                </div>
-                </div>              
+        {/loop}
+        {/pc}
 
-        </div>
-        </a>
-        </div>
+        
+
     </div>
     
       
     <!--生产加工-->
-    <div class="container gy_wm" style=" display:none;">
-        <div class="keyanbox keyantab1" style="display: block;">
+    <div class="container gy_wm" {if $catid!=26}style=" display: none;"{/if}>
+        <div class="keyanbox keyantab1" style="display:block" >
 
+{pc:content action="lists" moreinfo="1" catid="26" order="id desc" num="1"}
 
+{loop $data $k $r}
             <div class="row keyan-p">
                 <h3 style="margin-top: 0;">
-                    纳米乳液的制备方法及原理
+                    {$r[title]}
                 </h3>
-                <p>
-                    纳米乳液（nanoemulsion）又称微乳液（microemulsion），是由水、油、表面活性剂和助表面活性剂等自发形成，粒径为1～100nm的热力学稳定、各向同性，透明或半透明的均相分散体系.一般来说，纳米乳分为三种类型，即水包油型纳米乳(O/W)、油包水型纳米乳(W/O以及双连续型纳米乳(B.C)，1943年由Hoar和Schulman首次发现并报道了这一分散体系。
-                </p>
-                <p>
-                    纳米乳具有许多其它制剂无可比拟的优点：①为各向同性的透明液体，属热力学稳定系统，经热压灭菌或离心也不能使之分层；②工艺简单，制备过程不需特殊设备，可自发形成，纳米乳粒径一般为1～100nm；③黏度低，可减少注射时的疼痛；④具有缓释和靶向作用；⑤提高药物的溶解度，减少药物在体内的酶解，可形成对药物的保护作用并提高胃肠道对药物的吸收，提高药物的生物利用度[20]。因此纳米乳作为一种药物载体受到广泛的关注。
-                </p>
-                <p>
-                    乳化大致可分为机械法和物理化学法两大类。纳米乳剂是非平衡体系，它的形成需要外加能量，一般来自机械设备或来自化学制剂的结构潜能。利用机械设备的能量(高速搅拌器、高压均质机和超声波发生器)这类方法通常被认为是高能乳化法。而利用结构中的化学潜能的方法通常被认为是浓缩法或低能乳化法。
-                </p>
-
-                <h3>
-                    1.机械法制备纳米乳剂
-                </h3>
-                <p>
-                    机械法制备纳米乳剂的常规过程有两步：首先是粗乳液的制备，通常按照工艺配比将油一水，表面活性剂及其他稳定剂成分混合，利用搅拌器得到一定粒度分布的常规乳液；然后是纳米乳剂的制备，利用动态超高压微射流均质机或超声波与高压均质机联用对粗乳液进行特定条件下的均质处理得到纳米乳剂。
-                </p>
-                <p>
-                    利用高压均质机或超声波发生器能量的方法通常被叫做高能乳化法。研究表明，这些设备能在最短的时间内提供所需要的能量并获得液滴粒径最小的均匀流体 。动态超高压微射均质机在国内外纳米乳剂领域的研究中被广泛应用。超声波乳化在降低液滴粒径方面相当有效，仅仅适用于小批量生产。
-                </p>
-
-                <h3>
-                    2.低能乳化法
-                </h3>
-                <p>
-                    低能乳化法是利用在乳化作用过程中曲率和相转变发生的原理。乳剂转换点EIP (Emulsioninversion point)法由Marszall和Shick首先发明。在恒定温度下，乳化过程中不断改变组分就可以观察到相转变。Sadurni等研制的O/W型纳米乳剂，粒径小至14nm，同时还具有高的动力学稳定性。转相乳化PIT(phase inversion temperature)法由Shinoda和Saito首先发明。在恒定组分条件下，调节温度得到目标乳化体系。此法在实际应用中多用来制备0/W型乳液。研究表明，在不添加任何表面活性剂的情况下，自发的乳化也会产生，并获得纳米乳剂。
-                </p>
+                {$r[content]}
 
             </div>
+{/loop}
+{/pc}
         </div>  
     </div>
 
 
-    <footer>
-        <div class="container" style="padding: 0;">
-            <ul class="col-md-12 col-sm-12 f_u" style="padding: 0;">
-                <li class="col-md-3 col-sm-3 li_11" style="padding: 0;">
-                    <h1>联系我们</h1>
-                    <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li>官方热线：400-888-8888</li>
-                        <li>官方微信：Hhhhh</li>
-                        <li>QQ号：220220220</li>
-                    </ul>
-                </li>
-                <li class="col-md-2 col-sm-2 li_22" style="padding: 0;">
-                    <h1>公司简介</h1>
-                    <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li><a href="">公司历史</a></li>
-                        <li><a href="">业务原则</a></li>
-                        <li><a href="">H在中国</a></li>
-                        <li><a href="">质量与安全</a></li>
-                    </ul>
-                </li>
-                <li class="col-md-2 col-sm2 li_33" style="padding: 0;">
-                    <h1>新闻频道</h1>
-                    <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li><a href="">集团新闻</a></li>
-                        <li><a href="">新闻特写</a></li>
-                        <li><a href="">H声明</a></li>
-                        <li><a href="">媒体联系</a></li>
-                    </ul>
-                </li>
-                <li class="col-md-5 col-sm-5 li_44" style="padding: 0;">
-                    <h1>关注我们</h1>
-                    <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li class="col-md-5 col-sm-5" style="padding: 0;">微信<br/><img src="img/Hf_03.jpg" /></li>
-                        <li class="col-md-5 col-sm-5" style="padding: 0;">微博<br/><img src="img/Hf_03.jpg" /></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="g_s">
-                工商编码
-            </div>
-        </div>
-    </footer>
-
-  
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
-
-    <script>
-        $(function() {
-            $('.keyan-tab>div').on('click', function() {
-                $(this).parents('.keyan-tab').find('div').removeClass('active');
-                $(this).addClass('active');
-
-                $(this).parents('.gy_wm').find('.keyanbox').hide();
-                if ($(this).hasClass('keyan1')) {
-                    $(this).parents('.gy_wm').find('.keyantab1').fadeIn(500);
-                } else if ($(this).hasClass('keyan2')) {
-                    $(this).parents('.gy_wm').find('.keyantab2').fadeIn(500);
-                } else if ($(this).hasClass('keyan3')) {
-                    $(this).parents('.gy_wm').find('.keyantab3').fadeIn(500);
-                } else if ($(this).hasClass('keyan4')) {
-                    $(this).parents('.gy_wm').find('.keyantab4').fadeIn(500);
-                }
-            })
-        });
-    </script>
-</body>
-
-</html>
+{template "","footer"}

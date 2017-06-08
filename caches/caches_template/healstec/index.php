@@ -120,7 +120,7 @@
 			<div class="row" id="pd">
 				<div class="col-md-12  col-sm-12"  id="col"><p>最新消息</p></div>
 				<ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
-					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=08e28d9c306a1ae09d10606e5b75ee02&action=lists&catid=15&order=updatetime+DESC&thumb=1&num=3&return=info\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$info = $content_tag->lists(array('catid'=>'15','order'=>'updatetime DESC','thumb'=>'1','limit'=>'3',));}?>
+					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=08603c3400a60ad2b76a149bc0127d30&action=lists&catid=15&order=updatetime+DESC&thumb=1&num=3&return=info\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$info = $content_tag->lists(array('catid'=>'15','order'=>'updatetime DESC','thumb'=>'1','limit'=>'3',));}?>
 					<?php $n=1;if(is_array($info)) foreach($info AS $v) { ?>
 					<li class="col-md-12  col-sm-12">
 						<img src="<?php echo $v['thumb'];?>" class="col-md-8  col-sm-8 col-xs-12 img-responsive"
