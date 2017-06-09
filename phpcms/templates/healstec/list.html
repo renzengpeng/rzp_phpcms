@@ -1,0 +1,30 @@
+{template "","header"}
+
+
+
+
+<div class="container" id="midle">
+    <div class="row">
+        {pc:get sql="select * from hl_category where catid='$catid'" cache="3600" return="data"}
+        <div class="col-md-12  col-sm-12" id="col"><a href="{$data[0][url]}"><p>{$data[0][catname]}</p></a>
+        </div>
+        {/pc}
+    </div>
+</div>
+<div class="container" style="padding-left: 0; padding-right: 0;">
+    <ul class="row" id="pinpai">
+        {pc:content action="lists" catid="$catid" order="id DESC" num="10"}
+        {loop $data $k $r}
+        <li class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 2%;">
+            <a href="{$r[url]}">
+                <div class="col-md-10 col-sm-10 col-xs-10"><p>{$r[title]}</p></div>
+                <h1 class="col-md-2 col-sm-2 col-xs-2" style="font-size: 2rem;">{date('Y-m-d',$r[inputtime])}</h1>
+            </a>
+        </li>
+        {/loop}
+        {/pc}
+    </ul>
+</div>
+
+
+{template "","footer"}

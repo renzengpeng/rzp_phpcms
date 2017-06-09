@@ -318,7 +318,10 @@ class index {
 			}
 			if(in_array($catid,[23,24,25,26])){
 				include template('', 'ky_js');
-			}
+			}else{
+                include template('', 'list');
+            }
+
 
 
 

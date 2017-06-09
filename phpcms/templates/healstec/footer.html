@@ -1,42 +1,71 @@
+{if $_GET['a']!='show'}
 <div class="section fp-auto-height se_f">
+    {/if}
     <footer>
         <div class="container" style="padding: 0;">
             <ul class="col-md-12 col-sm-12 f_u" style="padding: 0;">
-                <li class="col-md-3 col-sm-3 li_11" style="padding: 0;"><h1>联系我们</h1>
+                <li class="col-md-3 col-sm-3 li_11" style="padding: 0;">
+                    {pc:get sql="select * from hl_category where catid='46'"  return="data"}
+                    <h1>{$data[0][catname]}</h1>
+                    {/pc}
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li>官方热线：400-888-8888</li>
-                        <li>官方微信：Hhhhh</li>
-                        <li>QQ号：220220220</li>
+                        {pc:get sql="select * from hl_page where catid='46'"  return="data"}
+                        {$data[0][content]}
+                        {/pc}
                     </ul>
                 </li>
-                <li class="col-md-2 col-sm-2 li_22" style="padding: 0;"><h1>公司简介</h1>
+
+                <li class="col-md-2 col-sm-2 li_22" style="padding: 0;">
+                    {pc:get sql="select * from hl_category where catid='42'"  return="data"}
+                    <h1>{$data[0][catname]}</h1>
+                    {/pc}
+
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li><a href="">公司历史</a></li>
-                        <li><a href="">业务原则</a></li>
-                        <li><a href="">H在中国</a></li>
-                        <li><a href="">质量与安全</a></li>
+                        {pc:content action="lists" moreinfo="1" catid="42" order="id asc" num="3"}
+                        {loop $data $k $r}
+                        <li><a href="{$r[url]}">{$r[title]}</a></li>
+                        {/loop}
+                        {/pc}
                     </ul>
                 </li>
-                <li class="col-md-2 col-sm2 li_33" style="padding: 0;"><h1>新闻频道</h1>
+                {pc:get sql="select * from hl_category where catid='41'"  return="data"}
+
+                <li class="col-md-2 col-sm2 li_33" style="padding: 0;"><h1>{$data[0][catname]}</h1>
+                    {/pc}
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li><a href="">集团新闻</a></li>
-                        <li><a href="">新闻特写</a></li>
-                        <li><a href="">H声明</a></li>
-                        <li><a href="">媒体联系</a></li>
+                        {pc:get sql="select * from hl_category where parentid='41'" return="data1"}
+
+                        {loop $data1 $k $r}
+                        <li><a href="{$r[url]}">{$r[catname]}</a></li>
+                        {/loop}
+                        {/pc}
                     </ul>
                 </li>
-                <li class="col-md-5 col-sm-5 li_44" style="padding: 0;"><h1>关注我们</h1>
+                <li class="col-md-5 col-sm-5 li_44" style="padding: 0;">
+                    {pc:get sql="select * from hl_category where catid='43'"  return="data"}
+                    <h1>{$data[0][catname]}</h1>
+                    {/pc}
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <li class="col-md-5 col-sm-5" style="padding: 0;">微信<br/><img src="{IMG_PATH}Hf_03.jpg"/></li>
-                        <li class="col-md-5 col-sm-5" style="padding: 0;">微博<br/><img src="{IMG_PATH}Hf_03.jpg"/></li>
+                        {pc:content action="category" catid="43" num="2" order="listorder ASC" return="data1"}
+                        {loop $data1 $k $r}
+                        <li class="col-md-5 col-sm-5" style="padding: 0;">{$r[catname]}<br/><img src="{$r[image]}"/></li>
+                        {/loop}
+                        {/pc}
                     </ul>
                 </li>
             </ul>
             <div class="g_s">
-                工商编码
+                {pc:get sql="select * from hl_category where catid='48'"  return="data"}
+                {$data[0][catname]}  {$data[0][description]}
+                {/pc}
+
             </div>
+
         </div>
     </footer>
+    {if $_GET['a']!='show'}
+</div>
+        {/if}
 </div>
 </div>
 

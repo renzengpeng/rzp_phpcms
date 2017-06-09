@@ -27,7 +27,7 @@ return array (
     'letter' => 'shehuizeren',
     'usable_type' => '',
     'big_image' => 'http://www.healstec.com/uploadfile/2017/0605/20170605014121331.jpg',
-    'image1' => '',
+    'image1' => 'http://www.healstec.com/uploadfile/2017/0608/20170608123045685.jpg',
     'description_index' => '',
   ),
 );

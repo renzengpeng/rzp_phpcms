@@ -3,12 +3,12 @@ return array (
   1 => 
   array (
     'siteid' => '1',
-    'name' => '默认站点',
+    'name' => 'healstec',
     'dirname' => '',
     'domain' => 'http://www.healstec.com/',
-    'site_title' => 'PHPCMS演示站',
-    'keywords' => 'PHPCMS演示站',
-    'description' => 'PHPCMS演示站',
+    'site_title' => 'healstec',
+    'keywords' => 'healstec',
+    'description' => 'healstec',
     'release_point' => '',
     'default_style' => 'healstec',
     'template' => 'healstec',

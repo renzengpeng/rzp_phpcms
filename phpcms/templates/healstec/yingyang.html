@@ -54,7 +54,7 @@
 				<ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
 					<li class="col-md-12  col-sm-12">						
 						<div class="col-md-7 col-sm-7 col-xs-12" id="ji_zi" style="padding-top: 0; padding-left: 0;">
-							{pc:content action="lists" catid="29" order="id DESC" num="10"}
+							{pc:content action="lists" moreinfo="1" catid="29" order="id DESC" num="10"}
 							{loop $data $k $r}
 							<h2  class="xy_h1" style="color: #01396a;">{$r[title]}</h2>
 							<span class="xy_p2">{$r[content]}</span>
@@ -96,13 +96,13 @@
 			<div class="row" >
 				<div class="col-md-12  col-sm-12"  id="col"><p>{$data_ca[0][catname]}</p></div>
                 <ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
-					{pc:content action="lists" catid="31" order="id DESC" num="10"}
+					{pc:content action="lists" moreinfo="1" catid="31" order="id DESC" num="10"}
 					{loop $data $k $r}
 					<li class="col-md-12  col-sm-12">
 						<img src="{$r[thumb]}" class="col-md-6  col-sm-6 col-xs-12 img-responsive" id="ji_img">
 						<div class="col-md-6 col-sm-6 col-xs-12" id="ji_zi">
 							<h1>{$r[title]}</h1>
-							<p class="xp_p3">{str_cut($r[description],40)}</p>
+							<p class="xp_p3">{str_cut($r[content],40)}</p>
 						</div>
 					</li>
 					{/loop}

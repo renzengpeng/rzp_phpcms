@@ -15,9 +15,15 @@
             {/pc}
 
             <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg"/></li>
+            {if $catid!=$top_parentid}
             {pc:get sql="select * from hl_category where catid='$catid'"  return="data1"}
             <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data1[0][catname]}</p></li>
             {/pc}
+            {else}
+            {pc:get sql="select * from hl_news a left join hl_news_data b on a.id=b.id where a.id=$id" cache="1" return="data"}
+            <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data[0][title]}</p></li>
+            {/pc}
+            {/if}
         </ul>
     </div>
 </div>
@@ -25,7 +31,17 @@
 
 {pc:get sql="select * from hl_news a left join hl_news_data b on a.id=b.id where a.id=$id" return="data"}
 <div class="keyanbox keyantab1" style="display: block;">
+    {php $image_arr=json_decode($data[0][muti_image],true);}
+    {if !empty($image_arr)}
+    <div class="row keyanImg">
 
+        {loop $image_arr $image}
+        <div class="col-xs-4 col-sm-4 col-md-4">
+            <img src="{$image[url]}" />
+        </div>
+        {/loop}
+    </div>
+    {/if}
     <div class="row keyan-p">
         <h3>
             {$data[0][title]}

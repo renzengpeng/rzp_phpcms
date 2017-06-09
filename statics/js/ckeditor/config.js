@@ -13,7 +13,7 @@ CKEDITOR.editorConfig = function( config )
 	config.disableNativeSpellChecker = false;
 	config.resize_dir = 'vertical';
 	config.keystrokes =[[ CKEDITOR.CTRL + 13 /*Enter*/, 'maximize' ]];	
-	config.extraPlugins = 'capture,videoforpc,flashplayer';
+	config.extraPlugins = 'capture,videoforpc,flashplayer,lineheight';
 	config.enterMode = CKEDITOR.ENTER_BR; 
 	config.shiftEnterMode = CKEDITOR.ENTER_P;
 	config.font_names='宋体/宋体;黑体/黑体;仿宋/仿宋_GB2312;楷体/楷体_GB2312;隶书/隶书;幼圆/幼圆;微软雅黑/微软雅黑;'+ config.font_names;
@@ -61,4 +61,3 @@ var objid = MM_objid = key = 0;
 function file_list(fn,url,obj) {
 	$('#MM_file_list_editor1').append('<div id="MM_file_list_'+fn+'">'+url+' <a href=\'#\' onMouseOver=\'javascript:FilePreview("'+url+'", 1);\' onMouseout=\'javascript:FilePreview("", 0);\'>查看</a> | <a href="javascript:insertHTMLToEditor(\'<img src='+url+'>\',\''+fn+'\')">插入</A> | <a href="javascript:del_file(\''+fn+'\',\''+url+'\','+fn+')">删除</a><br>');
 }
-

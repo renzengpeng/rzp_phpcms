@@ -39,7 +39,7 @@ class form {
 		    ['Link','Unlink','Anchor'],
 		    ['Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
 		    '/',
-		    ['Styles','Format','Font','FontSize'],
+		    ['Styles','Format','Font','FontSize','lineheight'],
 		    ['TextColor','BGColor'],
 		    ['attachment'],\r\n";
 		} elseif($toolbar == 'desc') {
