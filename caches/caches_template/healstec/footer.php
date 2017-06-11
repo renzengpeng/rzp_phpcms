@@ -28,12 +28,12 @@
                         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     </ul>
                 </li>
-                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=f99392bfa16710563120c1a5c2bd7c00&sql=select+%2A+from+hl_category+where+catid%3D%2741%27&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='41' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
+                <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=e9c8423184f294ceec5e6fd4b27dce1e&sql=select+%2A+from+hl_category+where+catid%3D%2750%27&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='50' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
 
                 <li class="col-md-2 col-sm2 li_33" style="padding: 0;"><h1><?php echo $data['0']['catname'];?></h1>
                     <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=6dc8228ceed81ae4acbfdf24db4fcfae&sql=select+%2A+from+hl_category+where+parentid%3D%2741%27&return=data1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where parentid='41' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data1 = $a;unset($a);?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=6131bcbfafb1e5a40f8eaa11210e7d1c&sql=select+%2A+from+hl_category+where+parentid%3D%2750%27&return=data1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where parentid='50' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data1 = $a;unset($a);?>
 
                         <?php $n=1; if(is_array($data1)) foreach($data1 AS $k => $r) { ?>
                         <li><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></li>

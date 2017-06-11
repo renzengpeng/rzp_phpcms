@@ -28,12 +28,12 @@
                         {/pc}
                     </ul>
                 </li>
-                {pc:get sql="select * from hl_category where catid='41'"  return="data"}
+                {pc:get sql="select * from hl_category where catid='50'"  return="data"}
 
                 <li class="col-md-2 col-sm2 li_33" style="padding: 0;"><h1>{$data[0][catname]}</h1>
                     {/pc}
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        {pc:get sql="select * from hl_category where parentid='41'" return="data1"}
+                        {pc:get sql="select * from hl_category where parentid='50'" return="data1"}
 
                         {loop $data1 $k $r}
                         <li><a href="{$r[url]}">{$r[catname]}</a></li>
