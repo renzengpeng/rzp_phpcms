@@ -10,7 +10,7 @@ return array (
     'parentid' => '0',
     'arrparentid' => '0',
     'child' => '1',
-    'arrchildid' => '10,37,38,39,40,41,49',
+    'arrchildid' => '10,37,38,39,40,41',
     'catname' => '关于我们',
     'style' => '',
     'image' => '',

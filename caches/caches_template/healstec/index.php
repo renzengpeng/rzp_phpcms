@@ -71,16 +71,16 @@
 				<div class="col-md-12  col-sm-12"  id="col"><p>健康方案</p></div>
 			</div>
 		</div>
-		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=2cda98eee9d608d3d6c4453cd11889d8&sql=select+%2A+from+hl_page+where+catid%3D%2722%27+&cache=3600&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_page where catid=\'22\' ',)).'2cda98eee9d608d3d6c4453cd11889d8');if(!$data = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_page where catid='22'  LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);if(!empty($data)){setcache($tag_cache_name, $data, 'tpl_data');}}?>
+		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=c523c1e517632c227e3e71276bdcd059&sql=select+%2A+from+hl_category+where+catid%3D%2725%27&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='25' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
 			<div class="container-fluid tu_o"
 				 style="background: url(<?php echo $data['0']['image1'];?>); width: 100%; background-size: cover;">
-				<a href="ky_jk.html">
+				<a href="<?php echo $data['0']['url'];?>">
 					<div class="row">
 						<div class="tu_o_zh">
 							<div class="tu_zh">
 
-								<h1><?php echo $data['0']['title'];?></h1>
-								<p><?php echo $data['0']['content'];?></p>
+								<h1><?php echo $data['0']['catname'];?></h1>
+								<p><?php echo $data['0']['description'];?></p>
 
 
 
@@ -101,7 +101,7 @@
 			</div>
 		</div>		
 		<div class="container-fluid tu_o" style="background: url(<?php echo $data['0']['big_image'];?>); width: 100%; background-size: cover;">
-			<a href="yingyang.html">
+			<a href="<?php echo $data['0']['url'];?>">
 			<div class="row">
 				<div class="tu_o_zh">
 					<div class="tu_zh">
