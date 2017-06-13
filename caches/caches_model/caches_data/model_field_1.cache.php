@@ -1,13 +1,13 @@
 <?php
 return array (
-  'my_test' => 
+  'muti_image' => 
   array (
-    'fieldid' => '108',
+    'fieldid' => '110',
     'modelid' => '1',
     'siteid' => '1',
-    'field' => 'my_test',
-    'name' => 'my_test',
-    'tips' => '',
+    'field' => 'muti_image',
+    'name' => '图片',
+    'tips' => '多张图片',
     'css' => '',
     'minlength' => '0',
     'maxlength' => '0',
@@ -130,6 +130,39 @@ return array (
     'listorder' => '4',
     'disabled' => '0',
     'isomnipotent' => '0',
+  ),
+  'redirect_url' => 
+  array (
+    'fieldid' => '109',
+    'modelid' => '1',
+    'siteid' => '1',
+    'field' => 'redirect_url',
+    'name' => '指定跳转地址',
+    'tips' => '跳转地址',
+    'css' => '',
+    'minlength' => '0',
+    'maxlength' => '0',
+    'pattern' => '',
+    'errortips' => '',
+    'formtype' => 'text',
+    'setting' => '{"size":"50","defaultvalue":"","ispassword":"0"}',
+    'formattribute' => '',
+    'unsetgroupids' => '',
+    'unsetroleids' => '',
+    'iscore' => '0',
+    'issystem' => '1',
+    'isunique' => '0',
+    'isbase' => '1',
+    'issearch' => '0',
+    'isadd' => '1',
+    'isfulltext' => '1',
+    'isposition' => '0',
+    'listorder' => '4',
+    'disabled' => '0',
+    'isomnipotent' => '0',
+    'size' => '50',
+    'defaultvalue' => '',
+    'ispassword' => '0',
   ),
   'keywords' => 
   array (

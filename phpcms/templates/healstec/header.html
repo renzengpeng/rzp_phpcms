@@ -32,7 +32,7 @@
                     <span class='icon-bar'></span>
                     <span class='icon-bar'></span>
                 </button>
-                <a href="index.html"><img src="{IMG_PATH}/healstec/H2_06.jpg" class="navbar-brand"/></a>
+                <a href="/"><img src="{IMG_PATH}/healstec/H2_06.jpg" class="navbar-brand"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -43,16 +43,16 @@
                                 <input type="hidden" name="m" value="search"/>
                                 <input type="hidden" name="c" value="index"/>
                                 <input type="hidden" name="a" value="init"/>
-                                <input type="hidden" name="typeid" value="{$typeid}" id="typeid"/>
+                                <input type="hidden" name="typeid" value="{if $typeid==''}1{else}{$typeid}{/if}" id="typeid"/>
                                 <input type="hidden" name="siteid" value="{$siteid}" id="siteid"/>
-                                <input type="text" id="in">
+                                <input type="text" name="q" id="in">
                             </form>
                         </div>
 
                     <div class="clearfix"></div>
-                    {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC"}
-                    {php $c=end(array_keys($data))}
-                        {loop $data $k $r}
+                    {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC" return="data1"}
+                    {php $c=end(array_keys($data1))}
+                        {loop $data1 $k $r}
                         <li><a href="{$r[url]}" {if $c==$k}style="padding-right: 0;"{/if}>{$r[catname]}</a></li>
                         {/loop}
                     {/pc}

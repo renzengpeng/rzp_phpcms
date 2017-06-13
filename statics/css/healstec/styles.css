@@ -40,7 +40,7 @@ nav {
 
 .b_t p {
     color: #FFFFFF;
-    background: url(../img/H_03.jpg) no-repeat;
+    background: url('http://www.healstec.com/statics/images/healstec//H_03.jpg'ss) no-repeat;
     padding-left: 30px;
     background-position: 8px 6px;
     line-height: 25px;
@@ -50,7 +50,7 @@ nav {
     width: 280px;
     height: 30px;
     float: right;
-    background: url(../img/H3_09.jpg) no-repeat;
+    background: url("http://www.healstec.com/statics/images/healstec/H3_09.jpg") no-repeat;
     background-position: 10px;
     margin-top: 20px;
     padding-left: 40px;
@@ -216,7 +216,7 @@ nav {
 }
 
 .tu_o {
-    background: url(../img/H_21.jpg) no-repeat center;
+    background: url("http://www.healstec.com/statics/images/healstec/H_21.jpg") no-repeat center;
     margin-top: 2%;
     width: 100%;
     background-size: cover;
@@ -514,7 +514,7 @@ footer {
 
 .gywm {
     color: #0f97a7;
-    background: url(../img/xy01_03.jpg) no-repeat center bottom;
+    background: url("http://www.healstec.com/statics/images/healstec/xy01_03.jpg") no-repeat center bottom;
 }
 
 .x_w li,
@@ -581,7 +581,7 @@ footer {
     -moz-appearance: none;
     -webkit-appearance: none;
     border: 0;
-    background: url(../img/xw12_20.jpg) no-repeat scroll right center transparent;
+    background: url("http://www.healstec.com/statics/images/healstec/xw12_20.jpg") no-repeat scroll right center transparent;
     background-size: calc(0.5)
 }
 
@@ -1849,7 +1849,7 @@ footer {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: url('../img/bottom1.png') no-repeat;
+    background: url('http://www.healstec.com/statics/images/healstec/bottom1.png') no-repeat;
     background-size: 100% 3px;
 }
 
@@ -1902,22 +1902,22 @@ footer {
 }
 
 .jiankang1 {
-    background: url('../img/jiankang1.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang1.png');
     background-size: 100% 100%;
 }
 
 .jiankang2 {
-    background: url('../img/jiankang2.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang2.png');
     background-size: 100% 100%;
 }
 
 .jiankang3 {
-    background: url('../img/jiankang3.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang3.png');
     background-size: 100% 100%;
 }
 
 .jiankang4 {
-    background: url('../img/jiankang4.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang4.png');
     background-size: 100% 100%;
 }
 
@@ -2030,49 +2030,49 @@ footer {
 
 .jiankangImg1 {
     height: 221px;
-    background: url('../img/jiankang11.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang11.png');
     background-size: 100% 100%;
 }
 
 .jiankangImg2 {
     height: 221px;
-    background: url('../img/jiankang12.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang12.png');
     background-size: 100% 100%;
 }
 
 .jiankangImg3 {
     height: 221px;
-    background: url('../img/jiankang13.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang13.png');
     background-size: 100% 100%;
 }
 
 .jiankangImg4 {
     height: 221px;
-    background: url('../img/jiankang14.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang14.png');
     background-size: 100% 100%;
 }
 
 .jiankangImg5 {
     height: 221px;
-    background: url('../img/jiankang15.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang15.png');
     background-size: 100% 100%;
 }
 
 .jiankangImg6 {
     height: 221px;
-    background: url('../img/jiankang16.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang16.png');
     background-size: 100% 100%;
 }
 
 .jiankangImg7 {
     height: 221px;
-    background: url('../img/jiankang17.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang17.png');
     background-size: 100% 100%;
 }
 
 .jiankangImg8 {
     height: 221px;
-    background: url('../img/jiankang18.png');
+    background: url('http://www.healstec.com/statics/images/healstec/jiankang18.png');
     background-size: 100% 100%;
 }
 

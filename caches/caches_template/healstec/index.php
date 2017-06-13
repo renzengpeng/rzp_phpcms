@@ -19,7 +19,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
   </ol>
-      <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=0e36d7bc8cce0f0439f7adcf3eb2013a&action=position&posid=2&order=listorder+DESC&num=2\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'position')) {$data = $content_tag->position(array('posid'=>'2','order'=>'listorder DESC','limit'=>'2',));}?>
+      <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=92f7c98813e67bd0f1d8864dc6efe48c&action=position&posid=2&thumb=1&order=listorder+DESC&num=2\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'position')) {$data = $content_tag->position(array('posid'=>'2','thumb'=>'1','order'=>'listorder DESC','limit'=>'2',));}?>
       <?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
       <div class="item <?php if($n==1) { ?>active<?php } ?>">
           <img src="<?php echo $r['thumb'];?>" alt="<?php echo $r['title'];?>" class="img-responsive">
@@ -55,7 +55,7 @@
                     <?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
                     <li class="col-md-4 col-sm-4" id="li_o">
                         <span class="col-md-12 col-sm-12"><img src="<?php echo $r['image'];?>" class="img-responsive center-block"/></span>
-                        <h1><?php echo $r['description'];?></h1>
+                        <h1><?php echo $r['description_index'];?></h1>
                         <h2 class="li_h1"><a href="<?php echo $r['url'];?>"><?php echo $r['catname'];?></a></h2>
                     </li>
                     <?php $n++;}unset($n); ?>
@@ -71,16 +71,16 @@
 				<div class="col-md-12  col-sm-12"  id="col"><p>健康方案</p></div>
 			</div>
 		</div>
-		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=2cda98eee9d608d3d6c4453cd11889d8&sql=select+%2A+from+hl_page+where+catid%3D%2722%27+&cache=3600&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_page where catid=\'22\' ',)).'2cda98eee9d608d3d6c4453cd11889d8');if(!$data = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_page where catid='22'  LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);if(!empty($data)){setcache($tag_cache_name, $data, 'tpl_data');}}?>
+		<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=c523c1e517632c227e3e71276bdcd059&sql=select+%2A+from+hl_category+where+catid%3D%2725%27&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='25' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
 			<div class="container-fluid tu_o"
 				 style="background: url(<?php echo $data['0']['image1'];?>); width: 100%; background-size: cover;">
-				<a href="ky_jk.html">
+				<a href="<?php echo $data['0']['url'];?>">
 					<div class="row">
 						<div class="tu_o_zh">
 							<div class="tu_zh">
 
-								<h1><?php echo $data['0']['title'];?></h1>
-								<p><?php echo $data['0']['content'];?></p>
+								<h1><?php echo $data['0']['catname'];?></h1>
+								<p><?php echo $data['0']['description'];?></p>
 
 
 
@@ -101,7 +101,7 @@
 			</div>
 		</div>		
 		<div class="container-fluid tu_o" style="background: url(<?php echo $data['0']['big_image'];?>); width: 100%; background-size: cover;">
-			<a href="yingyang.html">
+			<a href="<?php echo $data['0']['url'];?>">
 			<div class="row">
 				<div class="tu_o_zh">
 					<div class="tu_zh">

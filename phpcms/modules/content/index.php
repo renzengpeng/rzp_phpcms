@@ -32,6 +32,7 @@ class index {
 	}
 	//内容页
 	public function show() {
+
 		$catid = intval($_GET['catid']);
 		$id = intval($_GET['id']);
 
@@ -48,6 +49,9 @@ class index {
 		
 		if(!isset($CATEGORYS[$catid]) || $CATEGORYS[$catid]['type']!=0) showmessage(L('information_does_not_exist'),'blank');
 		$this->category = $CAT = $CATEGORYS[$catid];
+        $arrparentid = explode(',', $CAT['arrparentid']);
+        $top_parentid = $arrparentid[1] ? $arrparentid[1] : $catid;
+        include template('', 'show');die;
 		$this->category_setting = $CAT['setting'] = string2array($this->category['setting']);
 		$siteid = $GLOBALS['siteid'] = $CAT['siteid'];
 		
@@ -200,7 +204,6 @@ class index {
 		if(empty($next_page)) {
 			$next_page = array('title'=>L('last_page'), 'thumb'=>IMG_PATH.'nopic_small.gif', 'url'=>'javascript:alert(\''.L('last_page').'\');');
 		}
-		include template('content',$template);
 	}
 	//列表页
 	public function lists() {
@@ -262,7 +265,66 @@ class index {
 			$GLOBALS['URL_ARRAY']['categorydir'] = $categorydir;
 			$GLOBALS['URL_ARRAY']['catdir'] = $catdir;
 			$GLOBALS['URL_ARRAY']['catid'] = $catid;
-			include template('','guanyu');
+			switch($catid){
+				case 10:
+					include template('', 'guanyu');
+					break;
+				case 11:
+					include template('', 'keyan');
+					break;
+				case 12:
+					include template('', 'shehui');
+					break;
+				case 13:
+					include template('', 'yingyang');
+					break;
+				case 14:
+					include template('', 'pinpai');
+					break;
+			}
+			if(in_array($catid,[37,38,39,40,41])){
+
+                    $MODEL = getcache('model','commons');
+                    $modelid = $CAT['modelid'];
+                    $sql='select * from hl_news where catid=41';
+                    $key_word=addslashes($_GET['key_word']);
+                    $key_word=trim($key_word);
+                    if(!empty($key_word)&&$key_word!='输入新闻关键词'){
+                        $sql.=' and title like\'%'.$key_word.'%\'';
+                    }
+                    $date=intval($_GET['date']);
+                    if(!empty($date)){
+                        if($date==1){
+                            $start_time=time()-7*60*60*24;
+                        }elseif($date==2){
+                            $start_time=time()-30*60*60*24;
+                        }elseif($date==3){
+                            $start_time=time()-90*60*60*24;
+                        }elseif($date==4){
+                            $start_time=time()-180*60*60*24;
+                        }elseif($date==5){
+                            $start_time=time()-365*60*60*24;
+                        }
+                        $end_time=time();
+                        $sql.=' and inputtime>='.$start_time.' and inputtime<'.$end_time;
+                    }
+
+                    $tablename = $this->db->table_name = $this->db->db_tablepre.$MODEL[$modelid]['tablename'];
+                     $this->db->query($sql);
+                    $data_arr = $this->db->fetch_array();
+
+
+				include template('', 'gy_renshi');
+			}
+			if(in_array($catid,[23,24,25,26])){
+				include template('', 'ky_js');
+			}else{
+                include template('', 'list');
+            }
+
+
+
+
 		} else {
 		//单网页
 			$this->page_db = pc_base::load_model('page_model');

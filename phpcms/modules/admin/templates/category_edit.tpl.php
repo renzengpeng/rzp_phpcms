@@ -65,8 +65,19 @@ include $this->admin_tpl('header');?>
         <td><?php echo form::images('info[image]', 'image', $image, 'content');?></td>
       </tr>
 	<tr>
+		<th><?php echo '小图' ?>：</th>
+		<td><?php echo form::images('info[image1]', 'image1', $image1, 'content'); ?></td>
+	</tr>
+	<tr>
 		<th><?php echo '大图' ?>：</th>
 		<td><?php echo form::images('info[big_image]', 'big_image', $big_image, 'content'); ?></td>
+	</tr>
+	<tr>
+		<th><?php echo '首页描述' ?>：</th>
+		<td>
+			<textarea name="info[description_index]" maxlength="255"
+					  style="width:300px;height:60px;"><?php echo $description_index; ?></textarea>
+		</td>
 	</tr>
 	<tr>
         <th><?php echo L('description')?>：</th>

@@ -19,7 +19,7 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active" ></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
   </ol>
-      {pc:content  action="position" posid="2" order="listorder DESC" num="2"}
+      {pc:content  action="position" posid="2"  thumb="1" order="listorder DESC" num="2"}
       {loop $data $k $r}
       <div class="item {if $n==1}active{/if}">
           <img src="{$r[thumb]}" alt="{$r[title]}" class="img-responsive">
@@ -55,7 +55,7 @@
                     {loop $data $k $r}
                     <li class="col-md-4 col-sm-4" id="li_o">
                         <span class="col-md-12 col-sm-12"><img src="{$r[image]}" class="img-responsive center-block"/></span>
-                        <h1>{$r[description]}</h1>
+                        <h1>{$r[description_index]}</h1>
                         <h2 class="li_h1"><a href="{$r[url]}">{$r[catname]}</a></h2>
                     </li>
                     {/loop}
@@ -71,16 +71,16 @@
 				<div class="col-md-12  col-sm-12"  id="col"><p>健康方案</p></div>
 			</div>
 		</div>
-		{pc:get sql="select * from hl_page where catid='22' " cache="3600" return="data" }
+		{pc:get sql="select * from hl_category where catid='25'" return="data" }
 			<div class="container-fluid tu_o"
 				 style="background: url({$data[0][image1]}); width: 100%; background-size: cover;">
-				<a href="ky_jk.html">
+				<a href="{$data[0][url]}">
 					<div class="row">
 						<div class="tu_o_zh">
 							<div class="tu_zh">
 
-								<h1>{$data[0][title]}</h1>
-								<p>{$data[0][content]}</p>
+								<h1>{$data[0][catname]}</h1>
+								<p>{$data[0][description]}</p>
 
 
 
@@ -101,7 +101,7 @@
 			</div>
 		</div>		
 		<div class="container-fluid tu_o" style="background: url({$data[0][big_image]}); width: 100%; background-size: cover;">
-			<a href="yingyang.html">
+			<a href="{$data[0][url]}">
 			<div class="row">
 				<div class="tu_o_zh">
 					<div class="tu_zh">

@@ -1,123 +1,86 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=divice-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>Healstec</title>
-		<link type="image/x-icon" rel="icon" href="img/bitbug_favicon (1).ico" />
-		<link type="image/x-icon" rel="shortcut icon" href="img/bitbug_favicon (1).ico" />
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
-		<link type="text/css" rel="stylesheet" href="css/bootstrap-off-canvas-nav.css" />
-		<link type="text/css" rel="stylesheet" href="css/style.css" />
-	<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-	<script>window.jQuery || document.write('<script src="js/jquery-3.1.1.min.js"><\/script>')</script>
-	<script src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/nav.js"></script>
-<script src="js/jquery.fullPage1.js"></script>
-		
-	</head>
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0;">
-			<div class="container">
-					<div class="b_t"><p>我们的产品遍布全国</p></div>
-			</div>
-			<div class="container">
-				<div class="navbar-header">	
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class='sr-only'></span>
-						<span class='icon-bar'></span>
-						<span class='icon-bar'></span>
-						<span class='icon-bar'></span>
-					</button>
-					<a href="index.html"><img src="img/H2_06.jpg" class="navbar-brand"/></a>					
-				</div>									
-
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 							
-						<ul class="nav navbar-nav navbar-right"  id="u_o">
-							<input type="text" id="in"/>
-							<div class="clearfix"></div>
-							<li><a href="guanyu.html">关于我们</a></li>							
-							<li><a href="keyan.html">科研技术</a></li>
-							<li><a href="shehui.html">社会责任</a></li>
-							<li><a href="yingyang.html">营养与健康</a></li>
-							<li><a href="pinpai.html"  style="padding-right: 0;">品牌中心</a></li>
-						</ul>					
-				</div>
-			</div>
-			<div class="container" id="midle_o" style="margin-top:0; padding-top: 0; ">
-			<div class="row" style="padding-bottom: 0; ">
-				<div class="col-md-12  col-sm-12"  id="col" style="border-bottom-color:#12949c ; margin-bottom: 0;"></div>
-			</div>
-		</div>
-		</nav>
+{template "","header"}
 						
 <div id="dowebok">
 			<div class="section fp-auto-height" style="padding-top: 0;">
-		<div class="container-fluid tu_o tu_o_2 tu_o_3" style="padding-top: 0; margin-top: 85px; background: url(img/hp_03.jpg) no-repeat center; width: 100%; background-size: cover;">
+				{pc:get sql="select * from hl_category where catid='14'" cache="3600" return="data"}
+		<div class="container-fluid tu_o tu_o_2 tu_o_3" style="padding-top: 0; margin-top: 85px; background: url({$data[0][big_image]}) no-repeat center; width: 100%; background-size: cover;">
 			<div class="row">
 				<div class="tu_o_zh" id="tu_cpcp">
 					<div class="tu_zh" id="keyanjishu" style="width: 100%; text-align: right;">
-					<h1  id="chanpin_h1" style="color: #ffffff;">品牌中心</h1>
+					<h1  id="chanpin_h1" style="color: #ffffff;">{$data[0][catname]}</h1>
 					<p></p>
 					<div class="clearfix"></div>
-					<p id="chanpin_p" style="color: #ffffff;">这是我们过硬的产品质量、完善的售后服务、良好的<br/>产品形象、美好的文化价值优秀的管理体系所形成的一种社会<br/>评价和认知是我们长期辛勤耕耘建立起来的一种社会责任！</p>
+					<p id="chanpin_p" style="color: #ffffff;">{$data[0][description]}</p>
 				</div>
 				</div>
 			</div>
 		</div>
 		</div>
-		</div>		
-
+		</div>
+{/pc}
+{pc:get sql="select * from hl_category where catid='32'" cache="3600" return="data_ca"}
 		<div class="container" id="midle">
 			<div class="row">
-				<div class="col-md-12  col-sm-12"  id="col"><p>自营品牌</p></div>
+				<div class="col-md-12  col-sm-12"  id="col"><p>{$data_ca[0][catname]}</p></div>
 			</div>
 		</div>
-		<a href="pp.html">
-		<div class="container-fluid tu_o tu_o_2" style="background: url(img/hp_06.png); width: 100%;  background-size: cover; margin-bottom:2%;">		
+{pc:content action="lists" moreinfo="1" catid="32" order="id DESC" num="10"}
+{loop $data $k $r}
+		<a href="{$r[url]}">
+            {if $n%2==1}
+		<div class="container-fluid tu_o tu_o_2" style="background: url({$r[thumb]}); width: 100%;  background-size: cover; margin-bottom:2%;">
             	<div class="tu_o_zh " style="padding-top: 8%;" id="tu_cp" >
 				<div class="tu_zh row" id="pp">
 					<div class="col-md-1 col-sm-1 col-xs-1" id="biao">
 						<p></p>
 					</div>
 					<div class="col-md-11 col-sm-11 col-xs-11" id="ppo">
-					<h1 class="col-xs-12">米花糖系列</h1>
-					<p style="font-size: 18px; margin-top: -1%;" class="col-xs-12">100%食品级配方，安全健康</p>
-					<p class="col-xs-12">simple（简约）+safe（安全）<br />+sincere（诚信）+strict （严谨）<br/>以严谨的科研态度，打造安全健康的诚信品牌</p>
+					<h1 class="col-xs-12">{$r[title]}</h1>
+					<p style="font-size: 18px; margin-top: -1%;" class="col-xs-12">{$r[description]}</p>
+					<p class="col-xs-12">{$r[content]}</p>
 					</div>
 				</div>	
 				</div>        								
 		</div>
+            {else}
+        <div class="container-fluid tu_o tu_o_2" style="background: url({$r[thumb]}); width: 100%;  background-size: cover; margin-top: 0; padding-top: 0;">
+            <div class="tu_o_zh " style="padding-top: 8%;" id="tu_cp " >
+                <div class="tu_zh row" id="pp" style="float: right;">
+                    <div class="col-md-1 col-sm-1 col-xs-1" id="biao" style="text-align: right; float: right;">
+                        <p style="float: right;"></p>
+                    </div>
+                    <div class="col-md-11 col-sm-11 col-xs-11" id="ppo" style="text-align: right; padding-right: 0;">
+                        <h1>{$r[title]}</h1>
+                        <p style="font-size: 18px; margin-top: -1%;">{$r[description]</p>
+                        <p class="col-xs-12">{$r[content]}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            {/if}
 		</a>
+{/loop}
+{/pc}
 	
+{/pc}
 
-		<div class="container-fluid tu_o tu_o_2" style="background: url(img/hp_06.png); width: 100%;  background-size: cover; margin-top: 0; padding-top: 0;">			
-            	<div class="tu_o_zh " style="padding-top: 8%;" id="tu_cp " >
-				<div class="tu_zh row" id="pp" style="float: right;">	
-					<div class="col-md-1 col-sm-1 col-xs-1" id="biao" style="text-align: right; float: right;">
-						<p style="float: right;"></p>
-					</div>
-					<div class="col-md-11 col-sm-11 col-xs-11" id="ppo" style="text-align: right; padding-right: 0;">
-					<h1>米花糖系列</h1>
-					<p style="font-size: 18px; margin-top: -1%;">100%食品级配方，安全健康</p>
-					<p>simple（简约）+safe（安全）+<br />sincere（诚信）+strict （严谨）<br/>以严谨的科研态度，打造安全、简约的诚信品牌</p>
-					</div>					
-				</div>	
-				</div>    								
-		</div>
 
 			
 
 		<div class="container" id="midle">
 			<div class="row">
-				<div class="col-md-12  col-sm-12"  id="col"><p>关于产品</p></div>
+                {pc:get sql="select * from hl_category where catid='36'" cache="3600" return="data_ca"}
+				<div class="col-md-12  col-sm-12"  id="col"><p>{$data_ca[0][catname]}</p></div>
+                {/pc}
 			</div>
 		</div>
 		<div class="container" style="padding-left: 0; padding-right: 0; margin:2% auto;">
 			<ul class="row" class="ro_pp">
-				<li class="col-md-12 col-sm-12 col-xs-12 p_pai"  style="border: 0; padding-left: 0; padding-right: 0;"  >
-					<a href="#">
-					<div class="col-md-11 col-sm-11 col-xs-11"><p >食品级日化品</p></div>
+                {pc:content action="lists" catid="36" order="id DESC" num="10"}
+                {loop $data $k $r}
+				<li class="col-md-12 col-sm-12 col-xs-12 p_pai"  style="border: 0; padding-left: 0; padding-right: 0;{if $n>1} margin-top: 2%;{/if}"   >
+					<a href="{$r[redirect_url]}"  >
+					<div class="col-md-11 col-sm-11 col-xs-11"><p >{$r[title]}</p></div>
 					<h1 class="glyphicon glyphicon-triangle-bottom col-md-1 col-sm-1 col-xs-1"></h1>					
 					</a>
 <!-- 					<ul class="row" id="pinpaineirong" style="display: none; padding-left: 0 ; padding-right: 0;">
@@ -131,14 +94,10 @@
 					<p><a href="#">奶瓶</a></p>
 				</li>
 			</ul> -->
-				</li>				
-				<li class="col-md-12 col-sm-12 col-xs-12 p_pai" style="border: 0;padding-left: 0; padding-right: 0; margin-top: 2%;" id="ppai">
-					<a href="#">
-					<div class="col-md-11 col-sm-11 col-xs-11"><p >健康营养品</p></div>
-					<h1 class="glyphicon glyphicon-triangle-bottom col-md-1 col-sm-1 col-xs-1"></h1>
-					</a>
-				</li>							
-			</ul>			            	          			
+				</li>
+                {/loop}
+                {/pc}
+            </ul>
 		</div>
         	<script type="text/javascript">
 			$(function(){
@@ -150,50 +109,5 @@
 			})
 		</script>
 
-		
-		
-		
 
-		<footer>
-			<div class="container"  style="padding: 0;">
-				<ul class="col-md-12 col-sm-12 f_u" style="padding: 0;">
-					<li class="col-md-3 col-sm-3 li_11" style="padding: 0;"><h1>联系我们</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
-							<li>官方热线：400-888-8888</li>
-							<li>官方微信：Hhhhh</li>
-							<li>QQ号：220220220</li>
-						</ul>
-					</li>
-					<li class="col-md-2 col-sm-2 li_22" style="padding: 0;"><h1>公司简介</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
-							<li><a href="">公司历史</a></li>
-							<li><a href="">业务原则</a></li>
-							<li><a href="">H在中国</a></li>
-							<li><a href="">质量与安全</a></li>
-						</ul>
-					</li>
-					<li class="col-md-2 col-sm2 li_33" style="padding: 0;"><h1>新闻频道</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12"  style="padding: 0; margin-top: 0;">
-							<li><a href="">集团新闻</a></li>
-							<li><a href="">新闻特写</a></li>
-							<li><a href="">H声明</a></li>
-							<li><a href="">媒体联系</a></li>
-						</ul>
-					</li>
-					<li class="col-md-5 col-sm-5 li_44" style="padding: 0;"><h1>关注我们</h1>
-						<ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-							<li class="col-md-5 col-sm-5" style="padding: 0;">微信<br/><img src="img/Hf_03.jpg"/></li>
-							<li class="col-md-5 col-sm-5" style="padding: 0;">微博<br/><img src="img/Hf_03.jpg"/></li>
-						</ul>
-					</li>					
-				</ul>
-				<div class="g_s">
-					工商编码
-				</div>
-			</div>
-		</footer>
-
-
-		
-	</body>
-</html>
+{template "","footer"}

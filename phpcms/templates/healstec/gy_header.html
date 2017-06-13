@@ -1,0 +1,68 @@
+{pc:get sql="select * from hl_category where catid='10'" cache="3600" return="data"}
+<div class="container-fluid tu_o"
+     style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;"
+     id="gy_to"></div>
+{/pc}
+<div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
+    <div class="row gy_no">
+        <ul class="col-md-6 col-sm-4 col-xs-12 x_w" style="padding-bottom: 0; margin-bottom: 0;">
+            <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img
+                    src="{IMG_PATH}/healstec/hgyxy_05.jpg"/></li>
+            {pc:get sql="select * from hl_category where catid='10'" cache="3600" return="data"}
+            <li class="col-md-2 col-sm-4" style="padding-right: 0;"><p>{$data[0][catname]}</p></li>
+            {/pc}
+
+            <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg"/></li>
+            {pc:get sql="select * from hl_category where catid='$catid'" cache="1" return="data1"}
+            <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data1[0][catname]}</p></li>
+            {/pc}
+        </ul>
+        <ul class="col-md-6 col-sm-7 x_w_y col-xs-12" style="padding-bottom: 0; margin-bottom: 0; text-align: center;"
+            id="onck">
+            {pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder ASC"}
+            {php $cc=count($data)}
+            {loop $data $k $r}
+            <li {if $n==1} class="col-md-2 col-sm-2 col-xs-3"{/if}{if $catid==$r[catid]} style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if}
+                {if $n==2}class="col-md-2 col-sm-2 col-xs-2"{/if}
+            {if $n>=3&&$n<$cc}class="col-md-3 col-sm-3 col-xs-3"{/if}
+            {if $n==$cc}class="col-md-2 col-sm-2 x_w_y_li col-xs-2"{/if}
+            ><p>
+                {$r[catname]}</p></li>
+            {/loop}
+            {/pc}
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var $p = $("#onck li");
+        $p.css("cursor", "pointer");
+        $p.click(function () {
+            //选中的文字添加下边框
+            $p.css({
+                "border-bottom": "0",
+            })
+            $(this).css({
+                "border-bottom": "1px solid #f7ac1d",
+            })
+            //选中后其左面显示其一致的文字内容并加上颜色效果
+            var $tex = $("#text p");
+            $tex.text($(this).text()).css("color", "#0096a5");
+            //选中后相应的banner图转换
+            var $im = $(".tu_o");
+            //$im.css("display","none");
+            // $im.eq($(this).index()).css("display","block");
+            if ($(window).width > 1024) {
+                $im.eq($(this).index()).css("display", "block");
+            }
+            if ($(window).width < 768) {
+                $im.eq($(this).index()).css("display", "none");
+            }
+            //点击展示相应内容
+            var $gy = $(".gy_wm");
+            $gy.css("display", "none");
+            $gy.eq($(this).index()).fadeIn(500);//透明渐入效果
+
+        })
+    })
+</script>
