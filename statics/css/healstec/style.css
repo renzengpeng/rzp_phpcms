@@ -9,8 +9,8 @@ nav{background: #FFFFFF;}
 .section{padding-top:70px;}
 .container .navbar-header .navbar-brand { padding:10px; margin-top: 10px; margin-left: 5px;}
 .b_t{width:150px;background: #01747a;float: right; height: 25px;}
-.b_t p{color: #FFFFFF; background: url("http://www.healstec.com/statics/images/healstec/H_03.jpg") no-repeat; padding-left: 30px; background-position: 8px 6px; line-height: 25px;}
-#in{width: 280px; height: 30px; float: right; background: url("http://www.healstec.com/statics/images/healstec/H3_09.jpg") no-repeat ; background-position: 10px;margin-top: 20px; padding-left: 40px;border: 1px solid #eeeeee;
+.b_t p{color: #FFFFFF; background: url("http://healstec.itcask.com/statics/images/healstec/H_03.jpg") no-repeat; padding-left: 30px; background-position: 8px 6px; line-height: 25px;}
+#in{width: 280px; height: 30px; float: right; background: url("http://healstec.itcask.com/statics/images/healstec/H3_09.jpg") no-repeat ; background-position: 10px;margin-top: 20px; padding-left: 40px;border: 1px solid #eeeeee;
 margin-right: 0; padding-right: 0;}
 #u_o input:focus{border: 1px solid #003969; box-shadow: 0 0 3px 0 #003969;}
 #u_o li a{padding: 15px 30px; font-size: 12px;}
@@ -38,7 +38,7 @@ margin-right: 0; padding-right: 0;}
 .li_h1{background: #3c9fa5;}
 .li_h2{background: #ad4949;}
 .li_h3{background: #3b832f;}
-.tu_o{background: url("http://www.healstec.com/statics/images/healstec/H_21.jpg") no-repeat center;  margin-top: 2%; width: 100%;  background-size:cover ; height: 550px;}
+.tu_o{background: url("http://healstec.itcask.com/statics/images/healstec/H_21.jpg") no-repeat center;  margin-top: 2%; width: 100%;  background-size:cover ; height: 550px;}
 .tu_o a { text-decoration: none; height: 100%; display: block; margin: 0 -15px; padding-left: 15px; padding-right: 15px;}
 .tu_o_2{height: 550px;}
 .tu_o_3{height: 700px;}
@@ -109,7 +109,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #gy_img .img-responsive{float: right;}
 .guanyu #jr{font-size: 5rem;}
 .guanyu #se{font-size: 2rem;}
-.gywm{color: #0f97a7; background:url("http://www.healstec.com/statics/images/healstec/xy01_03.jpg") no-repeat center bottom;}
+.gywm{color: #0f97a7; background:url("http://healstec.itcask.com/statics/images/healstec/xy01_03.jpg") no-repeat center bottom;}
 .x_w li, .x_w_y li{padding-top: 2%; padding-bottom: 2%; margin-bottom: 0;}
 .x_w li p, .x_w_y li p{margin-bottom: 0;}
 .gy_no{width: 1000px; margin: 0 auto;}
@@ -121,7 +121,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .s_s{background: #dfdfdf; padding: 5% 6.5%; float: right; margin-top: 0; color: #999999; top: 0;}
 .inp input:focus{border: 0;}
 .inp select{width: 100%; padding: 4% 0; padding-left: 4%;color: #999999;appearance:none;
--moz-appearance:none;-webkit-appearance:none; border: 0; background: url("http://www.healstec.com/statics/images/healstec/xw12_20.jpg") no-repeat scroll right center transparent; background-size: calc(0.5)}
+-moz-appearance:none;-webkit-appearance:none; border: 0; background: url("http://healstec.itcask.com/statics/images/healstec/xw12_20.jpg") no-repeat scroll right center transparent; background-size: calc(0.5)}
 .inp select option{margin-top: 2%;}
 .inp select:-ms-expand { display: none; }
 .news, .news_o{background: #f4f4f4; padding:4%;}

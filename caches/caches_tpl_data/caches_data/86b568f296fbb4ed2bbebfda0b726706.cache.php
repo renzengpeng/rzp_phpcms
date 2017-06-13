@@ -2,7 +2,7 @@
 return array (
   0 => 
   array (
-    'catid' => '10',
+    'catid' => '14',
     'siteid' => '1',
     'module' => 'content',
     'type' => '0',
@@ -10,25 +10,26 @@ return array (
     'parentid' => '0',
     'arrparentid' => '0',
     'child' => '1',
-    'arrchildid' => '10,37,38,39,40,41',
-    'catname' => '关于我们',
+    'arrchildid' => '14,32,36',
+    'catname' => '品牌中心',
     'style' => '',
     'image' => '',
-    'description' => '我们扎根中国，与世界先进科研机构紧密合作，在全球范围内精选优质原料，依照中国健康
-数据标准，旨在为人们提供优秀的健康解决方案',
+    'description' => '这是我们过硬的产品质量、完善的售后服务、良好的<br>
+产品形象、美好的文化价值优秀的管理体系所形成的一种社会<br>
+评价和认知是我们长期辛勤耕耘建立起来的一种社会责任！',
     'parentdir' => '',
-    'catdir' => 'guanyuwomen',
-    'url' => 'http://www.healstec.com/index.php?m=content&c=index&a=lists&catid=10',
+    'catdir' => 'pinpaizhongxin',
+    'url' => 'http://healstec.itcask.com/index.php?m=content&c=index&a=lists&catid=14',
     'items' => '0',
     'hits' => '0',
     'setting' => '{"workflowid":"","ishtml":"0","content_ishtml":"0","create_to_html_root":"0","template_list":"healstec","category_template":"category","list_template":"list","show_template":"show","meta_title":"","meta_keywords":"","meta_description":"","presentpoint":"1","defaultchargepoint":"0","paytype":"0","repeatchargedays":"1","category_ruleid":"6","show_ruleid":"16"}',
-    'listorder' => '10',
+    'listorder' => '14',
     'ismenu' => '1',
     'sethtml' => '0',
-    'letter' => 'guanyuwomen',
+    'letter' => 'pinpaizhongxin',
     'usable_type' => '',
-    'big_image' => 'http://www.healstec.com/uploadfile/2017/0605/20170605071848180.gif',
-    'image1' => 'http://www.healstec.com/uploadfile/2017/0608/20170608123045685.jpg',
+    'big_image' => 'http://healstec.itcask.com/uploadfile/2017/0606/20170606112033122.jpg',
+    'image1' => 'http://healstec.itcask.com/uploadfile/2017/0608/20170608123045685.jpg',
     'description_index' => '',
   ),
 );
