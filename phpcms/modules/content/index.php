@@ -265,23 +265,25 @@ class index {
 			$GLOBALS['URL_ARRAY']['categorydir'] = $categorydir;
 			$GLOBALS['URL_ARRAY']['catdir'] = $catdir;
 			$GLOBALS['URL_ARRAY']['catid'] = $catid;
-			switch($catid){
-				case 10:
-					include template('', 'guanyu');
-					break;
-				case 11:
-					include template('', 'keyan');
-					break;
-				case 12:
-					include template('', 'shehui');
-					break;
-				case 13:
-					include template('', 'yingyang');
-					break;
-				case 14:
-					include template('', 'pinpai');
-					break;
-			}
+            if(in_array($catid,[10,11,12,13,14])){
+                switch($catid){
+                    case 10:
+                        include template('', 'guanyu');die;
+                        break;
+                    case 11:
+                        include template('', 'keyan');die;
+                        break;
+                    case 12:
+                        include template('', 'shehui');die;
+                        break;
+                    case 13:
+                        include template('', 'yingyang');die;
+                        break;
+                    case 14:
+                        include template('', 'pinpai');die;
+                        break;
+                }
+            }
 			if(in_array($catid,[37,38,39,40,41])){
 
                     $MODEL = getcache('model','commons');
@@ -314,12 +316,15 @@ class index {
                     $data_arr = $this->db->fetch_array();
 
 
-				include template('', 'gy_renshi');
+				include template('', 'gy_renshi');die;
 			}
 			if(in_array($catid,[23,24,25,26])){
-				include template('', 'ky_js');
-			}else{
-                include template('', 'list');
+				include template('', 'ky_js');die;
+			}elseif(in_array($catid,[27,28])){
+                include template('', 'sh_hd');die;
+            }
+            else{
+                include template('', 'list');die;
             }
 
 

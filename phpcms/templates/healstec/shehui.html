@@ -1,6 +1,6 @@
 {template "","header"}
 
-
+<link type="text/css" rel="stylesheet" href="{CSS_PATH}healstec/styles.css" />
 {pc:get sql="select * from hl_category where catid='12'" cache="3600" return="data"}
 		<div class="container-fluid tu_o tu_o_2 tu_o_3" style="padding-top: 0; margin-top:85px; background: url({$data[0][big_image]}) no-repeat center; width: 100%; background-size: cover;">
 			<div class="row">
@@ -22,14 +22,14 @@
 				<div class="col-md-12  col-sm-12"  id="col"><a href="{$data[0][url]}"><p>{$data[0][catname]}</p></a></div>
 				{/pc}
 				<ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
-					{pc:content action="lists" catid="27" order="id DESC" num="10"}
+					{pc:content action="lists" moreinfo="1" catid="27" order="id DESC" num="10"}
 					{loop $data $k $r}
 					<li class="col-md-12  col-sm-12">
 						<a href="{$r[url]}">
 						<img src="{$r[thumb]}" class="col-md-7  col-sm-7 col-xs-12 img-responsive" id="ji_img">
 						<div class="col-md-5 col-sm-5 col-xs-12" id="ji_zi" style="padding-top: 0;">
 							<h2  class="xy_h1">{$r[title]}</h2>
-							<span class="xy_p1">{date('Y-m-d',$r[inputtime])}</span>
+							<span class="xy_p1">{date('Y.m.d',$r[inputtime])}</span>
 							<div class="clearfix"></div>
 							<span class="xy_p2">{$r[content]}</span>
 						</div>
@@ -58,7 +58,7 @@
 				<li class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 2%;">
 					<a href="{$r[url]}">
 						<div class="col-md-10 col-sm-10 col-xs-10"><p>{$r[title]}</p></div>
-						<h1 class="col-md-2 col-sm-2 col-xs-2" style="font-size: 2rem;">{date('Y-m-d',$r[inputtime])}</h1>
+						<h1 class="col-md-2 col-sm-2 col-xs-2" style="font-size: 2rem;">{date('Y.m.d',$r[inputtime])}</h1>
 					</a>
 				</li>
 				{/loop}

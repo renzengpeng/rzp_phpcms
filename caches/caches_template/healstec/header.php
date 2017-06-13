@@ -8,7 +8,7 @@
     <link type="image/x-icon" rel="shortcut icon" href="<?php echo IMG_PATH;?>/healstec/bitbug_favicon (1).ico" />
     <link type="text/css" rel="stylesheet" href="<?php echo CSS_PATH;?>/healstec/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="<?php echo CSS_PATH;?>/healstec/bootstrap-off-canvas-nav.css" />
-    <link type="text/css" rel="stylesheet" href="<?php echo CSS_PATH;?>/healstec/style.css" />
+    <link type="text/css" rel="stylesheet" href="<?php echo CSS_PATH;?>healstec/style.css" />
     <script type="text/javascript" src="<?php echo JS_PATH;?>/healstec/jquery.js"></script>
     <script src="<?php echo JS_PATH;?>/healstec/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script>window.jQuery || document.write('<script src="<?php echo JS_PATH;?>/healstec/jquery-3.1.1.min.js"><\/script>')</script>

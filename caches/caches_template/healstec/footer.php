@@ -1,4 +1,5 @@
-<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php if($_GET['a']!='show') { ?>
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?>
+<?php if($_GET['a']=='') { ?>
 <div class="section fp-auto-height se_f">
     <?php } ?>
     <footer>
@@ -21,7 +22,7 @@
                     <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=10188028374ff0dbe8e8c36990633ea5&action=lists&moreinfo=1&catid=42&order=id+asc&num=3\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('moreinfo'=>'1','catid'=>'42','order'=>'id asc','limit'=>'3',));}?>
+                        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=cc60e3b4f5ef8a1dbc134e21eb8611a1&action=lists&moreinfo=1&catid=42&order=id+asc&num=4\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('moreinfo'=>'1','catid'=>'42','order'=>'id asc','limit'=>'4',));}?>
                         <?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
                         <li><a href="<?php echo $r['url'];?>"><?php echo $r['title'];?></a></li>
                         <?php $n++;}unset($n); ?>
@@ -63,7 +64,7 @@
 
         </div>
     </footer>
-    <?php if($_GET['a']!='show') { ?>
+    <?php if($_GET['a']=='') { ?>
 </div>
         <?php } ?>
 </div>
