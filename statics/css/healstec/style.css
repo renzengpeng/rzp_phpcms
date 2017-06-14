@@ -45,7 +45,7 @@ margin-right: 0; padding-right: 0;}
 .tu_o_zh{width:63.4%; margin: 0 auto;}
 a.tu_o_1:hover { text-decoration: none; }
 .tu_o_1 .tu_o { display: block; }
-.tu_zh h1{font-size:7rem; margin-top: 21%;  color: #ffffff;}
+.tu_zh h1{font-size:7rem; margin-top:21%;  color: #ffffff;}
 .tu_zh p{font-size:2rem; margin-top: 2%; color: #ffffff;}
 .tu_zh{width:57%;}
 .ji_fa{color: #333333; margin-top: 5%;}
@@ -169,15 +169,15 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .renshiwomen ul{margin-top:8% ;}
 .renshiwomen ul li h1{font-size: 2.6rem; font-weight: bold;}
 .renshiwomen ul li p{font-size: 1.6rem; line-height: 3rem; padding-top: 5%;}
-.rho{height:439px ;}
-.rht{height: 539px;}
-.rhth{height: 582px;}
-.rhf{height: 583px;}
-.rho li{ margin-top: 5%;}
-.rht li{ padding: 15% 5% 3% 5%; }
-.rhth li{  padding: 3% 5% 3% 5%; }
-.rhf li{ padding: 15% 5% 3% 5%; }
-.rho li{ margin-right: 30%; font-size: 2.6rem; font-weight: bold;}
+.kuang{color:#fff;font-size: 1.6rem;width:1000px;padding:0;}
+.rho{height:439px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_05.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rht{height: 539px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_08.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rhth{height: 582px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_10.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rhf{height: 583px;margin: 5% 0;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_12.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rht .info{ padding: 15% 5% 3% 5%; }
+.rhth .info{  padding: 3% 5% 3% 5%; }
+.rhf .info{ padding: 15% 5% 3% 10%; }
+.rho .info{margin-top: 5%; margin-right: 30%; font-size: 2.6rem!important; font-weight: bold;}
 #gy_to{height: 238px;}
 #jk_a a{text-decoration: none;}
 #jk_a a .tu_zh:hover{font-weight: bold;}
@@ -363,6 +363,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 }
 
 @media only screen and (max-width:767px ) {
+.gywm{background:none;}
 .gy_no{width: 100%;}
 .xw{width: 100%;}
 .x_w li{display: none;}	
@@ -394,17 +395,16 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #bann p{font-size: 1.2rem;}
 #keyanjishu{ padding-top: 10%;}
 .renshiwomen{width: 100%;}
-.rho{height:239px ;}
-.rht{height: 239px;}
-.rhth{height: 239px;}
-.rhf{height: 239px;}
-.rho li{ margin-top: 5%;}
-.rht li{ padding: 10% 1% 1% 1%; }
-.rhth li{  padding: 3% 1% 1% 1%; }
-.rhf li{ padding: 10% 1% 1% 1%;  margin-top: 8%;}
-.renshiwomen ul li h1{font-size: 1.2rem; font-weight: bold;}
-.renshiwomen ul li p{font-size: 1rem; line-height: 2rem; padding-top: 2%;}
-.rho li{margin-right: 20%; font-size: 1.8rem;}	
+.kuang{color:#fff;font-size: 1.6rem;width:100%;}
+.kuang h3{font-size: 2rem;text-align: center;}
+.rho{height:0}
+.rht{height: 239px;background:#01737b;width: 100%;}
+.rhth{height: 239px;background:#01737b;width: 100%;}
+.rhf{height: 239px;background: #01737b;width: 100%;}
+.rht .info{ padding: 4% 5% 3% 5%; }
+.rhth .info{  padding: 4% 5% 3% 5%; }
+.rhf .info{ padding: 4% 5% 3% 5%; }
+.rho .infori{margin-right: 20%; font-size: 1.8rem;}	
 .pp_pai{width: 100%;}
 }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
@@ -425,17 +425,18 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #tu_cpcp{width:85%;}
 #ch_o p{font-size: 12px; margin-top: 8%; line-height: 24px;}
 .renshiwomen{width: 100%;}
-.rho{height:239px ;}
-.rht{height: 239px;}
-.rhth{height: 239px;}
-.rhf{height: 239px;}
-.rho li{ margin-top: 5%;}
-.rht li{ padding: 5% 5% 3% 5%; }
-.rhth li{  padding: 3% 5% 3% 5%; }
-.rhf li{ padding: 5% 5% 3% 5%;  margin-top: 8%;}
-.renshiwomen ul li h1{font-size: 2rem; font-weight: bold;}
-.renshiwomen ul li p{font-size: 1.4rem; line-height: 2rem; padding-top: 5%;}
-.rho li{margin-right: 20%; font-size: 2rem;}{height: 150px;}
+.kuang{color:#fff;font-size: 1.4rem;width:100%;}
+.rho{height:336px;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_05.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rht{height: 360px;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_08.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rhth{height: 360px;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_10.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rhf{height: 430px;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_12.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rho .info{ margin-top: 5%;}
+.rht .info{ padding: 6% 5% 3% 5%; }
+.rhth .info{  padding: 3% 5% 3% 5%; }
+.rhf .info{ padding: 3% 5% 3% 10%;  margin-top: 8%;}
+h3{font-size: 2rem!important; font-weight: bold;}
+.renshiwomen .info p{font-size: 1.4rem; line-height: 2rem; padding-top: 5%;}
+.rho .info{margin-right: 20%; font-size: 2rem;}{height: 150px;}
 
 }
 @media (min-width:830px){
@@ -446,8 +447,12 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 }
 
 @media (max-width:500px){
+ .gywm{background:none;}
+.rht{height: 259px;background:#01737b;width: 100%;}
+.rhth{height: 259px;background:#01737b;width: 100%;}
+.rhf{height: 259px;background: #01737b;width: 100%;}
 .b_t{display: none;}
-.navbar-toggle{margin-top: 6%;}
+.navbar-toggle{margin-top: 9%;}
 .container .navbar-header .navbar-brand {padding: 17px;}
 .gy_wm img { max-width: 100%; }
 #car h1{font-size:18px; color: #333333;}
@@ -459,7 +464,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #li_o{margin-top: 10%;}
 #li_o h1{font-size: 1.8rem; padding-top: 4% ; padding-bottom: 1%;}
 .li_h1, .li_h2, .li_h3{width:180px;height: 40px;  line-height: 40px;font-size: 1.8rem;}
-.tu_o{height: 200px; display: none;}
+.tu_o{height: 200px;}
 .tu_o_3 { display: block; }
 .tu_o_zh{width: 90%;}
 .tu_zh { display: none; }
@@ -519,7 +524,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .gy_no{width: 100%;}
 .xw{width: 100%;}
 .gy_wm { min-height: 300px; height: auto !important; height: 300px;}
-.x_w { margin-top: 110px;}
+/*.x_w { margin-top: 110px;}*/
 .x_w li{display: none;}	
 .x_w .x_w_img{display: none;}
 .x_w_y li{text-align:center;}
@@ -554,18 +559,11 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #col p{font-size: 1.5rem;}
 .gy_chpin{display: none;}
 #col_p{font-size:0.5rem ; font-weight: normal; color: red;}
-.rho li{margin-right: 10%; font-size: 1.3rem;}	
-.rht{font-size: 1.2rem;}
-.renshiwomen ul li h1{font-size: 1rem;}
-.renshiwomen ul li p{ line-height: 1.6rem; padding-top: 1%;}
-.rht li{ padding: 15% 2% 3% 2%; }
-.rho li{ margin-top: 5%;}
-.rhth li{  padding: 3% 2% 3% 2%; }
-.rhf li{ padding: 12% 2% 3% 2%;  margin-top: 8%;}
-#jk_a{height: 200px;}
+#jk_a{height: 200px;width:100%;background-repeat: no-repeat;}
 }
 
 @media only screen and (min-width: 500px) and (max-width:768px){
+.gywm{background:none;}
 .b_t{display: none;}
 .navbar-toggle{margin-top: 4%;}
 #car h1{font-size:20px;}
@@ -629,6 +627,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #gy_to{height: 100px;}
 }
 @media only screen and (min-width: 500px) and (max-width: 562px) {
+.gywm{background:none;}
 #guan_yu{width:98%; padding-top: 1%;}	
 .gyo p{line-height:0.9rem; font-size:1.2rem ;}	
 }
@@ -654,6 +653,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #gy_to{height: 238px;}
 }
 @media only screen and (min-width: 768px) and (max-width:1000px){
+#chanpin_p{font-size: 1.5rem}
 #car h1{font-size:60px;}
 #car p{font-size: 12px;}
 #car{width: 500px; text-align: left; top:15%;}
@@ -669,8 +669,6 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .ji_fa li h1{font-size: 1.8rem;}
 .ji_fa li p{font-size: 1.3rem; line-height: 22px;}
 .li_33{display: none;}
-.f_u li{margin-left: 5%;}
-.f_u li h1{margin-left: 5%;}
 #chpin{padding: 2% 0; margin-top: 5%;}
 #ch_o h1{font-size: 18px; font-weight: bold;}
 #ch_o p{font-size: 12px; margin-top: 6%; line-height: 22px;}
@@ -686,7 +684,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #guan_yu{width:75%; padding-top: 1%;}
 #guan_yu .tu_zh h1{margin-top: 30%; font-size: 3rem;}
 #guan_yu .tu_zh p{margin-top: 2%; font-size: 1.8rem;}
-.g_y .gy{height: 125px;}
+.g_y .gy{height: 90px;}
 .gyo p{line-height:1rem; font-size:1.5rem ;}	
 .gyo span{font-size: 1.1rem;}
 {height: 210px;}

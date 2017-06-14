@@ -235,8 +235,7 @@ return array (
     'catname' => '技术探索',
     'style' => '',
     'image' => 'http://healstec.itcask.com/uploadfile/2017/0603/20170603105020451.jpg',
-    'description' => '技术探索
-不断的反复测试，不断的探索前进，不断的日益创新
+    'description' => '不断的反复测试，不断的探索前进，不断的日益创新<br>
 我们一直在科研技术的道路上夜以继日的不断努力着·····',
     'parentdir' => 'tec/',
     'catdir' => 'jsts',
@@ -273,7 +272,7 @@ return array (
     'catname' => '健康方案',
     'style' => '',
     'image' => 'http://healstec.itcask.com/uploadfile/2017/0603/20170603110057672.png',
-    'description' => '我们用已知的科学积累和严谨的科研态度，加之强烈的责任感和爱心，为您奉上针对不同人群的健康解决说方案，安全无忧，健康生活！',
+    'description' => '我们用已知的科学积累和严谨的科研态度，加之强烈的责任感和爱心，为您奉<br>上针对不同人群的健康解决方案，安全无忧，健康生活！',
     'parentdir' => 'tec/',
     'catdir' => 'jkfan',
     'url' => 'http://healstec.itcask.com/index.php?m=content&c=index&a=lists&catid=25',
@@ -309,8 +308,7 @@ return array (
     'catname' => '生产加工',
     'style' => '',
     'image' => '',
-    'description' => '过硬的工艺水平，严格的消毒车间
-标准化的流水作业，早就你手中完美的科技创新产品！',
+    'description' => '过硬的工艺水平，严格的消毒车间</br>标准化的流水作业，早就你手中完美的科技创新产品！',
     'parentdir' => 'tec/',
     'catdir' => 'scjg',
     'url' => 'http://healstec.itcask.com/index.php?m=content&c=index&a=lists&catid=26',
@@ -324,7 +322,7 @@ return array (
     'usable_type' => '',
     'big_image' => 'http://healstec.itcask.com/uploadfile/2017/0606/20170606093322334.jpg',
     'image1' => '',
-    'description_index' => NULL,
+    'description_index' => '',
     'create_to_html_root' => '0',
     'ishtml' => '0',
     'content_ishtml' => '0',

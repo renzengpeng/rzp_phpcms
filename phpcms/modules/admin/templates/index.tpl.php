@@ -39,7 +39,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 </head>
 <body scroll="no" class="objbody">
 <div class="btns btns2" id="btnx">
-<div class="bg_btn"></div>
+<div class="bg_btn" style="display: none"></div>
 <?php $model_types = pc_base::load_config('model_config');?>
 <h6><?php echo L('panel_switch');?></h6>
 <ul id="Site_model" class="pd4">
@@ -61,7 +61,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
 	<div class="logo lf"><a href="<?php echo $currentsite['domain']?>" target="_blank"><span class="invisible">Healstec</span></a></div>
     <div class="rt-col">
     	<div class="tab_style white cut_line text-r"></a>
-    <ul id="Skin">
+    <ul id="Skin" style="display: none">
 		<li class="s1 styleswitch" rel="styles1"></li>
 		<li class="s2 styleswitch" rel="styles2"></li>
 		<li class="s3 styleswitch" rel="styles3"></li>
@@ -103,7 +103,7 @@ var pc_hash = '<?php echo $_SESSION['pc_hash']?>'
         </div>
     <div class="col-auto mr8">
     <div class="crumbs">
-    <div class="shortcut cu-span"><a href="?m=content&c=create_html&a=public_index&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('create_index')?></span></a><a href="?m=admin&c=cache_all&a=init&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('update_backup')?></span></a><a href="javascript:art.dialog({id:'map',iframe:'?m=admin&c=index&a=public_map', title:'<?php echo L('background_map')?>', width:'700', height:'500', lock:true});void(0);"><span><?php echo L('background_map')?></span></a><?php echo runhook('admin_top_left_menu')?></div>
+    <div class="shortcut cu-span"><a href="?m=content&c=create_html&a=public_index&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('create_index')?></span></a><a href="?m=admin&c=cache_all&a=init&pc_hash=<?php echo $_SESSION['pc_hash'];?>" target="right"><span><?php echo L('update_backup')?></span></a><a style="display: none" href="javascript:art.dialog({id:'map',iframe:'?m=admin&c=index&a=public_map', title:'<?php echo L('background_map')?>', width:'700', height:'500', lock:true});void(0);"><span style=""><?php echo L('background_map')?></span></a><?php echo runhook('admin_top_left_menu')?></div>
     <?php echo L('current_position')?><span id="current_pos"></span></div>
     	<div class="col-1">
         	<div class="content" style="position:relative; overflow:hidden">

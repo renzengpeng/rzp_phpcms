@@ -2,26 +2,24 @@
 
 {template "","gy_header"}
 		<!--认识我们-->
-		<div class="container gy_wm renshiwomen" style="padding-left: 0; padding-right: 0;{if $catid!=37}display:none;{/if}">
-			<ul style="background: url({IMG_PATH}/healstec/renshi_05.jpg) no-repeat center;background-size:cover ;width: 100%; padding-left: 0; margin-top: 0;" class="rho">
-				<li style="float: right; letter-spacing: 1px;">我们是谁</li>
-			</ul>
+		<div class="container kuang gy_wm " style="{if $catid!=37}display:none;{/if}">
+			<div style="background: url({IMG_PATH}/healstec/renshi_05.jpg) no-repeat center;" class="rho">
+			</div>
 			{pc:content action="lists" moreinfo="1" catid="37" order="id asc" num="3"}
 			{loop $data $k $r}
-			<ul style="background: url({$r[thumb]}) no-repeat center;background-size:cover ;width: 100%;  padding-left: 0;{if $n==3} margin-top: 1%; margin-bottom: 10%;{/if}" {if $n==1}class="rht"{/if}
-			{if $n==2}class="rhth"{/if}
-			{if $n==3}class="rhf"{/if}
-			>
-				<li style="letter-spacing: 1px; color: #FFFFFF; width: 50%;
-				{if $n==2}float: right{/if}
-				{if $n==3}margin-left: 4%{/if};
-				">
-				<h1 >{$r[title]}</h1>
+            <div {if $n==1}class="rht"{/if}{if $n==2}class="rhth"{/if}{if $n==3}class="rhf"{/if} style="background: url({$r[thumb]}) no-repeat center;">
+                <div class="col-md-6 col-sm-6 col-xs-12 info {if $n==2}col-md-offset-6 col-sm-offset-6{/if}">
+                    <h3>{$r[title]}</h3>
+                <p >{$r[content]}</p>
+                </div>
+            </div>
 
 
-					<p>{$r[content]}</p>
-				</li>				
-			</ul>
+
+
+
+
+
 			{/loop}
 			{/pc}
 		</div>

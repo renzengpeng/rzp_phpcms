@@ -74,14 +74,14 @@
                 {/pc}
 			</div>
 		</div>
-		<div class="container" style="padding-left: 0; padding-right: 0; margin:2% auto;">
-			<ul class="row" class="ro_pp">
+		<div class="container" style=" margin:2% auto;">
+			<ul class="row" style="padding-left: 0" >
                 {pc:content action="lists" catid="36" order="id DESC" num="10"}
                 {loop $data $k $r}
-				<li class="col-md-12 col-sm-12 col-xs-12 p_pai"  style="border: 0; padding-left: 0; padding-right: 0;{if $n>1} margin-top: 2%;{/if}"   >
+				<li class="col-md-12 col-sm-12 col-xs-12 p_pai"  style=" padding-top: 15px;"  {if $n>1} id="ppai"{/if} >
 					<a href="{$r[redirect_url]}"  >
-					<div class="col-md-11 col-sm-11 col-xs-11"><p >{$r[title]}</p></div>
-					<h1 class="glyphicon glyphicon-triangle-bottom col-md-1 col-sm-1 col-xs-1"></h1>					
+					<div class="col-md-11 col-sm-10 col-xs-9"><p >{$r[title]}</p></div>
+					<h1 class="glyphicon glyphicon-triangle-bottom col-md-1 col-sm-2 col-xs-3"  style="text-align: center;"></h1>
 					</a>
 <!-- 					<ul class="row" id="pinpaineirong" style="display: none; padding-left: 0 ; padding-right: 0;">
 				<li class="col-md-2 col-sm-2 col-xs-2" >
