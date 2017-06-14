@@ -51,7 +51,14 @@ class index {
 		$this->category = $CAT = $CATEGORYS[$catid];
         $arrparentid = explode(',', $CAT['arrparentid']);
         $top_parentid = $arrparentid[1] ? $arrparentid[1] : $catid;
-        include template('', 'show');die;
+		if(in_array($catid,[27,28])){
+			include template('', 'sh_show');
+			die;
+		}else{
+			include template('', 'show');
+			die;
+		}
+
 		$this->category_setting = $CAT['setting'] = string2array($this->category['setting']);
 		$siteid = $GLOBALS['siteid'] = $CAT['siteid'];
 		
@@ -288,11 +295,11 @@ class index {
 
                     $MODEL = getcache('model','commons');
                     $modelid = $CAT['modelid'];
-                    $sql='select * from hl_news where catid=41';
+                    $sql='select a.*,b.content from hl_news a left join hl_news_data b on a.id=b.id where a.catid=41';
                     $key_word=addslashes($_GET['key_word']);
                     $key_word=trim($key_word);
                     if(!empty($key_word)&&$key_word!='输入新闻关键词'){
-                        $sql.=' and title like\'%'.$key_word.'%\'';
+                        $sql.=' and a.title like\'%'.$key_word.'%\'';
                     }
                     $date=intval($_GET['date']);
                     if(!empty($date)){
@@ -308,7 +315,7 @@ class index {
                             $start_time=time()-365*60*60*24;
                         }
                         $end_time=time();
-                        $sql.=' and inputtime>='.$start_time.' and inputtime<'.$end_time;
+                        $sql.=' and a.inputtime>='.$start_time.' and a.inputtime<'.$end_time;
                     }
 
                     $tablename = $this->db->table_name = $this->db->db_tablepre.$MODEL[$modelid]['tablename'];

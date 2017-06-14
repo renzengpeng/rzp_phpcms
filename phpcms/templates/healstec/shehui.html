@@ -25,15 +25,15 @@
 					{pc:content action="lists" moreinfo="1" catid="27" order="id DESC" num="10"}
 					{loop $data $k $r}
 					<li class="col-md-12  col-sm-12">
-						<a href="{$r[url]}">
+						<!--<a href="{$r[url]}">-->
 						<img src="{$r[thumb]}" class="col-md-7  col-sm-7 col-xs-12 img-responsive" id="ji_img">
 						<div class="col-md-5 col-sm-5 col-xs-12" id="ji_zi" style="padding-top: 0;">
 							<h2  class="xy_h1">{$r[title]}</h2>
 							<span class="xy_p1">{date('Y.m.d',$r[inputtime])}</span>
 							<div class="clearfix"></div>
-							<span class="xy_p2">{$r[content]}</span>
+							<span class="xy_p2">{$r[description]}</span>
 						</div>
-						</a>
+						<!--</a>-->
 					</li>
 					{/loop}
 					{/pc}

@@ -1,0 +1,253 @@
+result: 
+AF: {code2: "AF",code3: "AFG",name: "Afghanistan",name_cn: "阿富汗",continent: "AS"}
+AX: {code2: "AX",code3: "ALA",name: "aland Islands",name_cn: "奥兰群岛",continent: "EU"}
+AL: {code2: "AL",code3: "ALB",name: "Albania",name_cn: "阿尔巴尼亚",continent: "EU"}
+DZ: {code2: "DZ",code3: "DZA",name: "Algeria",name_cn: "阿尔及利亚",continent: "AF"}
+AS: {code2: "AS",code3: "ASM",name: "American Samoa",name_cn: "美属萨摩亚",continent: "OC"}
+AD: {code2: "AD",code3: "AND",name: "Andorra",name_cn: "安道尔",continent: "EU"}
+AO: {code2: "AO",code3: "AGO",name: "Angola",name_cn: "安哥拉",continent: "AF"}
+AI: {code2: "AI",code3: "AIA",name: "Anguilla",name_cn: "安圭拉",continent: "NA"}
+AQ: {code2: "AQ",code3: "ATA",name: "Antarctica",name_cn: "南极洲",continent: "AN"}
+AG: {code2: "AG",code3: "ATG",name: "Antigua and Barbuda",name_cn: "安提瓜和巴布达",continent: "NA"}
+AR: {code2: "AR",code3: "ARG",name: "Argentina",name_cn: "阿根廷",continent: "SA"}
+AM: {code2: "AM",code3: "ARM",name: "Armenia",name_cn: "亚美尼亚",continent: "AS"}
+AW: {code2: "AW",code3: "ABW",name: "Aruba",name_cn: "阿鲁巴",continent: "NA"}
+AU: {code2: "AU",code3: "AUS",name: "Australia",name_cn: "澳大利亚",continent: "OC"}
+AT: {code2: "AT",code3: "AUT",name: "Austria",name_cn: "奥地利",continent: "EU"}
+AZ: {code2: "AZ",code3: "AZE",name: "Azerbaijan",name_cn: "阿塞拜疆",continent: "AS"}
+BS: {code2: "BS",code3: "BHS",name: "Bahamas",name_cn: "巴哈马",continent: "NA"}
+BH: {code2: "BH",code3: "BHR",name: "Bahrain",name_cn: "巴林",continent: "AS"}
+BD: {code2: "BD",code3: "BGD",name: "Bangladesh",name_cn: "孟加拉",continent: "AS"}
+BB: {code2: "BB",code3: "BRB",name: "Barbados",name_cn: "巴巴多斯",continent: "NA"}
+BY: {code2: "BY",code3: "BLR",name: "Belarus",name_cn: "白俄罗斯",continent: "EU"}
+BE: {code2: "BE",code3: "BEL",name: "Belgium",name_cn: "比利时",continent: "EU"}
+BZ: {code2: "BZ",code3: "BLZ",name: "Belize",name_cn: "伯利兹",continent: "NA"}
+BJ: {code2: "BJ",code3: "BEN",name: "Benin",name_cn: "贝宁",continent: "AF"}
+BM: {code2: "BM",code3: "BMU",name: "Bermuda",name_cn: "百慕大",continent: "NA"}
+BT: {code2: "BT",code3: "BHU",name: "Bhutan",name_cn: "不丹",continent: "AS"}
+BO: {code2: "BO",code3: "BOL",name: "Bolivia Plurinational",name_cn: "玻利维亚",continent: "SA"}
+BQ: {code2: "BQ",code3: "BES",name: "Bonaire Sint Eustatius and Saba",name_cn: "荷兰加勒比区",continent: "NA"}
+BA: {code2: "BA",code3: "BIH",name: "Bosnia and Herzegovina",name_cn: "波黑",continent: "EU"}
+BW: {code2: "BW",code3: "BWA",name: "Botswana",name_cn: "博茨瓦纳",continent: "AF"}
+BV: {code2: "BV",code3: "BVT",name: "Bouvet Island",name_cn: "布韦岛",continent: "AN"}
+BR: {code2: "BR",code3: "BRA",name: "Brazil",name_cn: "巴西",continent: "SA"}
+IO: {code2: "IO",code3: "IOT",name: "British Indian Ocean Territory",name_cn: "英属印度洋领地",continent: "AS"}
+BN: {code2: "BN",code3: "BRN",name: "Brunei Darussalam",name_cn: "文莱",continent: "AS"}
+BG: {code2: "BG",code3: "BGR",name: "Bulgaria",name_cn: "保加利亚",continent: "EU"}
+BF: {code2: "BF",code3: "BFA",name: "Burkina Faso",name_cn: "布基纳法索",continent: "AF"}
+BI: {code2: "BI",code3: "BDI",name: "Burundi",name_cn: "布隆迪",continent: "AF"}
+KH: {code2: "KH",code3: "KHM",name: "Cambodia",name_cn: "柬埔寨",continent: "AS"}
+CM: {code2: "CM",code3: "CMR",name: "Cameroon",name_cn: "喀麦隆",continent: "AF"}
+CA: {code2: "CA",code3: "CAN",name: "Canada",name_cn: "加拿大",continent: "NA"}
+CV: {code2: "CV",code3: "CPV",name: "Cape Verde",name_cn: "佛得角",continent: "AF"}
+KY: {code2: "KY",code3: "CYM",name: "Cayman Islands",name_cn: "开曼群岛",continent: "NA"}
+CF: {code2: "CF",code3: "CAF",name: "Central African Republic",name_cn: "中非",continent: "AF"}
+TD: {code2: "TD",code3: "TCD",name: "Chad",name_cn: "乍得",continent: "AF"}
+CL: {code2: "CL",code3: "CHL",name: "Chile",name_cn: "智利",continent: "SA"}
+CN: {code2: "CN",code3: "CHN",name: "China",name_cn: "中国",continent: "AS"}
+CX: {code2: "CX",code3: "CXR",name: "Christmas Island",name_cn: "圣诞岛",continent: "AS"}
+CC: {code2: "CC",code3: "CCK",name: "Cocos (Keeling) Islands",name_cn: "科科斯群岛",continent: "AS"}
+CO: {code2: "CO",code3: "COL",name: "Colombia",name_cn: "哥伦比亚",continent: "SA"}
+KM: {code2: "KM",code3: "COM",name: "Comoros",name_cn: "科摩罗",continent: "AF"}
+CG: {code2: "CG",code3: "CGO",name: "Congo",name_cn: "刚果（布）",continent: "AF"}
+CD: {code2: "CD",code3: "COD",name: "Congo the Democratic Republic of the",name_cn: "刚果（金）",continent: "AF"}
+CK: {code2: "CK",code3: "COK",name: "Cook Islands",name_cn: "库克群岛",continent: "OC"}
+CR: {code2: "CR",code3: "CRI",name: "Costa Rica",name_cn: "哥斯达黎加",continent: "NA"}
+HR: {code2: "HR",code3: "HRV",name: "Croatia",name_cn: "克罗地亚",continent: "EU"}
+CI: {code2: "CI",code3: "CIV",name: "Cte d'Ivoire",name_cn: "科特迪瓦",continent: "AF"}
+CU: {code2: "CU",code3: "CUB",name: "Cuba",name_cn: "古巴",continent: "NA"}
+CW: {code2: "CW",code3: "CUW",name: "Curaao",name_cn: "库拉索",continent: "NA"}
+CY: {code2: "CY",code3: "CYP",name: "Cyprus",name_cn: "塞浦路斯",continent: "AS"}
+CZ: {code2: "CZ",code3: "CZE",name: "Czech Republic",name_cn: "捷克",continent: "EU"}
+DK: {code2: "DK",code3: "DNK",name: "Denmark",name_cn: "丹麦",continent: "EU"}
+DJ: {code2: "DJ",code3: "DJI",name: "Djibouti",name_cn: "吉布提",continent: "AF"}
+DM: {code2: "DM",code3: "DMA",name: "Dominica",name_cn: "多米尼克",continent: "NA"}
+DO: {code2: "DO",code3: "DOM",name: "Dominican Republic",name_cn: "多米尼加",continent: "NA"}
+EC: {code2: "EC",code3: "ECU",name: "Ecuador",name_cn: "厄瓜多尔",continent: "SA"}
+EG: {code2: "EG",code3: "EGY",name: "Egypt",name_cn: "埃及",continent: "AF"}
+SV: {code2: "SV",code3: "SLV",name: "El Salvador",name_cn: "萨尔瓦多",continent: "NA"}
+GQ: {code2: "GQ",code3: "GNQ",name: "Equatorial Guinea",name_cn: "赤道几内亚",continent: "AF"}
+ER: {code2: "ER",code3: "ERI",name: "Eritrea",name_cn: "厄立特里亚",continent: "AF"}
+EE: {code2: "EE",code3: "EST",name: "Estonia",name_cn: "爱沙尼亚",continent: "EU"}
+ET: {code2: "ET",code3: "ETH",name: "Ethiopia",name_cn: "埃塞俄比亚",continent: "AF"}
+EU: {code2: "EU",code3: "XEU",name: "Europe",name_cn: "欧洲",continent: }
+FK: {code2: "FK",code3: "FLK",name: "Falkland Islands (Malvinas)",name_cn: "马尔维纳斯群岛（福克兰）",continent: "SA"}
+FO: {code2: "FO",code3: "FRO",name: "Faroe Islands",name_cn: "法罗群岛",continent: "EU"}
+FJ: {code2: "FJ",code3: "FJI",name: "Fiji",name_cn: "斐济群岛",continent: "OC"}
+FI: {code2: "FI",code3: "FIN",name: "Finland",name_cn: "芬兰",continent: "EU"}
+FR: {code2: "FR",code3: "FRA",name: "France",name_cn: "法国",continent: "EU"}
+GF: {code2: "GF",code3: "GUF",name: "French Guiana",name_cn: "法属圭亚那",continent: "SA"}
+PF: {code2: "PF",code3: "PYF",name: "French Polynesia",name_cn: "法属波利尼西亚",continent: "OC"}
+TF: {code2: "TF",code3: "ATF",name: "French Southern Territories",name_cn: "法属南部领地",continent: "AN"}
+GA: {code2: "GA",code3: "GAB",name: "Gabon",name_cn: "加蓬",continent: "AF"}
+GM: {code2: "GM",code3: "GMB",name: "Gambia",name_cn: "冈比亚",continent: "AF"}
+GE: {code2: "GE",code3: "GEO",name: "Georgia",name_cn: "格鲁吉亚",continent: "AS"}
+DE: {code2: "DE",code3: "DEU",name: "Germany",name_cn: "德国",continent: "EU"}
+GH: {code2: "GH",code3: "GHA",name: "Ghana",name_cn: "加纳",continent: "AF"}
+GI: {code2: "GI",code3: "GIB",name: "Gibraltar",name_cn: "直布罗陀",continent: "EU"}
+GR: {code2: "GR",code3: "GRC",name: "Greece",name_cn: "希腊",continent: "EU"}
+GL: {code2: "GL",code3: "GRL",name: "Greenland",name_cn: "格陵兰",continent: "NA"}
+GD: {code2: "GD",code3: "GRD",name: "Grenada",name_cn: "格林纳达",continent: "NA"}
+GP: {code2: "GP",code3: "GLP",name: "Guadeloupe",name_cn: "瓜德罗普",continent: "NA"}
+GU: {code2: "GU",code3: "GUM",name: "Guam",name_cn: "关岛",continent: "OC"}
+GT: {code2: "GT",code3: "GTM",name: "Guatemala",name_cn: "危地马拉",continent: "NA"}
+GG: {code2: "GG",code3: "GGY",name: "Guernsey",name_cn: "根西岛",continent: "EU"}
+GN: {code2: "GN",code3: "GIN",name: "Guinea",name_cn: "几内亚",continent: "AF"}
+GW: {code2: "GW",code3: "GNB",name: "Guinea-Bissau",name_cn: "几内亚比绍",continent: "AF"}
+GY: {code2: "GY",code3: "GUY",name: "Guyana",name_cn: "圭亚那",continent: "SA"}
+HT: {code2: "HT",code3: "HTI",name: "Haiti",name_cn: "海地",continent: "NA"}
+HM: {code2: "HM",code3: "HMD",name: "Heard Island and McDonald Islands",name_cn: "赫德岛和麦克唐纳群岛",continent: "AN"}
+VA: {code2: "VA",code3: "VAT",name: "Holy See (Vatican City State)",name_cn: "梵蒂冈",continent: "EU"}
+HN: {code2: "HN",code3: "HND",name: "Honduras",name_cn: "洪都拉斯",continent: "NA"}
+HK: {code2: "HK",code3: "HKG",name: "Hong Kong",name_cn: "香港",continent: "AS"}
+HU: {code2: "HU",code3: "HUN",name: "Hungary",name_cn: "匈牙利",continent: "EU"}
+IS: {code2: "IS",code3: "ISL",name: "Iceland",name_cn: "冰岛",continent: "EU"}
+IN: {code2: "IN",code3: "IND",name: "India",name_cn: "印度",continent: "AS"}
+ID: {code2: "ID",code3: "IDN",name: "Indonesia",name_cn: "印尼",continent: "AS"}
+IR: {code2: "IR",code3: "IRN",name: "Iran Islamic Republic of",name_cn: "伊朗",continent: "AS"}
+IQ: {code2: "IQ",code3: "IRQ",name: "Iraq",name_cn: "伊拉克",continent: "AS"}
+IE: {code2: "IE",code3: "IRL",name: "Ireland",name_cn: "爱尔兰",continent: "EU"}
+IM: {code2: "IM",code3: "IMN",name: "Isle of Man",name_cn: "马恩岛",continent: "EU"}
+IL: {code2: "IL",code3: "ISR",name: "Israel",name_cn: "以色列",continent: "AS"}
+IT: {code2: "IT",code3: "ITA",name: "Italy",name_cn: "意大利",continent: "EU"}
+JM: {code2: "JM",code3: "JAM",name: "Jamaica",name_cn: "牙买加",continent: "NA"}
+JP: {code2: "JP",code3: "JPN",name: "Japan",name_cn: "日本",continent: "AS"}
+JE: {code2: "JE",code3: "JEY",name: "Jersey",name_cn: "泽西岛",continent: "EU"}
+JO: {code2: "JO",code3: "JOR",name: "Jordan",name_cn: "约旦",continent: "AS"}
+KZ: {code2: "KZ",code3: "KAZ",name: "Kazakhstan",name_cn: "哈萨克斯坦",continent: "AS"}
+KE: {code2: "KE",code3: "KEN",name: "Kenya",name_cn: "肯尼亚",continent: "AF"}
+KI: {code2: "KI",code3: "KIR",name: "Kiribati",name_cn: "基里巴斯",continent: "OC"}
+KP: {code2: "KP",code3: "PRK",name: "Korea Democratic People's Republic of",name_cn: "朝鲜",continent: "AS"}
+KR: {code2: "KR",code3: "KOR",name: "Korea Republic of",name_cn: "韩国",continent: "AS"}
+KW: {code2: "KW",code3: "KWT",name: "Kuwait",name_cn: "科威特",continent: "AS"}
+KG: {code2: "KG",code3: "KGZ",name: "Kyrgyzstan",name_cn: "吉尔吉斯斯坦",continent: "AS"}
+LA: {code2: "LA",code3: "LAO",name: "Lao People's Democratic Republic",name_cn: "老挝",continent: "AS"}
+LV: {code2: "LV",code3: "LVA",name: "Latvia",name_cn: "拉脱维亚",continent: "EU"}
+LB: {code2: "LB",code3: "LBN",name: "Lebanon",name_cn: "黎巴嫩",continent: "AS"}
+LS: {code2: "LS",code3: "LSO",name: "Lesotho",name_cn: "莱索托",continent: "AF"}
+LR: {code2: "LR",code3: "LBR",name: "Liberia",name_cn: "利比里亚",continent: "AF"}
+LY: {code2: "LY",code3: "LBY",name: "Libya",name_cn: "利比亚",continent: "AF"}
+LI: {code2: "LI",code3: "LIE",name: "Liechtenstein",name_cn: "列支敦士登",continent: "EU"}
+LT: {code2: "LT",code3: "LTU",name: "Lithuania",name_cn: "立陶宛",continent: "EU"}
+LU: {code2: "LU",code3: "LUX",name: "Luxembourg",name_cn: "卢森堡",continent: "EU"}
+MO: {code2: "MO",code3: "MAC",name: "Macao",name_cn: "澳门",continent: "AS"}
+MK: {code2: "MK",code3: "MKD",name: "Macedonia the former Yugoslav Republic of",name_cn: "马其顿",continent: "EU"}
+MG: {code2: "MG",code3: "MDG",name: "Madagascar",name_cn: "马达加斯加",continent: "AF"}
+MW: {code2: "MW",code3: "MWI",name: "Malawi",name_cn: "马拉维",continent: "AF"}
+MY: {code2: "MY",code3: "MYS",name: "Malaysia",name_cn: "马来西亚",continent: "AS"}
+MV: {code2: "MV",code3: "MDV",name: "Maldives",name_cn: "马尔代夫",continent: "AS"}
+ML: {code2: "ML",code3: "MLI",name: "Mali",name_cn: "马里",continent: "AF"}
+MT: {code2: "MT",code3: "MLT",name: "Malta",name_cn: "马耳他",continent: "EU"}
+MH: {code2: "MH",code3: "MHL",name: "Marshall islands",name_cn: "马绍尔群岛",continent: "OC"}
+MQ: {code2: "MQ",code3: "MTQ",name: "Martinique",name_cn: "马提尼克",continent: "NA"}
+MR: {code2: "MR",code3: "MRT",name: "Mauritania",name_cn: "毛里塔尼亚",continent: "AF"}
+MU: {code2: "MU",code3: "MUS",name: "Mauritius",name_cn: "毛里求斯",continent: "AF"}
+YT: {code2: "YT",code3: "MYT",name: "Mayotte",name_cn: "马约特",continent: "AF"}
+MX: {code2: "MX",code3: "MEX",name: "Mexico",name_cn: "墨西哥",continent: "NA"}
+FM: {code2: "FM",code3: "FSM",name: "Micronesia Federated States of",name_cn: "密克罗尼西亚联邦",continent: "OC"}
+MD: {code2: "MD",code3: "MDA",name: "Moldova Republic of",name_cn: "摩尔多瓦",continent: "EU"}
+MC: {code2: "MC",code3: "MCO",name: "Monaco",name_cn: "摩纳哥",continent: "EU"}
+MN: {code2: "MN",code3: "MNG",name: "Mongolia",name_cn: "蒙古国；蒙古",continent: "AS"}
+ME: {code2: "ME",code3: "MNE",name: "Montenegro",name_cn: "黑山",continent: "EU"}
+MS: {code2: "MS",code3: "MSR",name: "Montserrat",name_cn: "蒙塞拉特岛",continent: "NA"}
+MA: {code2: "MA",code3: "MAR",name: "Morocco",name_cn: "摩洛哥",continent: "AF"}
+MZ: {code2: "MZ",code3: "MOZ",name: "Mozambique",name_cn: "莫桑比克",continent: "AF"}
+MM: {code2: "MM",code3: "MMR",name: "Myanmar",name_cn: "缅甸",continent: "AS"}
+NA: {code2: "NA",code3: "NAM",name: "Namibia",name_cn: "纳米比亚",continent: "AF"}
+NR: {code2: "NR",code3: "NRU",name: "Nauru",name_cn: "瑙鲁",continent: "OC"}
+NP: {code2: "NP",code3: "NPL",name: "Nepal",name_cn: "尼泊尔",continent: "AS"}
+NL: {code2: "NL",code3: "NLD",name: "Netherlands",name_cn: "荷兰",continent: "EU"}
+AN: {code2: "AN",code3: "ANT",name: "Netherlands Antilles",name_cn: "荷属安的列斯群岛",continent: }
+NC: {code2: "NC",code3: "NCL",name: "New Caledonia",name_cn: "新喀里多尼亚",continent: "OC"}
+NZ: {code2: "NZ",code3: "NZL",name: "New Zealand",name_cn: "新西兰",continent: "OC"}
+NI: {code2: "NI",code3: "NIC",name: "Nicaragua",name_cn: "尼加拉瓜",continent: "NA"}
+NE: {code2: "NE",code3: "NER",name: "Niger",name_cn: "尼日尔",continent: "AF"}
+NG: {code2: "NG",code3: "NGA",name: "Nigeria",name_cn: "尼日利亚",continent: "AF"}
+NU: {code2: "NU",code3: "NIU",name: "Niue",name_cn: "纽埃",continent: "OC"}
+NF: {code2: "NF",code3: "NFK",name: "Norfolk Island",name_cn: "诺福克岛",continent: "OC"}
+MP: {code2: "MP",code3: "MNP",name: "Northern Mariana Islands",name_cn: "北马里亚纳群岛",continent: "OC"}
+NO: {code2: "NO",code3: "NOR",name: "Norway",name_cn: "挪威",continent: "EU"}
+OM: {code2: "OM",code3: "OMN",name: "Oman",name_cn: "阿曼",continent: "AS"}
+PK: {code2: "PK",code3: "PAK",name: "Pakistan",name_cn: "巴基斯坦",continent: "AS"}
+PW: {code2: "PW",code3: "PLW",name: "Palau",name_cn: "帕劳",continent: "OC"}
+PS: {code2: "PS",code3: "PSE",name: "Palestine State of",name_cn: "巴勒斯坦",continent: "AS"}
+PA: {code2: "PA",code3: "PAN",name: "Panama",name_cn: "巴拿马",continent: "NA"}
+PG: {code2: "PG",code3: "PNG",name: "Papua New Guinea",name_cn: "巴布亚新几内亚",continent: "OC"}
+PY: {code2: "PY",code3: "PRY",name: "Paraguay",name_cn: "巴拉圭",continent: "SA"}
+PE: {code2: "PE",code3: "PER",name: "Peru",name_cn: "秘鲁",continent: "SA"}
+PH: {code2: "PH",code3: "PHL",name: "Philippines",name_cn: "菲律宾",continent: "AS"}
+PN: {code2: "PN",code3: "PCN",name: "Pitcairn Islands",name_cn: "皮特凯恩群岛",continent: "OC"}
+PL: {code2: "PL",code3: "POL",name: "Poland",name_cn: "波兰",continent: "EU"}
+PT: {code2: "PT",code3: "PRT",name: "Portugal",name_cn: "葡萄牙",continent: "EU"}
+PR: {code2: "PR",code3: "PRI",name: "Puerto Rico",name_cn: "波多黎各",continent: "NA"}
+QA: {code2: "QA",code3: "QAT",name: "Qatar",name_cn: "卡塔尔",continent: "AS"}
+RE: {code2: "RE",code3: "REU",name: "Réunion",name_cn: "留尼汪",continent: "AF"}
+RO: {code2: "RO",code3: "ROU",name: "Romania",name_cn: "罗马尼亚",continent: "EU"}
+RU: {code2: "RU",code3: "RUS",name: "Russian Federation",name_cn: "俄罗斯",continent: "EU"}
+RW: {code2: "RW",code3: "RWA",name: "Rwanda",name_cn: "卢旺达",continent: "AF"}
+BL: {code2: "BL",code3: "BLM",name: "Saint Barthélemy",name_cn: "圣巴泰勒米岛",continent: "NA"}
+SH: {code2: "SH",code3: "SHN",name: "Saint Helena Ascension and Tristan da Cunha",name_cn: "圣赫勒拿",continent: "AF"}
+KN: {code2: "KN",code3: "KNA",name: "Saint Kitts and Nevis",name_cn: "圣基茨和尼维斯",continent: "NA"}
+LC: {code2: "LC",code3: "LCA",name: "Saint Lucia",name_cn: "圣卢西亚",continent: "NA"}
+MF: {code2: "MF",code3: "MAF",name: "Saint Martin (French part)",name_cn: "法属圣马丁",continent: "NA"}
+PM: {code2: "PM",code3: "SPM",name: "Saint Pierre and Miquelon",name_cn: "圣皮埃尔和密克隆",continent: "NA"}
+VC: {code2: "VC",code3: "VCT",name: "Saint Vincent and the Grenadines",name_cn: "圣文森特和格林纳丁斯",continent: "NA"}
+WS: {code2: "WS",code3: "WSM",name: "Samoa",name_cn: "萨摩亚",continent: "OC"}
+SM: {code2: "SM",code3: "SMR",name: "San Marino",name_cn: "圣马力诺",continent: "EU"}
+ST: {code2: "ST",code3: "STP",name: "Sao Tome and Principe",name_cn: "圣多美和普林西比",continent: "AF"}
+SA: {code2: "SA",code3: "SAU",name: "Saudi Arabia",name_cn: "沙特阿拉伯",continent: "AS"}
+SN: {code2: "SN",code3: "SEN",name: "Senegal",name_cn: "塞内加尔",continent: "AF"}
+RS: {code2: "RS",code3: "SRB",name: "Serbia",name_cn: "塞尔维亚",continent: "EU"}
+SC: {code2: "SC",code3: "SYC",name: "Seychelles",name_cn: "塞舌尔",continent: "AF"}
+SL: {code2: "SL",code3: "SLE",name: "Sierra Leone",name_cn: "塞拉利昂",continent: "AF"}
+SG: {code2: "SG",code3: "SGP",name: "Singapore",name_cn: "新加坡",continent: "AS"}
+SX: {code2: "SX",code3: "SXM",name: "Sint Maarten (Dutch part)",name_cn: "荷属圣马丁",continent: "NA"}
+SK: {code2: "SK",code3: "SVK",name: "Slovakia",name_cn: "斯洛伐克",continent: "EU"}
+SI: {code2: "SI",code3: "SVN",name: "Slovenia",name_cn: "斯洛文尼亚",continent: "EU"}
+SB: {code2: "SB",code3: "SLB",name: "Solomon Islands",name_cn: "所罗门群岛",continent: "OC"}
+SO: {code2: "SO",code3: "SOM",name: "Somalia",name_cn: "索马里",continent: "AF"}
+ZA: {code2: "ZA",code3: "ZAF",name: "South Africa",name_cn: "南非",continent: "AF"}
+GS: {code2: "GS",code3: "SGS",name: "South Georgia and the South Sandwich Islands",name_cn: "南乔治亚岛和南桑威奇群岛",continent: "AN"}
+SS: {code2: "SS",code3: "SSD",name: "South Sudan",name_cn: "南苏丹",continent: "AF"}
+ES: {code2: "ES",code3: "ESP",name: "Spain",name_cn: "西班牙",continent: "EU"}
+LK: {code2: "LK",code3: "LKA",name: "Sri Lanka",name_cn: "斯里兰卡",continent: "AS"}
+SD: {code2: "SD",code3: "SDN",name: "Sudan",name_cn: "苏丹",continent: "AF"}
+SR: {code2: "SR",code3: "SUR",name: "Suriname",name_cn: "苏里南",continent: "SA"}
+SJ: {code2: "SJ",code3: "SJM",name: "Svalbard and Jan Mayen",name_cn: "斯瓦尔巴群岛和扬马延岛",continent: "EU"}
+SZ: {code2: "SZ",code3: "SWZ",name: "Swaziland",name_cn: "斯威士兰",continent: "AF"}
+SE: {code2: "SE",code3: "SWE",name: "Sweden",name_cn: "瑞典",continent: "EU"}
+CH: {code2: "CH",code3: "CHE",name: "Switzerland",name_cn: "瑞士",continent: "EU"}
+SY: {code2: "SY",code3: "SYR",name: "Syrian Arab Republic",name_cn: "叙利亚",continent: "AS"}
+TW: {code2: "TW",code3: "TWN",name: "Taiwan",name_cn: "台湾",continent: "AS"}
+TJ: {code2: "TJ",code3: "TJK",name: "Tajikistan",name_cn: "塔吉克斯坦",continent: "AS"}
+TZ: {code2: "TZ",code3: "TZA",name: "Tanzania United Republic of",name_cn: "坦桑尼亚",continent: "AF"}
+TH: {code2: "TH",code3: "THA",name: "Thailand",name_cn: "泰国",continent: "AS"}
+TL: {code2: "TL",code3: "TLS",name: "Timor-Leste",name_cn: "东帝汶",continent: "AS"}
+TG: {code2: "TG",code3: "TGO",name: "Togo",name_cn: "多哥",continent: "AF"}
+TK: {code2: "TK",code3: "TKL",name: "Tokelau",name_cn: "托克劳",continent: "OC"}
+TO: {code2: "TO",code3: "TON",name: "Tonga",name_cn: "汤加",continent: "OC"}
+TT: {code2: "TT",code3: "TTO",name: "Trinidad and Tobago",name_cn: "特立尼达和多巴哥",continent: "NA"}
+TN: {code2: "TN",code3: "TUN",name: "Tunisia",name_cn: "突尼斯",continent: "AF"}
+TR: {code2: "TR",code3: "TUR",name: "Turkey",name_cn: "土耳其",continent: "EU"}
+TM: {code2: "TM",code3: "TKM",name: "Turkmenistan",name_cn: "土库曼斯坦",continent: "AS"}
+TC: {code2: "TC",code3: "TCA",name: "Turks and Caicos Islands",name_cn: "特克斯和凯科斯群岛",continent: "NA"}
+TV: {code2: "TV",code3: "TUV",name: "Tuvalu",name_cn: "图瓦卢",continent: "OC"}
+UG: {code2: "UG",code3: "UGA",name: "Uganda",name_cn: "乌干达",continent: "AF"}
+UA: {code2: "UA",code3: "UKR",name: "Ukraine",name_cn: "乌克兰",continent: "EU"}
+AE: {code2: "AE",code3: "UAE",name: "United Arab Emirates",name_cn: "阿联酋",continent: "AS"}
+GB: {code2: "GB",code3: "GBR",name: "United Kingdom",name_cn: "英国",continent: "EU"}
+US: {code2: "US",code3: "USA",name: "United States",name_cn: "美国",continent: "NA"}
+UM: {code2: "UM",code3: "UMI",name: "United States Minor Outlying Islands",name_cn: "美国本土外小岛屿",continent: "OC"}
+VI: {code2: "VI",code3: "VIR",name: "United States Virgin Islands",name_cn: "美属维尔京群岛",continent: "NA"}
+UY: {code2: "UY",code3: "URY",name: "Uruguay",name_cn: "乌拉圭",continent: "SA"}
+UZ: {code2: "UZ",code3: "UZB",name: "Uzbekistan",name_cn: "乌兹别克斯坦",continent: "AS"}
+VU: {code2: "VU",code3: "VUT",name: "Vanuatu",name_cn: "瓦努阿图",continent: "OC"}
+VE: {code2: "VE",code3: "VEN",name: "Venezuela Bolivarian Republic of",name_cn: "委内瑞拉",continent: "SA"}
+VN: {code2: "VN",code3: "VNM",name: "Vietnam",name_cn: "越南",continent: "AS"}
+VG: {code2: "VG",code3: "VGB",name: "Virgin Islands U.S.",name_cn: "英属维尔京群岛",continent: "NA"}
+WF: {code2: "WF",code3: "WLF",name: "Wallis and Futuna",name_cn: "瓦利斯和富图纳",continent: "OC"}
+EH: {code2: "EH",code3: "ESH",name: "Western Sahara",name_cn: "西撒哈拉",continent: "AF"}
+YE: {code2: "YE",code3: "YEM",name: "Yemen",name_cn: "也门",continent: "AS"}
+ZM: {code2: "ZM",code3: "ZMB",name: "Zambia",name_cn: "赞比亚",continent: "AF"}
+ZW: {code2: "ZW",code3: "ZWE",name: "Zimbabwe",name_cn: "津巴布韦",continent: "AF"}
+XK: {code2: "XK",code3: "XK",name: "Serbia",name_cn: "塞尔维亚",continent: }
