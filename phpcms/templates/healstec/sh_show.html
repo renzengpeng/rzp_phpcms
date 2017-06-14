@@ -31,7 +31,7 @@
                 {pc:content action="category" catid="12" num="25" siteid="$siteid" order="listorder ASC"}
                 {loop $data $k $r}
                 <li class="col-md-4 col-sm-4 {if  $catid!=$r[catid]} x_w_y_li{/if} col-xs-4"  {if $catid==$r[catid]}style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if} >
-                    <p>{$r[catname]}</p>
+                    <p><a href="{$r[url]}" style="color:black">{$r[catname]}</a></p>
                 </li>
                 {/loop}
                 {/pc}
