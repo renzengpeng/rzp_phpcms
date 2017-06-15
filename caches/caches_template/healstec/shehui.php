@@ -25,7 +25,7 @@
 					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=718de9a2f8e637ce470b35dc0519b4d0&action=lists&moreinfo=1&catid=27&order=id+DESC&num=10\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('moreinfo'=>'1','catid'=>'27','order'=>'id DESC','limit'=>'10',));}?>
 					<?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
 					<li class="col-md-12  col-sm-12">
-						<!--<a href="<?php echo $r['url'];?>">-->
+						<a href="<?php echo $r['url'];?>" style="color: black">
 						<img src="<?php echo $r['thumb'];?>" class="col-md-7  col-sm-7 col-xs-12 img-responsive" id="ji_img">
 						<div class="col-md-5 col-sm-5 col-xs-12" id="ji_zi" style="padding: 0 1rem;">
 							<h2  class="xy_h1"><?php echo $r['title'];?></h2>
@@ -33,7 +33,7 @@
 							<div class="clearfix"></div>
 							<span class="xy_p2"><?php echo $r['description'];?></span>
 						</div>
-						<!--</a>-->
+						</a>
 					</li>
 					<?php $n++;}unset($n); ?>
 					<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>

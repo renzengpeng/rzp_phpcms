@@ -98,12 +98,15 @@
                 <ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
 					<?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=adacd06f384382d287a39d8357ae0486&action=lists&moreinfo=1&catid=31&order=id+DESC&num=10\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$data = $content_tag->lists(array('moreinfo'=>'1','catid'=>'31','order'=>'id DESC','limit'=>'10',));}?>
 					<?php $n=1; if(is_array($data)) foreach($data AS $k => $r) { ?>
+
 					<li class="col-md-12  col-sm-12">
+						<a href="<?php echo $r['url'];?>" style="color: black">
 						<img src="<?php echo $r['thumb'];?>" class="col-md-6  col-sm-6 col-xs-12 img-responsive" id="ji_img">
 						<div class="col-md-6 col-sm-6 col-xs-12" id="ji_zi">
 							<h1><?php echo $r['title'];?></h1>
 							<p class="xp_p3"><?php echo str_cut($r[content],40);?></p>
 						</div>
+						</a>
 					</li>
 					<?php $n++;}unset($n); ?>
 					<?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>

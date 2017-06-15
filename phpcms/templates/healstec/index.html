@@ -124,12 +124,14 @@
 					return="info"}
 					{loop $info $v}
 					<li class="col-md-12  col-sm-12">
+						<a href="{$v[url]}" style="color: black">
 						<img src="{$v[thumb]}" class="col-md-8  col-sm-8 col-xs-12 img-responsive"
 							 id="ji_img">
 						<div class="col-md-4 col-sm-4 col-xs-12" id="ji_zi">
 							<h1>{$v['title']}</h1>
 							<p>{str_cut($v['description'],100)}</p>
 						</div>
+						</a>
 					</li>
 
 					{/loop}

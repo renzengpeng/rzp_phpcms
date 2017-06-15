@@ -98,12 +98,15 @@
                 <ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
 					{pc:content action="lists" moreinfo="1" catid="31" order="id DESC" num="10"}
 					{loop $data $k $r}
+
 					<li class="col-md-12  col-sm-12">
+						<a href="{$r[url]}" style="color: black">
 						<img src="{$r[thumb]}" class="col-md-6  col-sm-6 col-xs-12 img-responsive" id="ji_img">
 						<div class="col-md-6 col-sm-6 col-xs-12" id="ji_zi">
 							<h1>{$r[title]}</h1>
 							<p class="xp_p3">{str_cut($r[content],40)}</p>
 						</div>
+						</a>
 					</li>
 					{/loop}
 					{/pc}
