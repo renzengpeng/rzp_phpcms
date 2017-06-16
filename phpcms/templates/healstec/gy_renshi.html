@@ -109,9 +109,10 @@
 				<ul class="col-md-12 col-sm-12 news col-xs-12">
                     {pc:content  action="position" posid="10" catid="41" thumb="1" order="listorder DESC" num="1"}
                     {loop $data $v}
-					<li><h1>{$v[title]}</h1>
+					<li><a href="{$v[url]}" style="text-decoration: none"><h1>{$v[title]}</h1>
 						<h2>{date('Y-m-d',$v[inputtime])}</h2>
 						<p>{$v[description]}</p>
+                    </a>
 					</li>
                     {/loop}
                     {/pc}

@@ -1,11 +1,21 @@
 {template "","header"}
 <script src="{JS_PATH}/healstec/jquery-3.1.1.min.js" type="text/javascript"></script>
+
 <script>
     window.jQuery || document.write('<script src="{JS_PATH}/healstec/jquery-3.1.1.min.js"><\/script>')
 </script>
 <script src="{JS_PATH}/healstec/bootstrap.min.js"></script>
 <script type="text/javascript" src="{JS_PATH}/healstec/nav.js"></script>
 <link type="text/css" rel="stylesheet" href="{CSS_PATH}/healstec/styles.css"/>
+<style>
+    .gongyi2Main {
+        padding-top: 20px;
+    }
+    .gongyi2Main {
+        /* width: 100%; */
+
+    }
+</style>
 {pc:get sql="select * from hl_category where catid='12'" cache="3600" return="data"}
     <div class="container-fluid tu_o" style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;" id="gy_to"></div>
     <div class="container-fluid tu_o" style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px; display: none;" id="gy_to"></div>
@@ -77,7 +87,7 @@
             <span>发布时间：{date('Y-m-d',$data[0][inputtime])}</span>
         </div>
 
-        <div class="gongyi1Main">
+        <div class="gongyi2Main">
             {php $image_arr=json_decode($data[0][muti_image],true);}
             {if !empty($image_arr)}
             {loop $image_arr $image}
