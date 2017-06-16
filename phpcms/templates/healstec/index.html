@@ -54,9 +54,9 @@
                     {php $c=end(array_keys($data))}
                     {loop $data $k $r}
                     <li class="col-md-4 col-sm-4" id="li_o">
-                        <span class="col-md-12 col-sm-12"><img src="{$r[image]}" class="img-responsive center-block"/></span>
+                        <span class="col-md-12 col-sm-12"{if $n==2}id="bor"{/if}><img src="{$r[image]}" class="img-responsive center-block"/></span>
                         <h1>{$r[description_index]}</h1>
-                        <h2 class="li_h1"><a href="{$r[url]}">{$r[catname]}</a></h2>
+                        <h2 class="li_h{$n}"><a href="{$r[url]}">{$r[catname]}</a></h2>
                     </li>
                     {/loop}
                     {/pc}

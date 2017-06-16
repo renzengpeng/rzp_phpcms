@@ -11,7 +11,9 @@
             <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img
                     src="{IMG_PATH}/healstec/hgyxy_05.jpg"/></li>
             {pc:get sql="select * from hl_category where catid='$top_parentid'"  return="data"}
-            <li class="col-md-2 col-sm-4" style="padding-right: 0;"><p>{$data[0][catname]}</p></li>
+            <li class="col-md-2 col-sm-4" style="padding-right: 0;">
+                <a href="{$data[0][url]}" style="color: black"><p>{$data[0][catname]}</p></a>
+            </li>
             {/pc}
 
             <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg"/></li>

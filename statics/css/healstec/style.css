@@ -146,7 +146,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .ul_r li{float: right; margin-top: 2%;}
 .ryo .row div li{padding-left: 0; padding-right: 0;}
 .ryt .img-responsive{margin: 0 auto;}
-.gy_wm{margin-top: 2%;}
+.gy_wm{margin-top: -1%;}
 #ban{width:100%; background: #ffffff; padding: 3% 0 4% 0; left: 0;opacity: 0.5; filter: alpha(opacity=5); bottom: 0;}
 #bann{bottom: 10px;}
 #bann p{color: #000000; font-size: 2rem; text-shadow: none;z-index: 100;}
