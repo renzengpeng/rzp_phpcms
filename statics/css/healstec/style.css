@@ -146,7 +146,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .ul_r li{float: right; margin-top: 2%;}
 .ryo .row div li{padding-left: 0; padding-right: 0;}
 .ryt .img-responsive{margin: 0 auto;}
-.gy_wm{margin-top: -1%;}
+.gy_wm{margin-top: 2%;}
 #ban{width:100%; background: #ffffff; padding: 3% 0 4% 0; left: 0;opacity: 0.5; filter: alpha(opacity=5); bottom: 0;}
 #bann{bottom: 10px;}
 #bann p{color: #000000; font-size: 2rem; text-shadow: none;z-index: 100;}
@@ -170,7 +170,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .renshiwomen ul li h1{font-size: 2.6rem; font-weight: bold;}
 .renshiwomen ul li p{font-size: 1.6rem; line-height: 3rem; padding-top: 5%;}
 .kuang{color:#fff;font-size: 1.6rem;width:1000px;padding:0;}
-.rho{height:439px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_05.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rho{height:439px;margin-top: -1%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_05.jpg") no-repeat center;background-size:cover ;width: 100%;}
 .rht{height: 539px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_08.jpg") no-repeat center;background-size:cover ;width: 100%;}
 .rhth{height: 582px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_10.jpg") no-repeat center;background-size:cover ;width: 100%;}
 .rhf{height: 583px;margin: 5% 0;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_12.jpg") no-repeat center;background-size:cover ;width: 100%;}

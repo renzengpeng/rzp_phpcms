@@ -54,11 +54,11 @@
 				<ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
 					<li class="col-md-12  col-sm-12">
 						<div class="col-md-7 col-sm-7 col-xs-12" id="ji_zi" style="padding-top: 0; padding-left: 0;">
-							{pc:content action="lists"  catid="29" order="id DESC" num="10"}
+							{pc:content action="lists" moreinfo="1"  catid="29" order="id DESC" num="10"}
 							{loop $data $k $r}
 							<a href="{$r[url]}" style="cursor: pointer;text-decoration: none;">
 							<h2  class="xy_h1" style="color: #01396a;">{$r[title]}</h2>
-							<span class="xy_p2" style="color: black">{$r[description]}</span>
+							<span class="xy_p2" style="color: black">{$r[content]}</span>
 							</a>
 							{/loop}
 							{/pc}
