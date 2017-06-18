@@ -36,8 +36,8 @@
 					</div>
 					<div class="col-md-11 col-sm-11 col-xs-11" id="ppo">
 					<h1 class="col-xs-12"><?php echo $r['title'];?></h1>
-					<p style="font-size: 18px; margin-top: -1%;" class="col-xs-12"><?php echo $r['description'];?></p>
-					<p class="col-xs-12"><?php echo $r['content'];?></p>
+					<p style="font-size: 18px; margin-top: -1%;" class="col-xs-12"><?php echo $r['keywords'];?></p>
+					<p class="col-xs-12"><?php echo $r['description'];?></p>
 					</div>
 				</div>	
 				</div>        								
@@ -51,8 +51,8 @@
                     </div>
                     <div class="col-md-11 col-sm-11 col-xs-11" id="ppo" style="text-align: right; padding-right: 0;">
                         <h1><?php echo $r['title'];?></h1>
-                        <p style="font-size: 18px; margin-top: -1%;">{$r[description]</p>
-                        <p class="col-xs-12"><?php echo $r['content'];?></p>
+                        <p style="font-size: 18px; margin-top: -1%;"><?php echo $r['keywords'];?></p>
+                        <p class="col-xs-12"><?php echo $r['description'];?></p>
                     </div>
                 </div>
             </div>

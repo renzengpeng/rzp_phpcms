@@ -21,7 +21,7 @@
 {/pc}
 
     <div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
-        <div class="row gy_no clearfix">
+        <div class="row gy_no">
             <ul class="col-md-6 col-sm-4 col-xs-12 x_w" style="padding-bottom: 0; margin-bottom: 0;">
                 <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img src="{IMG_PATH}/healstec/hgyxy_05.jpg" /></li>
                 {pc:get sql="select * from hl_category where catid='12'" cache="3600" return="data"}
@@ -38,6 +38,7 @@
             </ul>
             <ul class="col-md-4 col-sm-5 x_w_y col-xs-12" style="float:right; padding-bottom: 0; margin-bottom: 0; text-align: center;" id="onck">
                 {pc:content action="category" catid="12" num="25" siteid="$siteid" order="listorder ASC"}
+
                 {loop $data $k $r}
                 <li class="col-md-4 col-sm-4 {if  $catid!=$r[catid]} x_w_y_li{/if} col-xs-4"  {if $catid==$r[catid]}style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if} >
                     <p><a href="{$r[url]}" style="color:black">{$r[catname]}</a></p>

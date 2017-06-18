@@ -26,7 +26,8 @@
             {loop $data $k $r}
             <li {if $n==1} class="col-md-2 col-sm-2 col-xs-3"{/if}{if $catid==$r[catid]} style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if}
                 {if $n==2}class="col-md-2 col-sm-2 col-xs-2"{/if}
-            {if $n>=3&&$n<$cc}class="col-md-3 col-sm-3 col-xs-3"{/if}
+            {if $n==3}class="col-md-2 col-sm-2 col-xs-2"{/if}
+            {if $n>3&&$n<$cc}class="col-md-3 col-sm-3 col-xs-3"{/if}
             {if $n==$cc}class="col-md-2 col-sm-2 x_w_y_li col-xs-2"{/if}
             ><p>
                 {$r[catname]}</p></li>

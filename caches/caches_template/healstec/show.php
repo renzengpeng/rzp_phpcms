@@ -11,7 +11,9 @@
             <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img
                     src="<?php echo IMG_PATH;?>/healstec/hgyxy_05.jpg"/></li>
             <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=f804ec768b47ac35c2b7980943a2773e&sql=select+%2A+from+hl_category+where+catid%3D%27%24top_parentid%27&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='$top_parentid' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);?>
-            <li class="col-md-2 col-sm-4" style="padding-right: 0;"><p><?php echo $data['0']['catname'];?></p></li>
+            <li class="col-md-2 col-sm-4" style="padding-right: 0;">
+                <a href="<?php echo $data['0']['url'];?>" style="color: black"><p><?php echo $data['0']['catname'];?></p></a>
+            </li>
             <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 
             <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="<?php echo IMG_PATH;?>/healstec/xw_08.jpg"/></li>

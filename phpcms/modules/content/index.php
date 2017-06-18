@@ -54,7 +54,11 @@ class index {
 		if(in_array($catid,[27,28])){
 			include template('', 'sh_show');
 			die;
-		}else{
+		}elseif($catid==32){
+            include template('', 'pp');
+            die;
+        }
+        else{
 			include template('', 'show');
 			die;
 		}
