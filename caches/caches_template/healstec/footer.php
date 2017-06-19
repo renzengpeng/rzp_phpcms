@@ -1,6 +1,6 @@
 <?php defined('IN_PHPCMS') or exit('No permission resources.'); ?>
 <?php if($_GET['a']==''||$catid=='11') { ?>
-<div class="section fp-auto-height se_f">
+<div class="section fp-auto-height"<?php if($_GET['a']=='') { ?>style="padding-top: 0;"<?php } else { ?>style="padding-top: 4%;"<?php } ?>>
     <?php } ?>
     <footer>
         <div class="container" style="padding: 0;">

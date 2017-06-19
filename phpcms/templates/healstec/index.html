@@ -22,7 +22,7 @@
       {pc:content  action="position" posid="2"  thumb="1" order="listorder DESC" num="2"}
       {loop $data $k $r}
       <div class="item {if $n==1}active{/if}">
-          <img src="{$r[thumb]}" alt="{$r[title]}" class="img-responsive">
+          <a href="{$r[url]}" target="_blank"> <img src="{$r[thumb]}" alt="{$r[title]}" class="img-responsive">
           <div class="carousel-caption" id="car">
               <h1 id="jr" class="jr">{str_cut($r[description],112)}</h1>
           </div>
@@ -31,6 +31,7 @@
           <div class="carousel-caption" id="bann" >
               <p id="se"><a href="{$r[url]}" title="{$r[title]}">{str_cut($r[title],36,'')}</a></p>
           </div>
+          </a>
       </div>
       {/loop}
       {/pc}

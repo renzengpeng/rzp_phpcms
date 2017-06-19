@@ -1,59 +1,47 @@
 {template "","header"}
-
 {pc:get sql="select * from hl_category where catid='$top_parentid'"  return="data"}
-<div class="container-fluid tu_o"
-     style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px;"
-     id="gy_to"></div>
+		<div class="container-fluid tu_o " style="background: url({$data[0][image1]}) center; width: 100%;  background-size: cover; margin-top: 70px; " id="gy_to"></div>
 {/pc}
-<div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
-    <div class="row gy_no">
-        <ul class="col-md-6 col-sm-4 col-xs-12 x_w" style="padding-bottom: 0; margin-bottom: 0;">
-            <li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img
-                    src="{IMG_PATH}/healstec/hgyxy_05.jpg"/></li>
-            {pc:get sql="select * from hl_category where catid='$top_parentid'"  return="data"}
-            <li class="col-md-2 col-sm-4" style="padding-right: 0;">
-                <a href="{$data[0][url]}" style="color: black"><p>{$data[0][catname]}</p></a>
-            </li>
-            {/pc}
-
-            <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg"/></li>
-            {if $catid!=$top_parentid}
-            {pc:get sql="select * from hl_category where catid='$catid'"  return="data1"}
-            <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data1[0][catname]}</p></li>
-            {/pc}
-            {else}
-            {pc:get sql="select * from hl_news a left join hl_news_data b on a.id=b.id where a.id=$id" cache="1" return="data"}
-            <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data[0][title]}</p></li>
-            {/pc}
-            {/if}
-        </ul>
-    </div>
-</div>
-<div class="container gy_wm" >
-
+		
+		<div class="container-fluid" style="border-bottom: 1px solid #f4f4f4;">
+			<div class="row gy_no">
+				<ul class="col-md-6 col-sm-4 col-xs-12 x_w" style="padding-bottom: 0; margin-bottom: 0;">
+					<li class="col-md-1 col-sm-2 x_w_img col-xs-12" style="background: #f4f4f4; text-align: center;"><img src="{IMG_PATH}/healstec/hgyxy_05.jpg"/></li>
+                    {pc:get sql="select * from hl_category where catid='$top_parentid'"  return="data"}
+                    <li class="col-md-2 col-sm-4" style="padding-right: 0;"><p><a href="{$data[0][url]}">{$data[0][catname]}</a></p></li>
+                    {/pc}
+					<li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg"/></li>
+                    {if $catid!=$top_parentid}
+                    {pc:get sql="select * from hl_category where catid='$catid'"  return="data1"}
+                    <li class="col-md-3 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p><a href="{$data1[0][url]}" style="color:#0f97a7">{$data1[0][catname]}</a></p></li>
+                    {/pc}
+                    {else}
+                    {pc:get sql="select * from hl_news a left join hl_news_data b on a.id=b.id where a.id=$id" cache="1" return="data"}
+                    <li class="col-md-3 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p><a href="gy_news.html" style="color:#0f97a7">{$data[0][title]}</a></p></li>
+                    {/pc}
+                    {/if}
+				</ul>
+			</div>
+		</div>
 {pc:get sql="select * from hl_news a left join hl_news_data b on a.id=b.id where a.id=$id" return="data"}
-<div class="keyanbox keyantab1" style="display: block;">
-    {php $image_arr=json_decode($data[0][muti_image],true);}
-    {if !empty($image_arr)}
-    <div class="row keyanImg">
+{php $image_arr=json_decode($data[0][muti_image],true);}
+{if !empty($image_arr)}
+<div class="row keyanImg">
 
-        {loop $image_arr $image}
-        <div class="col-xs-4 col-sm-4 col-md-4">
-            <img src="{$image[url]}" />
-        </div>
-        {/loop}
+    {loop $image_arr $image}
+    <div class="col-xs-4 col-sm-4 col-md-4">
+        <img src="{$image[url]}" />
     </div>
-    {/if}
-    <div class="row keyan-p" style="margin-bottom: 50px;">
-        <h3>
-            {$data[0][title]}
-        </h3>
-        {$data[0][content]}
-
-    </div>
+    {/loop}
 </div>
+{/if}
+		<!--认识我们-->
+		<div  class="xiangqing clearfix">
+			<ul class="col-md-12 col-sm-12  col-xs-12">
+					<li><h4> {$data[0][title]}</h4>
+						<p> {$data[0][content]}</p>
+					</li>
+			</ul>
+		</div>
 {/pc}
-</div>
-
 {template "","footer"}
-

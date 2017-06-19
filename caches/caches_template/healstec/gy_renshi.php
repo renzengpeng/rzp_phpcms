@@ -109,7 +109,7 @@
 				<ul class="col-md-12 col-sm-12 news col-xs-12">
                     <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=3afc5d23844a89b3b824109a6e491399&action=position&posid=10&catid=41&thumb=1&order=listorder+DESC&num=1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'position')) {$data = $content_tag->position(array('posid'=>'10','catid'=>'41','thumb'=>'1','order'=>'listorder DESC','limit'=>'1',));}?>
                     <?php $n=1;if(is_array($data)) foreach($data AS $v) { ?>
-					<li><a href="<?php echo $v['url'];?>" style="text-decoration: none"><h1><?php echo $v['title'];?></h1>
+					<li><a href="<?php echo $v['url'];?>" style="text-decoration: none" target="_blank"><h1><?php echo $v['title'];?></h1>
 						<h2><?php echo date('Y-m-d',$v[inputtime]);?></h2>
 						<p><?php echo $v['description'];?></p>
                     </a>
@@ -120,7 +120,7 @@
 				<ul class="col-md-12 col-sm-12 news_o col-xs-12" style="padding: 0;">
                     <?php $n=1; if(is_array($data_arr)) foreach($data_arr AS $k => $r) { ?>
 					<li class="col-md-12 col-sm-12 li_o col-xs-12">
-						<a href="<?php echo $r['url'];?>">
+						<a href="<?php echo $r['url'];?>" target="_blank">
 						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;"><?php echo date('Y-m-d',$r[inputtime]);?></h2>
 						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1><?php echo $r['title'];?></h1>
 							<p><?php echo $r['content'];?></p>

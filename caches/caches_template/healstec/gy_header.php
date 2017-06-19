@@ -10,13 +10,13 @@
                     src="<?php echo IMG_PATH;?>/healstec/hgyxy_05.jpg"/></li>
             <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=444d1ae2bfa95acdcd7107b3ec703cce&sql=select+%2A+from+hl_category+where+catid%3D%2710%27&cache=3600&return=data\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_category where catid=\'10\'',)).'444d1ae2bfa95acdcd7107b3ec703cce');if(!$data = tpl_cache($tag_cache_name,3600)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='10' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data = $a;unset($a);if(!empty($data)){setcache($tag_cache_name, $data, 'tpl_data');}}?>
             <li class="col-md-2 col-sm-4" style="padding-right: 0;">
-               <a href="<?php echo $data['0']['url'];?>" style="color: black"> <p><?php echo $data['0']['catname'];?></p></a>
+                <p><a href="<?php echo $data['0']['url'];?>" style="color: black"> <?php echo $data['0']['catname'];?></a></p>
             </li>
             <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 
             <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="<?php echo IMG_PATH;?>/healstec/xw_08.jpg"/></li>
             <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"get\" data=\"op=get&tag_md5=61f1316d9c673aad23d6ff5ecc1abc42&sql=select+%2A+from+hl_category+where+catid%3D%27%24catid%27&cache=1&return=data1\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$tag_cache_name = md5(implode('&',array('sql'=>'select * from hl_category where catid=\'$catid\'',)).'61f1316d9c673aad23d6ff5ecc1abc42');if(!$data1 = tpl_cache($tag_cache_name,1)){pc_base::load_sys_class("get_model", "model", 0);$get_db = new get_model();$r = $get_db->sql_query("select * from hl_category where catid='$catid' LIMIT 20");while(($s = $get_db->fetch_next()) != false) {$a[] = $s;}$data1 = $a;unset($a);if(!empty($data1)){setcache($tag_cache_name, $data1, 'tpl_data');}}?>
-            <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p><?php echo $data1['0']['catname'];?></p></li>
+            <li class="col-md-3 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p><?php echo $data1['0']['catname'];?></p></li>
             <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
         </ul>
         <ul class="col-md-6 col-sm-7 x_w_y col-xs-12" style="padding-bottom: 0; margin-bottom: 0; text-align: center;"

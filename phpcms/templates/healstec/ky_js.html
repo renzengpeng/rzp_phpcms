@@ -46,7 +46,7 @@
                 {/pc}
                 <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg" /></li>
                 {pc:get sql="select * from hl_category where catid='$catid'" cache="1" return="data1"}
-                <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text">
+                <li class="col-md-3 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text">
                     <p>{$data1[0][catname]}</p>
                 </li>
                 {/pc}
@@ -96,7 +96,7 @@
        <!--关注科研-->
     <div class="container gy_wm" {if $catid!=23}style=" display: none;"{/if}>
 
-        {pc:content action="lists" moreinfo="1" catid="23" order="id desc" num="1"}
+        {pc:content action="lists" moreinfo="1" catid="23" order="listorder desc" num="1"}
 
         {loop $data $k $r}
         <div class="keyanbox keyantab1" style="display: block;">
@@ -126,7 +126,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="row keyan-tab">
-                    {pc:content action="lists"  catid="24" order="id asc" num="2"}
+                    {pc:content action="lists"  catid="24" order="listorder asc" num="2"}
                     {loop $data $v}
                     <div class="col-xs-6 col-sm-6 col-md-6 keyan{$n} {if $n==1}active{/if}">
                         {$v[title]}
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-        {pc:content action="lists" moreinfo="1" catid="24" order="id asc" num="2"}
+        {pc:content action="lists" moreinfo="1" catid="24" order="listorder asc" num="2"}
         {loop $data $v}
         <div class="keyanbox keyantab{$n}" {if $n==1}style="display: block;"{/if}>
 
@@ -161,7 +161,7 @@
             </div>
             </div>
         </div>
-        {pc:content action="lists" moreinfo="1" catid="25" order="id asc" num="20"}
+        {pc:content action="lists" moreinfo="1" catid="25" order="listorder asc" num="20"}
         {loop $data $v}
         <div class="container" id="midle">
             <div class="row">
@@ -169,7 +169,7 @@
             </div>
         </div>
         <div id="jk_a" style="background: url({$v[thumb]}); width: 100%;  background-size: cover; margin-top: 2%;">
-        <a href="{$v[url]}" >
+        <a href="{$v[url]}" target="_blank" >
             <div class="row">
                 <div class="tu_o_zh">
                     <div class="tu_zh">
@@ -193,7 +193,7 @@
     <div class="container gy_wm" {if $catid!=26}style=" display: none;"{/if}>
         <div class="keyanbox keyantab1" style="display:block" >
 
-{pc:content action="lists" moreinfo="1" catid="26" order="id desc" num="1"}
+{pc:content action="lists" moreinfo="1" catid="26" order="listorder desc" num="1"}
 
 {loop $data $k $r}
             <div class="row keyan-p">

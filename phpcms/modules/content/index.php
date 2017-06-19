@@ -333,6 +333,8 @@ class index {
 				include template('', 'ky_js');die;
 			}elseif(in_array($catid,[27,28])){
                 include template('', 'sh_hd');die;
+            }elseif(in_array($catid,[29,30,31])){
+                include template('', 'yy_cp');die;
             }
             else{
                 include template('', 'list');die;

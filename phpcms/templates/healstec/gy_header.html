@@ -10,13 +10,13 @@
                     src="{IMG_PATH}/healstec/hgyxy_05.jpg"/></li>
             {pc:get sql="select * from hl_category where catid='10'" cache="3600" return="data"}
             <li class="col-md-2 col-sm-4" style="padding-right: 0;">
-               <a href="{$data[0][url]}" style="color: black"> <p>{$data[0][catname]}</p></a>
+                <p><a href="{$data[0][url]}" style="color: black"> {$data[0][catname]}</a></p>
             </li>
             {/pc}
 
             <li class="col-md-1 col-sm-1" style="padding-left: 0; text-align: center;"><img src="{IMG_PATH}/healstec/xw_08.jpg"/></li>
             {pc:get sql="select * from hl_category where catid='$catid'" cache="1" return="data1"}
-            <li class="col-md-2 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data1[0][catname]}</p></li>
+            <li class="col-md-3 col-sm-4" style="padding-left: 0; color: #0096a5;" id="text"><p>{$data1[0][catname]}</p></li>
             {/pc}
         </ul>
         <ul class="col-md-6 col-sm-7 x_w_y col-xs-12" style="padding-bottom: 0; margin-bottom: 0; text-align: center;"

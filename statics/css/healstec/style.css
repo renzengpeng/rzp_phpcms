@@ -1,12 +1,15 @@
 body{font-family: "microsoft yahei"; font-size: 12px;}
 body, html{ height: 100%;}
 .section{height: 100%;}
-a{text-decoration:none;}
+a,a:hover{text-decoration:none;}
 li{list-style-type: none;}
 img{border: none;}
 input,select,option,textarea{outline: none;}
 nav{background: #FFFFFF;}
 .section{padding-top:70px;}
+.lxt a,.news a{color:#000;}
+.xiangqing{width:1000px;height:auto;margin:20px auto}
+.xiangqing h4{text-align: center;margin:40px auto;}
 .container .navbar-header .navbar-brand { padding:10px; margin-top: 10px; margin-left: 5px;}
 .b_t{width:150px;background: #01747a;float: right; height: 25px;}
 .b_t p{color: #FFFFFF; background: url("http://healstec.itcask.com/statics/images/healstec/H_03.jpg") no-repeat; padding-left: 30px; background-position: 8px 6px; line-height: 25px;}
@@ -92,7 +95,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 #kyjs{ padding-top: 60%;}
 .xy_h1{color: #11949c; font-size: 3.2rem; margin-top: 3%;}
 .xy_p1{color: #9a9a9a; font-weight: bold; font-size: 1.5rem;}
-.xy_p2{line-height: 3rem; padding-top: 2%; font-size: 2rem;}
+.xy_p2{line-height: 3rem; padding-top: 2%; font-size: 2rem;display: inline-block;width:88%;}
 .ji_fa li p.xp_p3 {line-height: 2rem; font-size: 1.8rem;}
 .g_y a:link{color: #ffffff; text-align: left;}
 .g_y .gy{background: #01396a; position: relative; height: 150px; opacity: 0.7;filter: alpha(opacity=70);}
@@ -112,6 +115,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .gywm{color: #0f97a7; background:url("http://healstec.itcask.com/statics/images/healstec/xy01_03.jpg") no-repeat center bottom;}
 .x_w li, .x_w_y li{padding-top: 2%; padding-bottom: 2%; margin-bottom: 0;}
 .x_w li p, .x_w_y li p{margin-bottom: 0;}
+.x_w li p a, .x_w_y li p a{text-decoration: none;color:#000;}
 .gy_no{width: 1000px; margin: 0 auto;}
 .xw{width:1000px;}
 .xw{margin-top: 5%; margin-bottom: 0;}
@@ -170,7 +174,7 @@ footer{width:100%;background: #01737b;padding: 2% 0;}
 .renshiwomen ul li h1{font-size: 2.6rem; font-weight: bold;}
 .renshiwomen ul li p{font-size: 1.6rem; line-height: 3rem; padding-top: 5%;}
 .kuang{color:#fff;font-size: 1.6rem;width:1000px;padding:0;}
-.rho{height:439px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_05.jpg") no-repeat center;background-size:cover ;width: 100%;}
+.rho{height:439px;margin-top: 2%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_05.jpg") no-repeat center;background-size:cover ;width: 100%;}
 .rht{height: 539px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_08.jpg") no-repeat center;background-size:cover ;width: 100%;}
 .rhth{height: 582px;margin-top: 5%;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_10.jpg") no-repeat center;background-size:cover ;width: 100%;}
 .rhf{height: 583px;margin: 5% 0;background: url("http://healstec.itcask.com/statics/images/healstec/renshi_12.jpg") no-repeat center;background-size:cover ;width: 100%;}

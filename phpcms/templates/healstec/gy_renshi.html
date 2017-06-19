@@ -109,7 +109,7 @@
 				<ul class="col-md-12 col-sm-12 news col-xs-12">
                     {pc:content  action="position" posid="10" catid="41" thumb="1" order="listorder DESC" num="1"}
                     {loop $data $v}
-					<li><a href="{$v[url]}" style="text-decoration: none"><h1>{$v[title]}</h1>
+					<li><a href="{$v[url]}" style="text-decoration: none" target="_blank"><h1>{$v[title]}</h1>
 						<h2>{date('Y-m-d',$v[inputtime])}</h2>
 						<p>{$v[description]}</p>
                     </a>
@@ -120,7 +120,7 @@
 				<ul class="col-md-12 col-sm-12 news_o col-xs-12" style="padding: 0;">
                     {loop $data_arr $k $r}
 					<li class="col-md-12 col-sm-12 li_o col-xs-12">
-						<a href="{$r[url]}">
+						<a href="{$r[url]}" target="_blank">
 						<h2 class="col-md-2 col-sm-2 col-xs-12" style="padding-left: 0; padding-right: 0;">{date('Y-m-d',$r[inputtime])}</h2>
 						<div class="col-md-9 col-sm-9 col-xs-12" style="padding-left: 0; padding-right: 0;"><h1>{$r[title]}</h1>
 							<p>{$r[content]}</p>
