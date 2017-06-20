@@ -52,7 +52,7 @@
                 {/pc}
             </ul>
             <ul class="col-md-6 col-sm-7 x_w_y col-xs-12" style="padding-bottom: 0; margin-bottom: 0; text-align: center;" id="onck">
-                {pc:content action="category" catid="11" num="25" siteid="$siteid" order="listorder ASC"}
+                {pc:content action="category" catid="11" num="25" siteid="$siteid" order="listorder desc"}
                 {loop $data $k $r}
                 <li class="col-md-2 col-sm-2 x_w_y_li col-xs-3" {if $catid==$r[catid]}
                     style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if} >
@@ -126,7 +126,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-6">
                 <div class="row keyan-tab">
-                    {pc:content action="lists"  catid="24" order="listorder asc" num="2"}
+                    {pc:content action="lists"  catid="24" order="listorder desc" num="2"}
                     {loop $data $v}
                     <div class="col-xs-6 col-sm-6 col-md-6 keyan{$n} {if $n==1}active{/if}">
                         {$v[title]}
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-        {pc:content action="lists" moreinfo="1" catid="24" order="listorder asc" num="2"}
+        {pc:content action="lists" moreinfo="1" catid="24" order="listorder desc" num="2"}
         {loop $data $v}
         <div class="keyanbox keyantab{$n}" {if $n==1}style="display: block;"{/if}>
 
@@ -161,7 +161,7 @@
             </div>
             </div>
         </div>
-        {pc:content action="lists" moreinfo="1" catid="25" order="listorder asc" num="20"}
+        {pc:content action="lists" moreinfo="1" catid="25" order="listorder desc" num="20"}
         {loop $data $v}
         <div class="container" id="midle">
             <div class="row">

@@ -28,7 +28,7 @@
                 {/pc}
             </ul>
             <ul class="col-md-4 col-sm-5 x_w_y col-xs-12" style="float:right; padding-bottom: 0; margin-bottom: 0; text-align: center;" id="onck">
-                {pc:content action="category" catid="12" num="25" siteid="$siteid" order="listorder ASC"}
+                {pc:content action="category" catid="12" num="25" siteid="$siteid" order="listorder desc"}
                 {loop $data $k $r}
                 <li class="col-md-4 col-sm-4 {if  $catid!=$r[catid]} x_w_y_li{/if} col-xs-4"  {if $catid==$r[catid]}style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if} >
                     <p>{$r[catname]}</p>
@@ -70,7 +70,7 @@
     </script>
     <!--关注公益-->
     <div class="container gy_wm" {if $catid!=27}style=" display: none;"{/if}>
-{pc:content action="lists" moreinfo="1" catid="27" order="id desc" num="10"}
+{pc:content action="lists" moreinfo="1" catid="27" order="listorder desc" num="10"}
 
 {loop $data $k $r}
         <div class="row  gongyi">
@@ -89,7 +89,7 @@
     </div>
     <!--社会活动-->
     <div class="container gy_wm" {if $catid!=28}style=" display: none;"{/if}>
-        {pc:content action="lists" moreinfo="1" catid="28" order="id desc" num="10"}
+        {pc:content action="lists" moreinfo="1" catid="28" order="listorder desc" num="10"}
 
         {loop $data $k $r}
         <div class="row  gongyi">

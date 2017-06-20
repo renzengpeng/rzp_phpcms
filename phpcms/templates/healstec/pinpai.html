@@ -24,7 +24,7 @@
 				<div class="col-md-12  col-sm-12"  id="col"><p>{$data_ca[0][catname]}</p></div>
 			</div>
 		</div>
-{pc:content action="lists" moreinfo="1" catid="32" order="id DESC" num="10"}
+{pc:content action="lists" moreinfo="1" catid="32" order="listorder DESC" num="10"}
 {loop $data $k $r}
 		<a href="{$r[url]}">
             {if $n%2==1}
@@ -76,7 +76,7 @@
 		</div>
 		<div class="container" style=" margin:2% auto;">
 			<ul class="row" style="padding-left: 0" >
-                {pc:content action="lists" catid="36" order="id DESC" num="10"}
+                {pc:content action="lists" catid="36" order="listorder DESC" num="10"}
                 {loop $data $k $r}
 				<li class="col-md-12 col-sm-12 col-xs-12 p_pai"  style=" padding-top: 15px;"  {if $n>1} id="ppai"{/if} >
 					<a href="{$r[redirect_url]}"  >

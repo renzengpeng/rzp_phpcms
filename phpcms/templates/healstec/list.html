@@ -13,7 +13,7 @@
 </div>
 <div class="container" style="padding-left: 0; padding-right: 0;">
     <ul class="row" id="pinpai">
-        {pc:content action="lists" catid="$catid" order="id DESC" num="10"}
+        {pc:content action="lists" catid="$catid" order="listorder DESC" num="10"}
         {loop $data $k $r}
         <li class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 2%;">
             <a href="{$r[url]}">

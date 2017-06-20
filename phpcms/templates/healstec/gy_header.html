@@ -21,7 +21,7 @@
         </ul>
         <ul class="col-md-6 col-sm-7 x_w_y col-xs-12" style="padding-bottom: 0; margin-bottom: 0; text-align: center;"
             id="onck">
-            {pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder ASC"}
+            {pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder desc"}
             {php $cc=count($data)}
             {loop $data $k $r}
             <li {if $n==1} class="col-md-2 col-sm-2 col-xs-3"{/if}{if $catid==$r[catid]} style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if}

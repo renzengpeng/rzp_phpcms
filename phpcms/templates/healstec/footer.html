@@ -22,7 +22,7 @@
                     {/pc}
 
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        {pc:content action="lists" moreinfo="1" catid="42" order="id asc" num="4"}
+                        {pc:content action="lists" moreinfo="1" catid="42" order="listorder desc" num="4"}
                         {loop $data $k $r}
                         <li><a href="{$r[url]}">{$r[title]}</a></li>
                         {/loop}
@@ -47,7 +47,7 @@
                     <h1>{$data[0][catname]}</h1>
                     {/pc}
                     <ul id="f_uu" class="col-md-12 col-sm-12" style="padding: 0; margin-top: 0;">
-                        {pc:content action="category" catid="43" num="2" order="listorder ASC" return="data1"}
+                        {pc:content action="category" catid="43" num="2" order="listorder desc" return="data1"}
                         {loop $data1 $k $r}
                         <li class="col-md-5 col-sm-5" style="padding: 0;">{$r[catname]}<br/><img src="{$r[image]}"/></li>
                         {/loop}

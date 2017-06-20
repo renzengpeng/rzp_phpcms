@@ -50,7 +50,7 @@
                         </div>
 
                     <div class="clearfix"></div>
-                    {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder ASC" return="data1"}
+                    {pc:content action="category" catid="0" num="25" siteid="$siteid" order="listorder desc" return="data1"}
                     {php $c=end(array_keys($data1))}
                         {loop $data1 $k $r}
                        <li><a href="{$r[url]}" {if $c==$k}style="padding-right: 0;"{/if} {if $r[catid]==$catid||(isset($arrparentid[1])&&$r[catid]==$arrparentid[1])}class="gywm" style="color: #0f97a7; font-weight: bold;"{/if}>{$r[catname]}</a></li>

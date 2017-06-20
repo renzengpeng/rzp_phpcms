@@ -22,7 +22,7 @@
 				<div class="col-md-12  col-sm-12"  id="col"><a href="{$data[0][url]}"><p>{$data[0][catname]}</p></a></div>
 				{/pc}
 				<ul class="col-md-12  col-sm-12 ji_fa" id="ji_fa">
-					{pc:content action="lists" moreinfo="1" catid="27" order="id DESC" num="10"}
+					{pc:content action="lists" moreinfo="1" catid="27" order="listorder DESC" num="10"}
 					{loop $data $k $r}
 					<li class="col-md-12  col-sm-12">
 						<a href="{$r[url]}" style="color: black">
@@ -53,7 +53,7 @@
 		</div>
 		<div class="container" style="padding-left: 0; padding-right: 0;">
 			<ul class="row" id="pinpai">
-				{pc:content action="lists" catid="28" order="id DESC" num="10"}
+				{pc:content action="lists" catid="28" order="listorder DESC" num="10"}
 				{loop $data $k $r}
 				<li class="col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 2%;">
 					<a href="{$r[url]}">

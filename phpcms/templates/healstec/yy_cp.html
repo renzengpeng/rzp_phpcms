@@ -24,7 +24,7 @@
                 {/pc}
             </ul>
             <ul class="col-md-4 col-sm-5 x_w_y col-xs-12" style="float:right; padding-bottom: 0; margin-bottom: 0; text-align: center;" id="onck">
-                {pc:content action="category" catid="13" num="3" siteid="$siteid" order="listorder ASC"}
+                {pc:content action="category" catid="13" num="3" siteid="$siteid" order="listorder desc"}
                 {loop $data $k $r}
                 <li class="col-md-4 col-sm-4 {if $n==1}x_w_y_li{/if} col-xs-4{/if }" {if $catid==$r[catid]}
                 style="padding-right: 0; border-bottom: 1px solid #f7ac1d;"{/if} >

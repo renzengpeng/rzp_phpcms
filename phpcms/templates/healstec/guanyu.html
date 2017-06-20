@@ -17,7 +17,7 @@
 				</div>
 			<div class="g_y" style="width: 100%;margin-top: 4%;">
 
-					{pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder ASC"}
+					{pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder desc"}
 					{loop $data $k $r}
 					{if $n%3==1}
 					<ul class="row" style="padding-left: 0; padding-right: 0; width: 100%;">
@@ -49,7 +49,7 @@
 		
 		<div class="section">
 		<div>
-			{pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder ASC"}
+			{pc:content action="category" catid="10" num="25" siteid="$siteid" order="listorder desc"}
 			{loop $data $k $r}
 			<div class="container guanyu">
 				<div class="row">
