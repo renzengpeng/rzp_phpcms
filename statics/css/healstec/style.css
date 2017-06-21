@@ -571,6 +571,12 @@ h3{font-size: 2rem!important; font-weight: bold;}
 }
 
 @media only screen and (min-width: 500px) and (max-width:768px){
+.xiangqing {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 0 1rem;
+}
 .gywm{background:none;}
 .b_t{display: none;}
 .navbar-toggle{margin-top: 4%;}
@@ -734,9 +740,3 @@ h3{font-size: 2rem!important; font-weight: bold;}
 	.se_kk{padding-top: 20%;}
 }
 
-.xiangqing {
-    width: 100%;
-    height: auto;
-    margin: 20px auto;
-    padding: 0 1rem;
-}
