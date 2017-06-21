@@ -165,11 +165,12 @@
         {loop $data $v}
         <div class="container" id="midle">
             <div class="row">
-                <div class="col-md-12  col-sm-12"  id="col"><p>{$v[title]}</p></div>
+                <div class="col-md-12  col-sm-12 lxt"  id="col"><p><a>{$v[title]}</a></p></div>
             </div>
         </div>
+        <a href="{$v[url]}" target="_blank">
         <div id="jk_a" style="background: url({$v[thumb]}); width: 100%;  background-size: cover; margin-top: 2%;">
-        <a href="{$v[url]}" target="_blank" >
+
             <div class="row">
                 <div class="tu_o_zh">
                     <div class="tu_zh">
@@ -179,8 +180,9 @@
                 </div>              
             </div>
            </div>>
-        </a>
+
         </div>
+        </a>
         {/loop}
         {/pc}
 

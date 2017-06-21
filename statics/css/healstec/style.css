@@ -9,7 +9,11 @@ nav{background: #FFFFFF;}
 .section{padding-top:70px;}
 .lxt a,.news a{color:#000;}
 .xiangqing{width:1000px;height:auto;margin:20px auto}
-.xiangqing h4{text-align: center;margin:40px auto;}
+
+.xiangqing h4 {
+    text-align: center;
+    line-height: 50px
+}
 .container .navbar-header .navbar-brand { padding:10px; margin-top: 10px; margin-left: 5px;}
 .b_t{width:150px;background: #01747a;float: right; height: 25px;}
 .b_t p{color: #FFFFFF; background: url("http://healstec.itcask.com/statics/images/healstec/H_03.jpg") no-repeat; padding-left: 30px; background-position: 8px 6px; line-height: 25px;}
@@ -728,4 +732,11 @@ h3{font-size: 2rem!important; font-weight: bold;}
 	.sc_jk{margin-top: 10%;}
 	.se_ky{padding-top: 6%;}
 	.se_kk{padding-top: 20%;}
+}
+
+.xiangqing {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 0 1rem;
 }
